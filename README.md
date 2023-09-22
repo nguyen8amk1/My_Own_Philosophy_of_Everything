@@ -1,0 +1,1 @@
+# My_Own_Philosophy_of_Everything
