@@ -10,8 +10,10 @@ IMPORTANT KEYWORDS:
 	PARAMETERIZE
 
 MY TOOLBOX: 
-    ....
-    HAVE A CATEGORIZE FEATURES SET OF DATA STRUCTURE AND ALGORITHMS: 
+    Data Structure:
+        .....
+
+    Algorithms: 
         ....
 
 MY FRAMEWORKS: 
