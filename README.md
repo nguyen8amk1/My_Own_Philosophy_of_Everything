@@ -98,6 +98,14 @@ MY FRAMEWORKS:
 
         -> TEST: USE THIS FRAMEWORK TO UNDERSTAND THE NATURE DATA STRUCTURES AND ALGORITHMS 
 
+    GOOD ENOUGH PHILOSOPHY: 
+        Things won't be perfect given the time and technology we currently having 
+        Use the thing that is a cut-down version rather than waiting for a perfect to come 
+        -> Try to apply the current knowledge 
+            (even though it's not perfect match for everything or even well thought out -> know when the stop researching and actually use the knowledge) 
+            then refines it afterwards (involve the users in the trade-offs) 
+
+
     A MASTER PLAN TO SOLVE PROBLEMS (which should counter your weaknesses in problem solving):
         ....
 
