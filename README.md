@@ -70,6 +70,25 @@ MY FRAMEWORKS:
         ....
 
 RANDOM QUOTES (that should be added to some topic):
+    How to choose a solution: 
+        Learn to make choice given:
+            + particular needs  
+            + resource at hand 
+                understand your options: 
+                    -> good, bad options 
+        The questions to ask is: 
+            Should i use this to ... ?
+            not Can i ....
+            -> the questions is less about the solutions is complete fit with your problem
+                but rather it's the best fit given your:
+                    + problem space
+                    + usage pattern 
+                    + available resources 
+
+        Instead of pure dominance of any particular strategy: 
+            -> we'll see increasingly SPECIALIZED SOLUTION
+            -> each suited for a particular (can be overlapped) SET OF IDEAL PROBLEM SPACE 
+
     Things in life happens in (solution) pattern, a lot of patterns applies to almost every aspect of our lives (economics, decisions, coding, math, ...)
         -> learning general patterns can help you solve most of the problems in most aspect of life
         -> a good language to learning these patterns is Mathematics
@@ -100,6 +119,8 @@ RANDOM QUOTES (that should be added to some topic):
                 as long as the foundation relationship between them holds  
             ....
 
+Random questions: 
+    What is a Problem Space: ?? 
 
 MY BEST PRACTICES: 
     .....
