@@ -100,7 +100,7 @@ MY FRAMEWORKS:
             -> we'll see increasingly SPECIALIZED SOLUTION
             -> each suited for a particular (can be overlapped) SET OF IDEAL PROBLEM SPACE 
 
-        -> TEST: USE THIS FRAMEWORK TO UNDERSTAND THE NATURE DATA STRUCTURES AND ALGORITHMS 
+        -> @TEST: USE THIS FRAMEWORK TO UNDERSTAND THE NATURE DATA STRUCTURES AND ALGORITHMS 
 
     GOOD ENOUGH PHILOSOPHY: 
         Things won't be perfect given the time and technology we currently having 
