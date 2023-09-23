@@ -66,16 +66,23 @@ MY TOOLBOX:
 
 
 MY FRAMEWORKS: 
-    A MASTER PLAN TO SOLVE PROBLEMS (which should counter your weaknesses in problem solving):
-        ....
-
-RANDOM QUOTES (that should be added to some topic):
-    How to choose a solution: 
+    THINGS YOU NEED TO KNOW BEFORE CHOOSING AMONG TOOLS (DEDUCE FROM 7DB7W): 
         Learn to make choice given:
             + particular needs  
             + resource at hand 
                 understand your options: 
                     -> good, bad options 
+                    -> Gets your hand dirty to figure out these questions -> understand the options
+                        + What TYPE of TOOL is this ?
+                        + What the REASON it created ? 
+                            -> the kind of problems they best suited 
+                        + How to USE it ? 
+                        + What makes it UNIQUE ? 
+                            -> understanding the: 
+                                + capabilities 
+                                + constraints 
+                                -> help you pick the right tool for the job 
+
         The questions to ask is: 
             Should i use this to ... ?
             not Can i ....
@@ -89,6 +96,12 @@ RANDOM QUOTES (that should be added to some topic):
             -> we'll see increasingly SPECIALIZED SOLUTION
             -> each suited for a particular (can be overlapped) SET OF IDEAL PROBLEM SPACE 
 
+        -> TEST: USE THIS FRAMEWORK TO UNDERSTAND THE NATURE DATA STRUCTURES AND ALGORITHMS 
+
+    A MASTER PLAN TO SOLVE PROBLEMS (which should counter your weaknesses in problem solving):
+        ....
+
+RANDOM QUOTES (that should be added to some topic):
     Things in life happens in (solution) pattern, a lot of patterns applies to almost every aspect of our lives (economics, decisions, coding, math, ...)
         -> learning general patterns can help you solve most of the problems in most aspect of life
         -> a good language to learning these patterns is Mathematics
