@@ -90,7 +90,14 @@ RANDOM QUOTES (that should be added to some topic):
         -> HOW TO ABSTRACT IT THE CONCRETE PATTERNS INTO GENERAL PATTERNS ? 
             ....
 
-        -> HOW TO PROVE THAT THE ABSTRACT PATTERN IS APPLICABLE TO SOME RANDOM FIELDS ? 
+        -> HOW TO PROVE THAT THE ABSTRACT PATTERN IS APPLICABLE TO SOME RANDOM FIELDS ? (Mathematically?)
+            ....
+
+        -> Does category theory is the answers to all of these questions ?? 
+            Category theory is more about how we structure knowledge rather than how knowledge actually are,
+            focus on relation (morphism), not content (object)  
+            ->  prove things using relation between them so the actual object does not matter 
+                as long as the foundation relationship between them holds  
             ....
 
 
