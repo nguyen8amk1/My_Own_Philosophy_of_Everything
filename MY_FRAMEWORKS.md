@@ -118,7 +118,7 @@ MY FRAMEWORKS:
             -> What i truly want are:
                 + Learn to admit the problem with my decision 
                 + Learn to actually decide the thing that good on the whole, not just me 
-                    (i tend to delay the decision so that i could wait for the timing that beneficial on my part only) 
+                    (i tend to delay the decision so that i could wait for the timing that beneficial on my part only) -> The reason why i become indecisive -> Selfish TT
                 -> These thing should become instince 
         .....
 
