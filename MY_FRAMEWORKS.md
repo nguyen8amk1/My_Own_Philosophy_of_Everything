@@ -50,6 +50,35 @@ MY FRAMEWORKS:
 
         Questions: WHAT ARE THE PROPERTIES TO CONSIDER ? 
 
+    SYSTEM DESIGN: 
+        -> Come up with technologies to solve problems
+        Steps: 
+            1. Define requirements from the users perspective 
+                -> pick out the most important user's requirements -> technical requirements
+            2. Reduce the features to data definition 
+                -> Make abstract/concepts into concrete properties  
+            3. Defines endpoints(vd: API) where data can be: 
+                + manipulate 
+                + queried 
+                -> Each for every features 
 
-    A MASTER PLAN TO SOLVE PROBLEMS (which should counter your weaknesses in problem solving):
+        -> Goal: create a system that easily:
+            + scale 
+            + extend  in features 
+            when requirements change 
+
+        API Design: 
+            Different API have different behaviours: 
+                + continous
+                + prediorically 
+                + rarely called  
+                +...
+                -> Require different PROTOCOL for each behaviour
+            -> Try to match the API behaviour with suitable protocol 
+            -> Choose correctly could greatly IMPROVE THE PERFORMANCE 
+
+        Choose Database: 
+            -> Choose base on pros, cons that benefit the storing requirements 
+
+    A MASTER PLAN TO SOLVE PROBLEMS (which should counter my weaknesses in problem solving):
         ....
