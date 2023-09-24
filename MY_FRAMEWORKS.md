@@ -111,5 +111,16 @@ MY FRAMEWORKS:
             Rules: 
                 vd: rules for file structure,... 
 
+    LEARN HOW TO DECIDE: 
+        This is right up the hardest thing i've ever wanted to learn  
+        and still can't do it right 
+        Really want to know how to be a decisive person ?? 
+            -> What i truly want are:
+                + Learn to admit the problem with my decision 
+                + Learn to actually decide the thing that good on the whole, not just me 
+                    (i tend to delay the decision so that i could wait for the timing that beneficial on my part only) 
+                -> These thing should become instince 
+        .....
+
     A MASTER PLAN TO SOLVE PROBLEMS (which should counter my weaknesses in problem solving):
         ....
