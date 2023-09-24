@@ -119,8 +119,22 @@ MY FRAMEWORKS:
                 + Learn to admit the problem with my decision 
                 + Learn to actually decide the thing that good on the whole, not just me 
                     (i tend to delay the decision so that i could wait for the timing that beneficial on my part only) -> The reason why i become indecisive -> Selfish TT
-                -> These thing should become instince 
+                -> These thing should become INSTINCE 
+        .....
+
+    LEARN HOW TO SWITCH BETWEEN ABSTRACT AND CONCRETE MINDSET: 
         .....
 
     A MASTER PLAN TO SOLVE PROBLEMS (which should counter my weaknesses in problem solving):
+        My weaknesses: 
+        My strengths: 
+
+        Strategy: 
+            Divide the problem: 
+                Divide the problem into discrete sub problems (steps)
+                ....
+                
+            Reduce the problem: 
+                Remove some contraints in oreder to make the (divided) problem easier to solve 
+                ....
         ....
