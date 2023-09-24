@@ -48,6 +48,8 @@ MY FRAMEWORKS:
             (even though it's not perfect match for everything or even well thought out -> know when the stop researching and actually use the knowledge) 
             then refines it afterwards (involve the users in the trade-offs) 
 
+        Questions: WHAT ARE THE PROPERTIES TO CONSIDER ? 
+
 
     A MASTER PLAN TO SOLVE PROBLEMS (which should counter your weaknesses in problem solving):
         ....
