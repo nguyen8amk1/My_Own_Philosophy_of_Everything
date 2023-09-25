@@ -21,6 +21,17 @@ MY TOOLBOX:
         Category theory:
             ....
 
+    Programming Languages: 
+        *Ruby: 
+            + What is the TYPING MODEL?: 
+            + What is the PROGRAMMING MODEL?: 
+            + How will you INTERACT with it?: 
+            + What are the:
+            + What are the CORE FEATURES that make the language UNIQUE ? 
+
+    Programming Paradigms: 
+        ....
+
     System design: 
         ....
 
