@@ -22,12 +22,24 @@ MY TOOLBOX:
             ....
 
     Programming Languages: 
-        *Ruby: 
+        Answer these questions:
             + What is the TYPING MODEL?: 
             + What is the PROGRAMMING MODEL?: 
             + How will you INTERACT with it?: 
             + What are the:
             + What are the CORE FEATURES that make the language UNIQUE ? 
+
+        *Ruby: 
+            + What is the TYPING MODEL?: 
+                ....
+            + What is the PROGRAMMING MODEL?: 
+                ....
+            + How will you INTERACT with it?: 
+                ....
+            + What are the:
+                ....
+            + What are the CORE FEATURES that make the language UNIQUE ? 
+                ....
 
     Programming Paradigms: 
         ....
