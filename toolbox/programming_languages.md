@@ -18,6 +18,9 @@ Answer these questions:
     + What is the TYPING MODEL?: 
         dynamic-typing: type-checking at run-time
         strongly-typed (not exactly but it behave like one most of the type )
+            -> it does checking type when does operations
+            vd: 4.0 + "ditme" -> can't do this, since they're different types 
+
         Duck-typing
 
         -> the TRADE-OFF that developer have to deal with: 
@@ -36,7 +39,6 @@ Answer these questions:
             ....
         -> the WAY THE LANGUAGE WORKS: 
             ....
-            
 
     + What is the reason it created? (Optional): 
         ....
