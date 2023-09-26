@@ -28,3 +28,17 @@ RANDOM QUOTES (that should be added to some topic):
             ->  prove things using relation between them so the actual object does not matter 
                 as long as the foundation relationship between them holds  
             ....
+
+    THE PROCESS OF FULLY UNDERSTAND ANYTHING:
+        If you keep using the [criteria of concepts](./frameworks//things_you_need_to_know_before_choosing_tools.md) on things you wanted to learn:
+            an keep running down the rabbit hole: 
+                vd: you disect concepts A into: 
+                    it's:
+                        Type: B
+                        Unique Features: C
+                        How to use it: D 
+                    -> Each will be come a concepts on its own 
+                        -> RECURSIVELY GO DOWN THE RABBIT HOLE 
+            -> [good enough mindset](./frameworks/good_enough_philosophy.md) is a must to get anything done on time
+                -> since it give you a STOPPING POINT at digging to actually REST and USE the gained concepts 
+
