@@ -1,5 +1,9 @@
 # need to explain each of these keywords meaning 
 IMPORTANT KEYWORDS (that applies to almost everything):
+        LEARNING THE HARDWAY: 
+                -> learning by experiencing hacking and making mistakes 
+                -> of course with a [enough](./frameworks/good_enough_philosophy.md) knowledge background first 
+
 	FEATURES:
         .... 
 
