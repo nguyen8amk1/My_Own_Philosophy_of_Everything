@@ -46,8 +46,7 @@ MY TOOLBOX:
         Sequence Diagram: 
             ....
 
-    Programming Paradigms: 
-        ....
+    [Programming Paradigms](./toolbox/programming_parardigms.md)
 
     System design: 
         ....

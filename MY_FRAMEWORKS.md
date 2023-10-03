@@ -8,6 +8,9 @@ MY FRAMEWORKS:
     [SYSTEM DESIGN](./frameworks/system_design.md) 
         <insert an introduction> 
 
+    [SOFTWARE ARCHITECTURE](./frameworks/software_architecture.md) 
+        <insert an introduction> 
+
     HOW TO LEAD A TEAM: 
         Goal: all members have the same big picture in mind 
         Tools: 

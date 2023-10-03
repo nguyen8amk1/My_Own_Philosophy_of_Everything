@@ -13,11 +13,22 @@ Find answers to these questions:
 
 MVC: 
     + What TYPE of TOOL is this ?
-        ....
+        SOLUTIONS (to common problems)
+        3 Types:
+            + Creational:  
+                -> Class INSTANTIATION 
+            + Behavioural: 
+                -> COMMUNICATION between Objects 
+            + Structural: 
+                -> How to STORE information 
 
     + What the REASON it created ? 
-        .....
-        -> the kind of problems they best suited 
+        reusable SOLUTIONS
+        for PROBLEMS 
+        in a given CONTEXT 
+
+        -> the kind of problems they best suited:
+            depends on the contexts 
 
     + How to USE it ? 
         .....

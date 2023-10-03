@@ -17,3 +17,4 @@ Use the thing that is a cut-down version rather than waiting for a perfect to co
     then refines it afterwards (involve the users in the trade-offs) 
 
 Questions: WHAT ARE THE PROPERTIES TO CONSIDER ? 
+    -> When should you stop and call it "good enough" ? 

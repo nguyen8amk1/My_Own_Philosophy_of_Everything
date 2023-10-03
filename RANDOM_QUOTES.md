@@ -1,4 +1,7 @@
 RANDOM QUOTES (that should be added to some topic):
+    ***You only USE something(tool) when you need its BENEFITS
+        -> Not use it just because you can use it, or other tell you to ...
+
     Things in life happens in (solution) pattern, a lot of patterns applies to almost every aspect of our lives (economics, decisions, coding, math, ...)
         -> learning general patterns can help you solve most of the problems in most aspect of life
         -> a good language to learning these patterns is Mathematics

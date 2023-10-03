@@ -4,3 +4,5 @@ There are a certain similarties between the approach of:
     + System Design
     may be other type of design as well. 
     -> Try to find another level of abstraction
+
+Aspect Oriented Programming seems very powerful 
