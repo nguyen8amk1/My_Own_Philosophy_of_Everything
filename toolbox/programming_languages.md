@@ -1,5 +1,4 @@
 # Programming languages 
-
 Answer these questions:
     + What is the TYPING MODEL?: 
     + What is the PROGRAMMING MODEL?: 
@@ -44,13 +43,43 @@ Answer these questions:
         ....
 
     + How will you INTERACT with it?: 
-        ....
+        Using interpreter 
 
     + What are the:
         + decision constructs: 
             ....
+
         + core data structures: 
-            ....
+            + array:
+            + hash: 
+            with multiple APIs sit on top
 
     + What are the CORE FEATURES that make the language UNIQUE ? 
-        ....
+        Mixin: 
+            -> 2 way dependencies (Child and Parents both depends on each others methods)
+            -> while inheritance is just 1 way dependencies (Child depends on Parent methods)
+
+        Meta-programming: 
+            Open class:
+                can add/change definition of any class at any time
+                    -> building languages to encode your own DOMAIN
+                    -> vd: express all number as inches, ... 
+
+            Method missing: 
+                when a method is not found in a class 
+                -> method_missing method will be called for debugging purposes
+                but if we overwrite (Open Class) that parts to ultilize it to do something else
+                    vd: use the not found method name as a parameter to some other purposes 
+                        -> WE WILL GET INFINITE AMOUNT OF METHODS WITHOUT WRITING ANY MORE CODE   
+                        vd: Roman.II methods
+                                can spit out value 2 
+                            Roman.III methods 
+                                can spit out value 3 
+                            even though the II and III methods not exist
+                            THE LOGIC OF CONVERSION IS IN THE METHOD_MISSING BODY
+
+            Module: 
+
+
+
+            -> 

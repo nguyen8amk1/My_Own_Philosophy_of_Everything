@@ -94,3 +94,10 @@ Conclusion:
         -> Higher Order Function which is more concrete (lower level of abstraction)
             -> can be use to implement Hooks
 
+Normalize: 
+    the process that makes something more 'normal'
+        the "normal" meaning might change in different context:
+        vd: 
+            Data Normalization: reduce data to canonical form (chinh tac)
+            Database normalization: reduce to normal form to reduce data redundancy, increase integrity 
+            ....
