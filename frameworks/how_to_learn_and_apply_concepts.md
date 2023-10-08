@@ -13,6 +13,9 @@ Procedure Abstraction (Removing Hooks):
         [Hooks](../RANDOM_TERMINOLOGIES.md):
             -> It's distract you from the main business logic   
 
+    -> YOU MIGHT NEED TO SOLVE A LOT OF CONCRETE PROBLEM 
+        AND WRITE THE DETAILS STEP OUT OF AND GET THE COMMON BETWEEN THEM 
+
     Things to identify from a concrete procedure: 
         Hooks: the additional operation that you need to do along the way (that goes between different main logic step)
         Business logics: the main step(goals) to solve the problem 
@@ -45,3 +48,9 @@ Pattern matching: one of the most powerful method to problem solving
             -> analyse the the relationship between objects 
             -> form a concrete pattern from the context
             -> match with the design pattern(in string pattern/diagram form) -> can choose the right one 
+
+
+
+-> STORE THE PATTERN/RELATIONSHIP OF OBJECTS IN YOUR HEAD 
+    -> OUTSOURCE(STORE THEM ELSEWHERE, vd: papers, other people head :v) THE OBJECTS DETAILS 
+    -> Pattern/Relationship of Objects is actually the thing you need to solve problems (or come up with solutions)

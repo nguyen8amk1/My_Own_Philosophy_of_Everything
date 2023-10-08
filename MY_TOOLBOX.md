@@ -40,6 +40,12 @@ MY TOOLBOX:
     [Programming Languages](./toolbox/programming_languages.md)
         <insert brief introduction>
 
+    [Mathematical Thinking](./toolbox/mathematical_thinking.md)
+        <insert brief introduction>
+
+    [Computational Thinking]()
+        <insert brief introduction>
+
     UML Diagrams: 
         Use Case Diagram:
             ....
