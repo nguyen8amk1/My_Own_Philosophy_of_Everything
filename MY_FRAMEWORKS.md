@@ -11,15 +11,11 @@ MY FRAMEWORKS:
     [SOFTWARE ARCHITECTURE](./frameworks/software_architecture.md) 
         <insert an introduction> 
 
-    HOW TO LEAD A TEAM: 
-        Goal: all members have the same big picture in mind 
-        Tools: 
-            Diagram:
-                Use case diagram
-                Class diagram 
-                Sequence diagram 
-            Rules: 
-                vd: rules for file structure,... 
+    [HOW TO GOOGLE FOR LEARNING LIBRARY/FRAMEWORK](./frameworks/how_to_google.md) 
+        <insert an introduction> 
+
+    [HOW TO LEAD A TEAM](./frameworks/how_to_lead_a_team.md): 
+        <insert an introduction> 
 
     HOW TO TURN SOME ACTION INTO INSTINCE: 
         ....
@@ -35,11 +31,8 @@ MY FRAMEWORKS:
                 -> These thing should become INSTINCE 
         .....
 
-    HOW TO AQUIRE A NEW SKILLS: 
-        First step in aquirring a new skill: 
-            is being able to reproduce what others have done before you. 
-        not doing your own thing. 
-        -> Reproducing things the quickest way to mastering a skill 
+    [HOW TO AQUIRE A NEW SKILL](./frameworks/how_to_aquire_a_new_skill.md): 
+        <insert an introduction> 
 
     [HOW TO LEARN A NEW PROGRAMMING LANGUAGE (Deduce from 7L7W)](./frameworks/learn_new_programming_languages.md) 
         <insert an introduction> 
@@ -55,7 +48,7 @@ MY FRAMEWORKS:
 
         My problem is that:     
             i saw the world too abstractly sometimes -> i can't remember the details, just vauge objects instead ? 
-        .....
+            .....
 
     [DATABASE DESIGN](./frameworks/database_design.md): 
         <insert an introduction> 

@@ -45,3 +45,21 @@ RANDOM QUOTES (that should be added to some topic):
             -> [good enough mindset](./frameworks/good_enough_philosophy.md) is a must to get anything done on time
                 -> since it give you a STOPPING POINT at digging to actually REST and USE the gained concepts 
 
+    THE SKILL TO GETTING THINGS DONE WITHOUT KNOWING ALL THE DETAILS OF THE SYSTEM YOU ARE CURRENTING WORKING ON:
+        vd: You already know CONCEPTUALLY how to solve the problem 
+            -> the problem abstractly solved using math or something like that 
+
+        -> now only need to implement it into the real-world :)) 
+
+        BUT, to implement it in the real world is NOT very STRAIGHT-FORWARD 
+        since you need an environment that match the mathematical model (abstract environment) that you use to solve the problem in 
+
+        -> there a lot of setup when cause things are get in the way 
+        -> So the setting up part is not needed to remember, they are just preparation
+
+        -> The core is already in your head 
+
+        -> SOLVE THE PROBLEM CONCEPTUALLY, IMPLEMENTATION IS NOW JUST DRUDG WORK
+
+        vd: you already now how to move a circle according to time
+            -> you can do that in any language(js, node, java,...), environment(web canvas, DOM, desktop, ...)

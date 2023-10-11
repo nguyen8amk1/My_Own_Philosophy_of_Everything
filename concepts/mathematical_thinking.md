@@ -28,6 +28,7 @@ Background reading:
     but it more about:
         + properties 
         + behaviours
+        + relationships
         vd: a function is not a formula
            -> it's any rules that produces new number from old  
            -> concernstrate on WHAT THE FUNCTION DOES ? in terms of: input, output behaviours
@@ -41,3 +42,38 @@ Background reading:
             use that mathematical description to analyze the problem in a precise fashion
 
         the 2nd type is better, way more powerful 
+            -> can:
+                + adapt old methods in new situations 
+                + develop new methods 
+
+    -> LEARNING TO THINK IN ANOTHER WAY IS WAY HARDER THAN LEARNING A NEW TECHNIQUES 
+
+The language use in math is very contraint and precise 
+    -> precise statement on mathematical objects (vd: integers, reals, sets, functions,...)
+    every statement is one of 4 TYPES:
+        Object a has property P 
+        Every object of type T has property P 
+        There is an object of type T having property P 
+        If statement A, then statement B
+
+    or COMBINATION of them using COMBINATORS (connecting words): 
+        + and
+            -> makes things LESS likely to happens
+            since more conditions have to be satistify 
+        + or 
+            -> make things MORE likely to happens
+            since things can happen one way or another 
+        + not
+        + implies 
+        + for all 
+        + there exists 
+        -> combinations are commutitive 
+        logical connections based on truth, not the statement content, meaning, or anything else, just truth (true/false)
+
+    -> formal logic ?? 
+
+
+The correctness of statement is not shown through experiments, testing,...
+    -> using proves
+    -> in order to do proves
+    -> we need to UNDERSTAND EXACTLY what the problem is stated
