@@ -64,7 +64,28 @@ The language use in math is very contraint and precise
             -> make things MORE likely to happens
             since things can happen one way or another 
         + not
+
         + implies 
+            vd: A implies B 
+
+            -> and, or, not doesn't require a relationship between 2 statement 
+                -> purely in terms of truth and falsity 
+            -> implies does, involves causality (nhan qua) 
+
+            -> implication has 2 parts:
+                + truth: we care about this part 
+                    -> THE (MATERIAL) CONDITIONAL 
+                    -> use '=>' symbol
+                + causation(nhan qua): we don't care about this :v 
+
+            -> vd: A => B : the truth part of A implies B (not the whole thing, cause we ditch the causation part)
+                antecedent(tien su) => consequent(he qua)
+
+            -> We don't care about the meaning, relation between A and B
+            -> WE ONLY CARE ABOUT THE TRUTH/FALSE of them to make a conclusion 
+
+
+
         + for all 
         + there exists 
         -> combinations are commutitive 
@@ -77,3 +98,5 @@ The correctness of statement is not shown through experiments, testing,...
     -> using proves
     -> in order to do proves
     -> we need to UNDERSTAND EXACTLY what the problem is stated
+
+You need Mathematical Techniques when Mathematical Thinking alone doesn't work 

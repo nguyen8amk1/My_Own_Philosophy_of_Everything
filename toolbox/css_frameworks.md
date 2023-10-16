@@ -22,14 +22,18 @@ Bootstrap:
             npm:
                 can be install through npm so that node-base front end framework can use it 
             Bower
-            Composersomething
+            Composer
 
             -> Bootstrap also has javascript file for:
                 + Components: vd: drop down, navbar
                 + Animation: 
 
                 (2 files, jquery, and bootstrap.js, since it's build upon jquery)
-            
+        Normal styling: 
+            ....
+
+        Responsive: 
+            ...
     + What makes it UNIQUE ? 
         Predesigned look and feel -> most bootstrap app, look just like bootstrap  
         Responsive implementation: Grid system 

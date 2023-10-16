@@ -101,3 +101,8 @@ Normalize:
             Data Normalization: reduce data to canonical form (chinh tac)
             Database normalization: reduce to normal form to reduce data redundancy, increase integrity 
             ....
+
+Intergration: Find the AREA under the curve ()
+    -> using small rectangles 
+Differentiation: Find the GRADIENT of the curve (Opposite process to intergration)
+    -> using small triangles
