@@ -83,8 +83,13 @@ The language use in math is very contraint and precise
 
             -> We don't care about the meaning, relation between A and B
             -> WE ONLY CARE ABOUT THE TRUTH/FALSE of them to make a conclusion 
+            -> WHETHER THE A AND B HAVE REAL RELATION IN MEANING OR NOT -> THE CONDTION STILL DEFINED(EXIST)
 
-
+        + equivalent 
+            -> only take the part we needed (just like with implies, takes conditional)
+                -> equivalent takes BICONDITIONAL
+            -> Two statements A, B are said to be (logically) equivalent if each implies the other
+                -> A <=> B same as (A => B) and (B => A)
 
         + for all 
         + there exists 
