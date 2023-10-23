@@ -13,6 +13,8 @@ Switch:
     ARP table: is blank when first use
         -> first request will be timed out (for the switch to find the dest MAC address)
 
+    -> If the MAC address don't have in the ARP table -> send BROADCAST (send to all interfaces)
+
 Router: 
     use IP address
 
@@ -74,3 +76,40 @@ NAT (Network Translation Address):
 
             
             -> Internet client can access private network using 1 static public ip 
+
+VLAN: 
+    Virtual LAN 
+    all network devices are LOGICALLY connected (another level of abstraction :v)
+    regardless of their PHYSICAL location
+
+    Purpose: 
+        + Improve security
+        + Traffic management 
+        + Make a network simpler ??
+        + REDUCE THE SCOPE OF THE BROADCAST DOMAIN
+
+        what is broadcast domain ?? 
+            -> SET of all DEVICES receive the BROADCAST FRAMES (originate from any devices within the set)
+        -> Isolate subnet through VLAN instead of using SWITCHES (multiple switches create huge boardcast domain)
+
+    -> GROUP devices LOGICALLY, 
+        -> even though physically all the devices are just in a single LAN, connected to a Switch 
+        -> Group into different VLAN, and ISOLATE the PACKETS to each group
+        -> Stuff from one VLAN CAN'T TALK to another VLAN 
+
+    -> Can be done using VLAN supported SWITCH 
+        -> done through dedicated ports for each group 
+            vd: 16 ports switch 
+                -> group 3 port for Group A, group 4 ports for Group B, ...
+
+    -> InterVLAN routing (VLAN talking to each other)
+        -> by default i can't :v 
+        -> Using a Layer 3 device: 
+            + Legacy: 
+                cons: gioi han so luong VLAN co the giao tiep (cause dependence on Router interfaces count)
+            + Router on a stick
+                -> Switch connect to Router though a Trunk Port ? sub-interface ??  
+            + Multi-layer switch 
+
+Access List (ACL): 
+    have to understand the flow and topology of the network to setup this 

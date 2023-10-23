@@ -94,6 +94,21 @@ Conclusion:
         -> Higher Order Function which is more concrete (lower level of abstraction)
             -> can be use to implement Hooks
 
+Middleware: 
+    a service that could be used in multiple situations 
+    provide abilities that you don't have to build everything from scratch everytime working on a new project
+    to reuse the handling of complex repsonsibility that you don't want to develop from scratch 
+    vd: 
+        handle bilions of simutanious database queries ? -> don't want to develop your own solution
+            -> use middleware
+
+    in Express: 
+        middleware is any code sit between The Request and Response
+        have ability to: 
+            run logic
+            modify request, response object  (passing info to the next middleware)
+            calling next middleware in the chain
+
 Normalize: 
     the process that makes something more 'normal'
         the "normal" meaning might change in different context:

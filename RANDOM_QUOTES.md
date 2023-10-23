@@ -45,7 +45,7 @@ RANDOM QUOTES (that should be added to some topic):
             -> [good enough mindset](./frameworks/good_enough_philosophy.md) is a must to get anything done on time
                 -> since it give you a STOPPING POINT at digging to actually REST and USE the gained concepts 
 
-    THE SKILL TO GETTING THINGS DONE WITHOUT KNOWING ALL THE DETAILS OF THE SYSTEM YOU ARE CURRENTING WORKING ON:
+    # THE SKILL TO GETTING THINGS DONE WITHOUT KNOWING ALL THE DETAILS OF THE SYSTEM YOU ARE CURRENTING WORKING ON:
         vd: You already know CONCEPTUALLY how to solve the problem 
             -> the problem abstractly solved using math or something like that 
 
@@ -66,7 +66,7 @@ RANDOM QUOTES (that should be added to some topic):
 
 
 
-abstraction: is kinda like substraction 
+# abstraction: is kinda like substraction 
 	-> getting rid of the details 
 
 oop abstract away the wrong thing (which makes it hard to do things in parallel) 
@@ -231,13 +231,13 @@ type:
 -------diagrammatic reasoning------
 Visual programming done right based on diagrammatic reasoning 
 
-diagrammatic reasoning: 
+# diagrammatic reasoning: 
 	state machines: behaviour modeling  
 	Petri nets : modeling architecture (very cool)
 	string diagrams: something about abstraction ??  
 	category theory:  
 
-Petri Net: graphical programming language 
+# Petri Net: graphical programming language 
 	primitives: 
 		place: o
 			-> condition
@@ -261,19 +261,37 @@ Petri Net: graphical programming language
 
 	reachability:  
 
-Formal Logic: 
+# Formal Logic: 
     IS THE KEY TO SOLVE SOME NONSENSE PROBLEM SUCH AS:
         apple + apple = car
         -> apple + banana = ? 
         => WHATTTTTTTT :v 
 
-Questionable (myown) statement 
-Polymorphism is for interfacing(adapt with different devices, object types might be created in the future), and should not run a loop (process data): 
-Data processing should be data oriented way, or functional (parallel) ??  
+# Questionable (myown) statement:  
+	Polymorphism is for interfacing(adapt with different devices, object types might be created in the future), and should not run a loop (process data): 
+	Data processing should be data oriented way, or functional (parallel) ??  
+
+# Backtracking have something to do with Set theory: 
+	vd: visisted values is not gonna be chosen to use in the next step 
+	total = {1, 2, 3, 4}
+	visited = {1, 2}
+	keep_chosen = total - visited = {3, 4}
+	-> SET THEORY
+	-> I think there is more to it -> KEEP RESEARCHING 
+
+# How to make friends: 
+	Important keyword: Wiggle room 
+
+# Shouldn't store something that can be calculated 
+	-> Shouldn't remember theory that can be derive from other theory 
+		-> Remember: 
+			+ building block 
+			+ HOW to COMPOSE them 
+
+# Keep things relative, rather than absolute
+	-> one way dependencies only, not both ways 
 
 # UNEDITED MATERIAL
-
-
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 a particular class of diagram: 
 	with 1 input and 1 output
