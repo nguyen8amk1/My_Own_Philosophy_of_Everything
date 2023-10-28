@@ -264,6 +264,10 @@ Two ways to read the books:
         -> linear combination NOT all coefficient/lambda constant is 0  -> NON-TRIVIAL LINEAR COMBINATIONS
             -> LINEAR DEPENDENT with at least 1 coeffecient = 0
 
+    2 vectors A, B are independent 
+    when A CAN NOT BE DESCRIBED in terms of B and vice versa
+    vector C is a LINEAR COMBINATION of A, B -> the SET of vectors ABC are linearly DEPENDENT
+
 Things to know: 
     First order logic: []
     Set builder notation: [X]

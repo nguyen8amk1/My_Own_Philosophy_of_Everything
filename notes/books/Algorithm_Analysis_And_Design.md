@@ -112,3 +112,9 @@ note from: Introduction to The Design and Analysis of Algorithms, Anany Levitin
             + evaluating functions
     -> These problems typically require approximate solutions.
     ....
+
+## Fundamental Data Structures: 
+
+Things to know: 
+    Combinatorial: 
+        Product Principles: 

@@ -48,9 +48,49 @@ IDS:
         + packet logger (for network traffic debugging)
         + full-blown network intrusion prevention system 
 
-    **Note: Have 2 sets of rules: 
-        + Community (we're gonna use this)
+    **Note: Have 3 sets of rules: 
+        + Community (we're gonna use this) - free created by the Snort community. 
+        + Registered rules - free created by Talos. 
         + Subscriber 
+
+        -> you can write your own rules 
+
+    Detection malicious traffic/attack by: 
+        PATTERN MATCHING 
+        
+    When active:
+       1. captures packets 
+       2. reassembles them
+       3. analyzes them 
+       4. determines what need to be done to the packets based on PREDEFINED RULES.
+
+    Snort has a LARGE AMMOUNT of RULE-SETS created by the community 
+        -> useful to begin with 
+    Snort rules are easy to write and understand 
+
+    Version: 
+        Snort 2: 
+        Snort 3: 
+
+    -> we will use Snort 2
+
+    Rules: 
+        what to do with packets 
+
+    How Snort works: 
+        ![How Snort works](./images/How%20Snort%20Works.jpg)
+        basically:
+            1. Capture packet through sniffing
+            2. Preprocessor 
+            3. Snort Detection Engine and Rule set
+            4. Alarm logging
+            5. Log file analysis 
+
+        -> Snort can be both IPS or IDS ->  can either Detect or Prevent 
+        if Snort is IPS -> place it on the outermost connection 
+        if Snort is IDS -> place it on the switch  
+        -> both are placed after the firewall but the IPS is closer to the firewall 
+
 
     ** Project: 
         Requirements: 
@@ -65,9 +105,12 @@ IDS:
                 1 client (host-only)
 
             -> Nang cap 10 diem: -> 3 VMs: 
-                1 server (2 NICs: NAT, host-only)
+                1 vulnerable server (2 NICs: NAT, host-only)
                 1 Snort (2 NICs: NAT, host-only) ?? 
-                1 client (host-only)
+                1 hacking client (host-only)
+
+    mau bao cao do an: 
+        https://www.studocu.com/vn/document/dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/marx-lenin/mau-bao-cao-do-an-uit-mau-bao-caotieu-luan-cua-truong-dh-cntt/21126530
 
     questions: 
         what is host-only ?? 
