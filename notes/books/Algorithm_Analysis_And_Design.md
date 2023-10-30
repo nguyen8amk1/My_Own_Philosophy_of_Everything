@@ -114,6 +114,171 @@ note from: Introduction to The Design and Analysis of Algorithms, Anany Levitin
     ....
 
 ## Fundamental Data Structures: 
+    -> Algorithms operates on data 
+        -> WAYS TO ORGANIZE DATA(data structure) play a CRITICAL ROLE in the DESIGN and ANALYSIS of algorithms 
+    Data structure:
+        Scheme for organizing RELATED data items. 
+
+    + Linear Data Structure: 
+        + array 
+        + linked list 
+        + stack 
+        + queue, priority queue
+
+    + Graphs:  
+        -> a collection of:
+            + points/vertices/nodes
+            + line segments/edges
+
+        Graph: G = (V, E) trong do: 
+            V: SET of vertices 
+            E: SET of edges (edge: pair of 2 vertices) 
+            vd: 
+                V = {a, b, c, d, e, f } -> set of NODES 
+                E = {(a, c), (a, d), (b, c), (b, f ), (c, e), (d, e), (e, f )} -> set of PAIR of nodes 
+
+        2 types of Edge: 
+            (u, v) mean: node u connected with node v (u -> v, directed)
+            + Undirected: 
+                pair of vertices (u, v) = (v, u) 
+            + Directed: 
+                pair of vertices (u, v) != (v, u) 
+        3 states: 
+            + complete: all vertices connect to all other verticies 
+            + dense: only missing few edges compare to the complete 
+            + sparse: miss a lot of edges compare to the complete
+            -> depends on the state we CHOOSE DIFFERENT representation of the graph 
+
+        2 representations: 
+            + adjacency matrix: use for known ammount of nodes 
+                -> better for dense graph
+            + adjacency list: use for unknown ammount of nodes 
+                -> better for sparse graph 
+
+        2 properties: 
+            + connectivity: 
+                every node u have a path to node v  
+                -> a graph with no connectivity will consist of many CONNECTED COMPONENT
+                -> connected component: subgraph with no connection to other subgraph in the graph 
+            + acyclicity: 
+                graph with no cycle 
+                -> cycle: path that start from u and end at u (khong trung edge)
+            -> path: 
+                simple: khong trung nodes  (vd: a, b, c, d, e)
+                not simple : bi trung nodes (vd: a, b, a, c, e) -> trung node a 
+
+
+    + Trees:   
+        -> connected acyclic graph
+        -> graph that acyclic but not connected = FOREST
+
+        properties: 
+            -> trees have some properties that normal graphs do not have: 
+                + the number of edges is a tree is always one less than the number of vertices
+                    |E| = |V| - 1
+                + for every 2 vertices -> there always EXIST exactly 1 SIMPLE PATH from one to the other
+                    -> we can SELECT ABTRARY VERTICES and call it a root -> Rooted tree
+        keywords: 
+            state-space trees: 
+                very important tree that underlies 2 algorithms design techniques: 
+                    + backtracking
+                    + branch-and-bound
+
+            ancestors: all the VERTICES on THE SIMPLE PATH from ROOT to vertex V 
+                -> set of vertices
+
+            decendents: all the VERTICES that the vertex V is the ANCESTOR (meaning V is on the simple path to those vertices)
+                -> set of vertices 
+                -> form a subtree rooted at V 
+
+            depth: the LENGTH of the simple path from ROOT to V 
+                -> TREE LEVEL = depth
+
+            height: the the LONGEST of all the lengths of simple path from ROOT to a LEAF
+                -> HEIGHT = MAX TREE LEVEL 
+
+        3 types: 
+            + Free tree: 
+            + Rooted tree: 
+            + Ordered Tree: 
+                rooted tree with ALL THE CHILDREN of EACH VERTEX are ORDERED
+                    -> ordered left to right 
+                    -> BINARY TREE is an ORDERED TREE with 2 children left and right 
+                    -> BINARY SEARCH TREE is an BINARY TREE with left child <= right child 
+                        -> the EFFICIENCY of binary search tree DEPENDS on tree's HEIGHT 
+                            logn <= h <= n - 1
+
+        Representation: 
+            + number of pointers = number of child 
+            + first child-next sibling
+
+    + Sets and Dictionaries:  
+        Set: an UNORDERED COLLECTION (can be empty) of DISTINCT items called ELEMENTS
+            can be DEFINED by:
+                + EXPLICIT LISTING 
+                    vd: {1, 2, 3, 4}
+                + specify a PROPERTY that all elements must SATISFY 
+                    vd: {n: n is a prime < 10}
+                   
+            Operations: 
+                + checking membership: 
+                    return true/false
+                + union: 
+                    return all the elements in 2 sets
+                + intersection:
+                    return all the COMMON ELEMENTS in 2 sets
+
+            Implementation, 2 ways: 
+                1. Bit vector/string 
+                    -> all SETS are SUBSETS of a UNIVERSAL SET
+                    -> if the UNIVERSAL SET have n elements 
+                        vd: n = 6, U = {1, 2, 3, 4, 5, 6}
+                        -> all the subset represented as a bit string/vector 
+                            vd: subset S = {2, 4, 5}, bit vector = 010110
+                    -> pros: 
+                        fast operations
+                    -> cons: large amount of storage 
+
+                2. List structure
+                    List vs Set: 
+                        List: 
+                            can contain identical elements
+                            ordered -> change the order -> change the list 
+
+                        Set: 
+                            cannot contain identical elements
+                            unordered -> change the order NOT change the set, it still the same set by nature
+
+                    -> but we can still use list structure to implement Set, with some Set rules 
+
+
+        Dictionary: 
+            Operations: 
+                + search for item 
+                + add new item 
+                + delete item 
+
+        Set union problem: 
+            ideas: 
+                have n disjoint subset (each element is it own set, 1 element set)
+                -> doing some combination UNION, SEARCH operations
+
+            parition:
+                of:  n-element set into 
+                into: a collection of disjoint subset
+
+            Operations: 
+                + Union
+                + Search
+
+
+            keywords: 
+                disjoint subsets: 
+                    subsets that have no elements in common 
+
+    + Abstract Data Types: 
+        = a SET of DATA + a SET of OPERATIONS
+        -> Basically all the Data Structure mention above
 
 Things to know: 
     Combinatorial: 
