@@ -291,6 +291,20 @@ Visual programming done right based on diagrammatic reasoning
 # Keep things relative, rather than absolute
 	-> one way dependencies only, not both ways 
 
+# W questions
+	The What, Why, How, When each represents a level of abstraction
+		-> depends on the approach to learning/understanding (top down, bottom up)
+		-> You have different ORDER to answering these questions 
+
+	vd: 
+		What the function does ? 
+		How the function does it ? 
+
+		What > How (what is higher level than how)
+
+	The ordering from high to low: 
+		When > Why > What > How 
+
 # UNEDITED MATERIAL
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 a particular class of diagram: 
