@@ -12,3 +12,29 @@
 
     + Inclusion-exclusion:
         ....
+
+    -> Addition is high level (different ways)
+    -> Multiplication is lower level (substep in each way)
+
+    the questions might have some CONTRAINTS: 
+        vd: No repetition is allowed
+
+## Combinatorial Objects: 
+    + k-permutation of a set S: 
+        -> an ORDERED LIST of exactly k elements of S
+        -> not allowed to use any element twice 
+        P(n, k): the NUMBER of k-permutation of a set with n elements
+
+    + k-subset of a set S: 
+        -> an UNORDERED LIST of exactly k elements of S
+        -> not allowed to use any element twice 
+        (n k): the NUMBER of k-subsets of a set with n elements
+
+        P(n, k) = (n k)*k! -> (n k) = P(n, k)/k!
+
+# Catalan number: 
+
+IMPORTANT: 
+    Catalan numbers ?? 
+
+    -> P(n, k) > (n k)
