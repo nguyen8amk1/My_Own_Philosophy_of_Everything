@@ -268,6 +268,64 @@ Two ways to read the books:
     when A CAN NOT BE DESCRIBED in terms of B and vice versa
     vector C is a LINEAR COMBINATION of A, B -> the SET of vectors ABC are linearly DEPENDENT
 
+## Basis and Rank 
+    Generating set: 
+        a SET of vectors 
+        which we can REPRESENT EVERY VECTOR in the vector space 
+        by ADDING them together and SCALING them.
+    Span: 
+        the SET of all LINEAR COMBINATION of vectors in generating set A 
+        -> A span V -> all the vector in V is the result of linear combination of the vectors in A  
+
+    Basis: 
+        the minimal generating set 
+        -> the smallest generating set, no subset of the generating set can span V  
+        -> basis of V 
+        -> There are INFINITELY MANY basis, the one we used to using is just the standard one  
+        -> a SET of LINEARLY INDEPENDENT vectors that SPAN the full space 
+
+    -> Note: 
+        Linearly dependent: 
+            exist vectors can be removed without changing the span -> have redudant vectors 
+            -> the redudant vector is IN THE SPAN of other basis vector 
+                -> meaning: the redudant vector is a LINEAR COMBINATION of the others
+            Term: vectors are linearly (in)dependent 
+
+
+    Rank: 
+        ... 
+## Linear mapping 
+    given 2 vector space V, W: 
+        a MAPPING from V -> W is called a LINEAR MAPPING (homomorphism, linear transformation) if: 
+            mapping(c*x + c*y) = c*mapping(x) + c*mapping(y)
+
+    Representation: 
+        matrices
+        matrices also repsensents a collection of (column) vectors 
+
+    Injective: x, y of V: mapping(x) = mapping(y) => x = y
+    Surjective: mapping(V) = W
+    Bijective: injective and surjective 
+
+    Special cases: 
+        Isomorphism: V -> W linear and bijective 
+        Endomorphism: V -> V linear 
+        Automorphism: V -> V linear and bijective
+
+    Theorem: 
+        there EXIST a linear bijective mapping
+        between 2 vector space with the SAME DIMENSION.
+        -> vector spaces of the same dimension are kind of the same thing 
+        -> transform into each other without incurring any loss.
+
+    notes: 
+        2 Linear Mapping a: V -> W and b: W -> X
+            -> the mapping a.b: V -> X is also LINEAR 
+
+    Matrix represetnation:
+        [mapping(basis.x), mapping(basis.y)][scalar.x, scalar.y]
+            -> basically this: mapping(c*x + c*y) = c*mapping(x) + c*mapping(y)
+
 Things to know: 
     First order logic: []
     Set builder notation: [X]

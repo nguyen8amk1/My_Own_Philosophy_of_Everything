@@ -163,6 +163,7 @@ note from: Introduction to The Design and Analysis of Algorithms, Anany Levitin
             + acyclicity: 
                 graph with no cycle 
                 -> cycle: path that start from u and end at u (khong trung edge)
+
             -> path: 
                 simple: khong trung nodes  (vd: a, b, c, d, e)
                 not simple : bi trung nodes (vd: a, b, a, c, e) -> trung node a 
