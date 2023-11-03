@@ -1,4 +1,9 @@
 # Legolization: Optimizing LEGO Designs
+notes from research: 
+    http://www.cs.columbia.edu/~yonghao/siga15/luo-Legolization.pdf
+    https://dl.acm.org/doi/10.1145/2816795.2818091
+ 
+
 Building LEGO sculpture requires accounting for the target object's: 
     + shape
     + color
