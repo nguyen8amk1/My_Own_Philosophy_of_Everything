@@ -9,7 +9,7 @@ Answer these questions:
         + core data structures: 
     + What are the CORE FEATURES that make the language UNIQUE ? 
 
-*Ruby: 
+## Ruby: 
     + What is the PROGRAMMING MODEL?: 
         Pure Object Oriented -> Everything down to a single number is an object 
         unlike Java -> numbers are primitives (don't have properties and methods) -> mixed with procedural 
