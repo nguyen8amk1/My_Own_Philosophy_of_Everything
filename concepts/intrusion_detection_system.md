@@ -108,6 +108,35 @@ IDS:
                 1 vulnerable server (2 NICs: NAT, host-only)
                 1 Snort (2 NICs: NAT, host-only) ?? 
                 1 hacking client (host-only)
+    Configuration: 
+        VM: 
+            1. Vulnerable server (host-only, NAT) -> 2 NICs
+            2. Snort server (host-only, NAT) -> 2 NICs 
+                -> remember the MAC address of each NIC 
+                -> ip range of the Snort server (local ip range)
+                the subnet that the vulnerable server and the snort server live on 
+            3. Attacker Client (NAT)
+
+            -> Attacker -> Snort Server -> Vulnerable server
+
+        Vulnerable server:
+            + installation: 
+            + config: 
+
+        Snort: 
+            installation: 
+                -> Interface to listen to 
+                -> subnet that the Snort live on
+
+            configuration (in the config file): 
+                -> ipvar HOME_NET ip_address/mask -> assign ip address to var HOME_NET
+                -> rules: 
+                    #include $RULE_PATH/**.rules
+                    custom rules in "local.rules" file  
+            start: 
+                sudo snort -T -i <interface> -c <config_file>
+            start and execute rule: 
+                sudo snort -A console -q -i <interface> -c <config_file>
 
     mau bao cao do an: 
         https://www.studocu.com/vn/document/dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/marx-lenin/mau-bao-cao-do-an-uit-mau-bao-caotieu-luan-cua-truong-dh-cntt/21126530
@@ -120,5 +149,3 @@ IDS:
 
         what is NAT ?? 
             ....  
-
-

@@ -322,7 +322,7 @@ Two ways to read the books:
         2 Linear Mapping a: V -> W and b: W -> X
             -> the mapping a.b: V -> X is also LINEAR 
 
-    Matrix represetnation:
+    Matrix representation:
         [mapping(basis.x), mapping(basis.y)][scalar.x, scalar.y]
             -> basically this: mapping(c*x + c*y) = c*mapping(x) + c*mapping(y)
 
