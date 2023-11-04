@@ -144,3 +144,13 @@ notes from book: Computational Thinking, A beginner's guide to problem solving a
                 BUT ONLY ONE parent node 
                 -> n child, 1 parent 
             the root node not have parent 
+
+## Introduction: 
+    the book teaches: 
+        How to: 
+            + PICK out the ESSENTIAL DETAILS of a problem
+            + FORMULATE a PROBLEM in ways a computer can understand 
+            + follow a PROBLEM-SOLVING PROCESS in ways that the process can be automated.
+
+## Part 1: COMPUTATIONAL THINKING
+1. What is computational thinking ? 
