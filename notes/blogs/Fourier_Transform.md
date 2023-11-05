@@ -16,4 +16,3 @@ Metaphor:
 
     How do we GET the smoothie BACK? 
         Blend the ingredients.
-

@@ -1,4 +1,7 @@
 # MATHEMATICS FOR MACHINE LEARNING
+notes from book: Mathematics for Machine Learning 
+along with some youtube videos 
+
 Machine learning is about: 
     designing algorithms that AUTOMATICALLY EXTRACT VALUABLE INFORMATION FROM DATA
     -> GENERAL-PURPOSE METHODOLOGIES that can be applied to many databases. (while producing something meaningful)
@@ -293,7 +296,14 @@ Two ways to read the books:
 
 
     Rank: 
-        ... 
+        basically: 
+            NUMBER of DIMENSIONS 
+            in the OUTPUT 
+            of the transformation
+            -> if rank 1 -> the output vector lies on a line (the vector space contains the output get squished into a line)
+
+        the NUMBER OF DIMENSIONS of the column space/(span of the columns of the basis in the transformation matrix)
+
 ## Linear mapping 
     given 2 vector space V, W: 
         a MAPPING from V -> W is called a LINEAR MAPPING (homomorphism, linear transformation) if: 
@@ -326,6 +336,28 @@ Two ways to read the books:
         [mapping(basis.x), mapping(basis.y)][scalar.x, scalar.y]
             -> basically this: mapping(c*x + c*y) = c*mapping(x) + c*mapping(y)
 
+        Coordinates:
+            the COEFFICIENT of the LINEAR COMBINATION to get the vector x from the BASIS 
+            -> is the COORDINATE RESPECT TO the BASIS
+
+        Transformation Matrix: 
+            B basis of vector space V
+            C basis of vector space W
+            use to map:
+                from: coordinates with respect to B
+                to: coordinates with respect to C 
+
+            -> x of V with respect to B -> y of W with respect to C
+            y = T(x) = Ax (A: transformation matrix)
+
+    Change of basis: 
+        Mapping:
+            from: basis A of V 
+            to:   basis A~ of V
+        Mapping basis - basis
+
+        -> Transition Matrix
+
 Things to know: 
     First order logic: []
     Set builder notation: [X]
@@ -334,3 +366,36 @@ Things to know:
         ...
     Inhomogeneous system of linear equations: 
         ...
+
+    Determinant: 
+        tell how much the linear transformation scale a unit square
+        -> input: transformation matrix (linear transformation)
+        -> output: scale number 
+            type: 
+                > 0: 
+                == 0: the vector space get squished into lower dimension
+                < 0: the vector space inverse with the same scale (change ORIENTATION)
+
+    Determine != 0 tells: 
+        -> linear independentness  
+        -> inversable 
+
+    2 important subspaces of a linear transformation: 
+        Column space (Image): all the OUTPUT of the transformation
+            -> Column space = span of the columns(basis vectors) of the transformation matrice 
+        Null space (Kernel): 
+            -> the space contains all of the INPUT vector with have the OUTPUT is the 0-vector 
+            -> all the x that T(x) = 0 -> solution to the homogeneous system of linear equation
+
+    Non-square matrices:
+        -> use to transform between dimension: 
+        vd: 3d -> 2d, 2d -> 3d
+
+Notes for thuoc bai: 
+    Closure: 
+        a PROPERTY of a Set
+        Determine how the set behave under an operation 
+        whether the output of the operation are in the Starting Set
+        if it does -> the set have Closure 
+
+    Vector space: 
