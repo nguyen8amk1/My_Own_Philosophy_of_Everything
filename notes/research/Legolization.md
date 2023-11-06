@@ -91,10 +91,97 @@ Related works are called: PHYSICAL REALIZATION OF 3D MODELS
             In the stability-aware refinement step:
                 use force-based analysis -> return SRL, WRL 
 
+## Layout Reconfiguration 
+    Given: 
+        + current layout L 
+        + structure critical region WL  
+    -> Do: 
+        1. Identify: RECONFIGURATION REGION Nk(WL) 
+            -> the UNION of:
+                + WL 
+                + WL's K-ring NEIGHBORS
+                (vd: k=1 -> 1-ring neightbor is the direct neighbor)
+        2. Modify: 
+            LOCALLY MODIFY the layout for Nk(WL)
+                -> Using ALGORITHM 2 
+
+        If k (in k-ring) is large enough to include the entire sculpture 
+            -> RECONFIGURE the layout FROM SCRATCH  
+
+        ->  if there exists a satisfactory maximal layout, 
+            we can eventually find that layout 
+
+        -> Basically: if locally reconfig not found any good layout -> do it from scratch 
+
+        Keep k small, only increase it when there is no better layout 
+            k = f/N + 1
+            trong: 
+                f: fail count 
+                N: 10 (magic number :v) 
+
+        Generate reconfigured layout use: (like previous method vanZijl and Smal 2008)
+            3 OPERATIONS: 
+                + split
+                + repeated
+                + remerge
+            with:
+                varying RECONFIGURATION SIZE 
+                extended COLOR ASSIGNMENT RULE 
+                
+        Algorithm 2: Layout Reconfiguration 
+            Input: 
+                + layout L
+                + critical portion WL
+                + fail count f
+
+            Output: -> reconfigured layout L'
+                steps: 
+                    1. compute k from f using k = f/N + 1
+                    2. Nk(WL) <- k ring neighbour from WL 
+                    3. Sk <- SPLIT bricks in Nk(WL)
+                    4. L' <- randomly and repeatedly remerge bricks in Sk
+        Explained: 
+            Brick SPLIT: 
+                1. Identify the bricks Nk(WL) 
+                    within the K-RING 
+                    of the CRITICAL PORTION WL
+
+                2. SPLIT bricks in Nk(WL): 
+                    into a SET OF 1X1 BRICKS.
+                    with their color RESET to the INPUT VOXEL COLOR.
+
+            Random REPEATED and REMERGE: 
+                Input:
+                    the set of 1x1 bricks  
+                Do: 
+                    Iteratively and randomly MERGE 2 neighbouring bricks that are MERGEABLE
+                    until no more bricks can be merged -> use less bricks  
+                    Mergable if: 
+                        + the merged brick still belong to the standard LEGO brick family 
+                        + the merge does not violate the Color Assignment Rule 
+
+            Color Assignment Rules: 
+                bm: the merged brick from input (2 bricks bi, bj)
+                cm: the color of the merged bricks bm with input (2 bricks bi,bj color ci, cj)
+
+                cm is decided through following rules: 
+                    1. Both ci and cj are IGNORED: cm is assigned IGNORE  
+                    2. one of ci or cj is IGNORED and the other with specific color  
+                       -> cm is the specific color 
+                    3. ci, cj are the same color -> cm = ci 
+                    4. ci, cj different color: 
+                        if hard color constraints -> NOT MERGE bi, bj
+                        else 
+                            use IMPORTANCE SAMPLING STRATEGY (Probabiliistic method)
+                            to assign either ci, or cj to cm
+                            such that it LESS likely to VIOLATE THE COLOR ALIGNMENT.
+                        
 
 Questions: 
     What's a discrete nature ? 
         ....
+        -> ultilize searching algorithm 
+
     What's a CONNECTED COMPONENT ? 
         a set of bricks such that:
             between any 2 bricks in the set, there exist a path of bricks

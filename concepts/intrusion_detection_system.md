@@ -141,11 +141,16 @@ IDS:
     mau bao cao do an: 
         https://www.studocu.com/vn/document/dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/marx-lenin/mau-bao-cao-do-an-uit-mau-bao-caotieu-luan-cua-truong-dh-cntt/21126530
 
-    questions: 
-        what is host-only ?? 
-            ....
-        what is NICs ?? 
-            -> Network Interface Card 
+ERROR: 
+    Add Component of snort 
+        https://www.google.com/search?q=how+snort+works+internally&sca_esv=579689770&tbm=isch&sxsrf=AM9HkKm2g_6OG0o4BFN6Yd_T3Gg4nMSJPA:1699234916762&source=lnms&sa=X&ved=2ahUKEwi0xOmsn66CAxU3slYBHZfXApEQ_AUoAnoECAEQBA&biw=1492&bih=740&dpr=1.25#imgrc=Vfucemqcu30ZYM
+    Change the topology to match NIDS or HIDS 
+    remove arrows and stuff  
 
-        what is NAT ?? 
-            ....  
+questions: 
+    what is host-only ??  ....
+    what is NICs ?? 
+        -> Network Interface Card 
+
+    what is NAT ?? 
+        ....  
