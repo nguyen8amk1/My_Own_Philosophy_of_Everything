@@ -154,3 +154,52 @@ notes from book: Computational Thinking, A beginner's guide to problem solving a
 
 ## Part 1: COMPUTATIONAL THINKING
 1. What is computational thinking ? 
+    Definition in a usual sense: 
+        -> creating a LIST OF CONDITIONS that something must meet before considered a match 
+
+    Computational thinking is hard to condense a rigoruous definition 
+        every one have a different meaning of CT (check page 8)
+
+    My favourite definition:   
+        CT is the THOUGHT PROCESSES
+        involved in FORMULATING a PROBLEM 
+        and EXPRESSING its SOLUTION 
+        in such a way that a COMPUTER can effectively CARRY OUT 
+        (Wing, 2014)
+
+    Divide into 2 categories: 
+        + Core concepts: 
+            + logical thinking
+            + algorithmic thinking
+            + decomposition
+            + GENERALISATION and PATTERN RECOGNITION 
+            + modeling 
+            + abstraction
+            + evaluation
+
+        + Peripheral(ngoai vi) concepts: 
+            + data representation 
+            + critical thinking
+            + computer science 
+            + automation
+            + simulation/visualization
+
+2. Computational thinking is not: 
+    Computer Science 
+        -> it's not completely attached to Computer science 
+
+    CT teaches:
+        an APPROACH to PROBLEM-SOLVING 
+        where the ULTIMATE AIM is to 
+        PROVIDE a SOLUTION 
+        whose form means it is ready to PROGRAMMED INTO A COMPUTER 
+
+    CT takes: 
+        a relatively small SUBSET of CONCEPTS (from CS)
+        use them to CONSTRUCT a WIDELY APPLICABLE, problem-solving APPROACH
+
+## Computational thinking is all about:
+    APPROACH to PROBLEM-SOLVING 
+    involves USING a SET of PRACTICES and PRINCIPLES from computer science 
+    to FORMULATE A SOLUTION 
+    that EXECUTABLE BY A COMPUTER 

@@ -90,7 +90,6 @@ Related works are called: PHYSICAL REALIZATION OF 3D MODELS
 
             In the stability-aware refinement step:
                 use force-based analysis -> return SRL, WRL 
-
 ## Layout Reconfiguration 
     Given: 
         + current layout L 
@@ -175,9 +174,14 @@ Related works are called: PHYSICAL REALIZATION OF 3D MODELS
                             use IMPORTANCE SAMPLING STRATEGY (Probabiliistic method)
                             to assign either ci, or cj to cm
                             such that it LESS likely to VIOLATE THE COLOR ALIGNMENT.
-                        
 
-Questions: 
+                IGNORED means: not visible 
+                        
+## Resources: 
+A Fast VOXEL TRAVERSAL ALGORITHM for Ray Tracing: 
+    -> http://www.cse.yorku.ca/~amana/research/grid.pdf
+
+## Questions: 
     What's a discrete nature ? 
         ....
         -> ultilize searching algorithm 
