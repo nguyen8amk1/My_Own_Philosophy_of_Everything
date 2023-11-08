@@ -58,6 +58,9 @@ notes from book: Computational Thinking, A beginner's guide to problem solving a
     Premise: 
         Proposition used by an arguments.
 
+    Reasoning: 
+        thinking about something in a logical way 
+
     Deductive reasoning: 
         Applying a CHAIN OF REASONING whose: 
             CONCLUSION follows from its PREMISES
@@ -203,3 +206,214 @@ notes from book: Computational Thinking, A beginner's guide to problem solving a
     involves USING a SET of PRACTICES and PRINCIPLES from computer science 
     to FORMULATE A SOLUTION 
     that EXECUTABLE BY A COMPUTER 
+
+## Logical and Algorithmic Thinking: 
+    LOGIC and ALGORITHMS are ESSENTIAL to CT 
+    each has it's own SET of:
+        + rules
+        + procedures
+        + definitions
+        -> very PRECISE and SYSTEMATIC 
+    -> CAN'T RELY solely on your INTUITION 
+        when dealing with these topics
+
+    -> Overcome by learn the precise, difficult core concepts 
+    -> In this book: 
+        FOCUS on FEW CORES ELEMENTS 
+            -> learned how to apply logic and algorithms to problem-solving 
+
+    Logical thinking:  
+        Argument: a CHAIN of REASONING that
+                  ends up in a CONCLUSION
+
+        Logic: a SYSTEM 
+        used for DISTINGUISHING between 
+        correct and incorrect ARGUMENTS
+            -> includes:
+                + a SET of PRINCIPLES that
+                when APPLY to ARGUMENTS
+                -> determine what is TRUE 
+
+        Applying logic:  
+            in a sense, is a way of DEVELOPING and TESTING a HYPOTHESIS.
+            assumes you ALREADY KNOW at least SOME THING FOR SURE 
+            allows you to USE that KNOWLEDGE to arrive some FURTHER CONCLUSIONS.
+
+        In logical argument: 
+            -> Premise: THING YOU ALREADY KNOW 
+                -> basically a STATEMENT that can be evaluate to obtain an answer of "true" or "false"
+                -> Condition: have TRUTH VALUE 
+
+            -> Once ALL PREMISES ARE STATED 
+                -> next step: ANALYSE them -> form CONCLUSION 
+
+        Inductive and Deductive arguments:  
+            IMPORTANT to realise: 
+                -> some logical arguments are stronger than others 
+                -> CATEGORISE arguments based on their CERTAINTY:
+                    -> 
+                    + DEDUCTIVE: 
+                        is the strongest form of reasoning 
+                        conclusion follows its premises
+                        -> very strict standard 
+                        -> hard to construct 
+                        an argument can fail in 2 ways: 
+                            + one of the PREMISES is FALSE (vd: all dog are brown) 
+                                -> garbage in, garbage out (premises wrong, conclusion wrong)
+                            + faulty logic (The CONCLUSION does NOT FOLLOWS from PREMISES)
+                                vd: Alls A are B
+                                    C is B 
+                                    -> C is a A
+                        -> In real life: Deductive argument are relatively RARE
+                            Real world problems usually give patchy, messy knowledge 
+                            rather than nice and clean 
+                            -> can't use Deductive argument with that
+
+                    + INDUCTIVE:
+                        Deals with:
+                            PROBABILITY 
+                            rather than 
+                            hard BLACK and WHITE rules.  
+
+                        The premises of inductive arguments are NOT UNQUESTIONABLY TRUE
+                        but rather HAVE SOME AMOUNT OF CONFIDENCE IN THEM 
+                        -> The CONCLUSION is NOT GUARANTEE to be TRUE
+                        -> But rather a TRUST WORTHY conclusion
+                        
+                        vd: A bag contains:
+                            + 99 red balls 
+                            + 1 black ball 
+                            100 people each drew 1 ball from the bag 
+                            Sarah is one of those people 
+                            -> Sarah PROBABLY drew a red ball 
+                        -> Perfectly fine 
+                            -> (as long as you ACKNOWLEDGE the aspect of PROBABILITY involved)
+
+                        IMPORTANT: The ANSWER of the computer is only 
+                        as RELIABLE as its REASONING (your reasoning)
+
+                        -> Your RESPONSIBILITY to MAKE SURE: 
+                            + the reasoning is valid 
+                            + give computer RELIABLE INPUT 
+                            + Know how to INTERPRET the Computer's CONCLUSION 
+                                + completely true (the reasoning was deductive)
+                                + probably true (the reasoning was inductive)
+
+        Boolean Logic: 
+            Much of our reasoning is INDUCTIVE 
+            but computers are NOT WELL equipped to DEAL with SHADE OF GREY (probabilities)
+            Computers are more apt to DEAL with BLACK and WHITE ISSUEs 
+            -> Need: a SYSTEM OF LOGIC that deal with black and white issues 
+                -> Boolean logic 
+
+            Propositions: 
+                -> STATEMENT in Boolean Logic 
+                Properties: 
+                    + only have 1 VALUE at any moment
+                        -> there is no grey value 
+                        -> MAPPING those GREY values to either BLACK and WHITE 
+
+                    + must have CLEAR and UNAMBIGUOUS MEANING 
+                        -> vd: moving fast (fast is ambiguous)
+                            -> need more clear meaning -> vd: fast means traveling speed > 70mph
+
+                    + possible to COMBINE individual propositions to make more complex ones 
+                        (COMPOUND PROPOSITIONS)
+                        vd: Jenny is wearing the shirt
+                            and 
+                            The shirt is red  
+                        -> Helpful because we often want to EVALUATE SEVERAL STATEMENTS 
+                            before reaching a conclusion 
+                        -> CONNECTING single propositions together using LOGICAL OPERATORS 
+
+            Logical operators:  
+                -> CONNECT SINGLE PROPOSITIONS together to create a compound proposition 
+                NOTES: 
+                    they have SPECIFIC MEANING in logic 
+                    that occasionally RUN COUNTER to our INTUITIVE UNDERSTANDING.
+
+                + AND (technical name: CONJUNCTION)
+                    -> CHAINS propositions together in a way that 
+                        ALL of them must be TRUE 
+                        or ELSE the conclusion will be FALSE
+
+                + OR (technical name: DISJUNCTION)
+                    -> CHAINS propositions together in a way that 
+                        AT LEAST ONE of them must be TRUE 
+                        or ELSE the conclusion will be FALSE
+
+                + NOT (techical name: NEGATION)
+                    -> modifies a single proposition (FLIP the truth value of the propositions)
+                    NOT CHAIN multiple propositions. 
+
+                    NOTES: 
+                        sometime negation MAKE IT EASIER to express the chain of REASONING  
+
+                + IMPLIES (technical name: IMPLICATION)
+                    -> State that there is a CORRELATION between TWO STATEMENTS
+                        -> If A is true -> B is also true 
+
+                    NOTES: 
+                        CORRELATION is NOT CAUSATION
+                            -> CAN'T not work backward (B can't determine A)
+
+                + IF AND ONLY IF (technical name: BICONDITIONAL)
+                    second prositions is influenced solely by the first
+                    If A is true -> B is true 
+                    If A is false -> B is false 
+                    No exception
+
+                    NOTES:  CAN work backward 
+
+            Symbolic Logic:  
+                To eliminate ambiguity 
+                The meaning of each logical operator is specified in PRECISE mathematical detail.
+                    -> Truth table 
+
+                IMPORTANT: Venn diagram for operators: 
+                    page 22, 23, 34 
+
+        Algorithmic Thinking: 
+            NOTES: 
+                LOGIC and ALGORITHM is NOT THE SAME 
+                Algorithms build on logic 
+                    because their work are:
+                        + MAKE logical DECISIONS
+                        + STICHING those DECISIONS together
+
+                Logic GIVES a SET of RULES that 
+                ALLOW you to REASON about some aspect of the WORLD.   
+
+                Algorithms:
+                    + INTERGRATE all of these rules 
+                    + EXECUTE actions based on the CONCLUSIONs of the Logic Rules
+
+            Algorithms are a way of SPECIFYING a MULTI-STEP task 
+
+            PROPERTIES of algorithms: 
+                + Collection of individual steps:
+                + Definiteness
+                    -> every step must have precise meaning (only 1 meaning)
+                + Sequential
+                    -> the steps must be CARRIED OUT IN the ORDER specified 
+                    -> Why sequential was so important: 
+                        It's all about STATE
+                        STATE: 
+                            the CURRENT CONFIGURATION of ALL THE INFORMATIONS 
+                            kept track of by a program/algorithm in one instant of time 
+                            -> CLEARLY SEQUENCING the steps ENSURES that 
+                            all STATE ALWAYS CHANGES in the SAME WAY whenever the algorithm is executed
+            IMPORTANT: 
+                there is NO "GLOBAL VIEW" when it comes to algorithms
+                    at EACH INSTANT IN TIME
+                    the ENVIRONMENT in which the algorithm is being run EXISTS IN SOME PARTICULAR STATE 
+                    -> Basically exist as a SERIES of SNAPSHOT 
+                    -> The computer FORGETS about PREVIOUS SNAPSHOT 
+                    -> Need a WAY TO REMEMBERING things that happens in PREVIOUS SNAPSHOT
+                        -> VARIABLES
+                    Math Variables:
+                        used in function to REPRESENTS a QUANTITIES that VARY.
+                    Algorithm Variables: 
+                        SCRATCHPAD that used as a PLACEHOLDER for IMPORTANT INFORMATION the computer should keep note of 
+
+            CONTROLLING algorithm EXECUTION: 
