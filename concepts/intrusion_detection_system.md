@@ -147,6 +147,14 @@ ERROR:
     Change the topology to match NIDS or HIDS 
     remove arrows and stuff  
 
+Things to do: @Current, tonight  
+    1. change the topology
+	the network have to go through
+	To NIDS
+	If too hard -> HIDS 
+    2. add the components description 
+    3. move the how to write rules to configuration part 
+
 questions: 
     what is host-only ??  ....
     what is NICs ?? 
