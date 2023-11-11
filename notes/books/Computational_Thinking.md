@@ -417,3 +417,15 @@ notes from book: Computational Thinking, A beginner's guide to problem solving a
                         SCRATCHPAD that used as a PLACEHOLDER for IMPORTANT INFORMATION the computer should keep note of 
 
             CONTROLLING algorithm EXECUTION: 
+                2 ways of control the execution of algorithm using VARIABLES: 
+                    + Iteration (Loop): 
+                        Variable in loop: 
+                            the thing that CHANGES from ONE LOOP to the NEXT
+
+                    + Selection (Conditional): 
+                        1. Test a VARIABLE current VALUE 
+                        2. MAKE a DECISION based on it 
+                        -> Creating a POINT at which the computer has to DECIDE 
+                            between: 
+                                + performing a set of steps or not 
+                        -> ENCAPSULATE the INFORMATION needed to MAKE that DECISION.

@@ -119,5 +119,12 @@ Normalize:
 
 Intergration: Find the AREA under the curve ()
     -> using small rectangles 
+
 Differentiation: Find the GRADIENT of the curve (Opposite process to intergration)
     -> using small triangles
+
+Synchronous: 
+    ... 
+
+Asynchronous: 
+    ...
