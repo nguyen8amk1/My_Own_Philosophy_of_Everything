@@ -128,3 +128,11 @@ Synchronous:
 
 Asynchronous: 
     ...
+
+## Định tính: 
+    Qualitative 
+    thông tin và dữ liệu dưới dạng ‘phi số’ để có được các thông tin chi tiết về đối tượng nghiên cứu
+
+## Định lượng:
+    Quantitative
+    thông tin và dữ liệu dưới dạng số học, số liệu có tính chất thống kê để có được những thông tin cơ bản, tổng quát về đối tượng nghiên cứu
