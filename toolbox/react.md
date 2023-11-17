@@ -1,4 +1,4 @@
-React: 
+# React: 
     Stateful Logic: 
         any code that uses state 
         vd: a button contains a counter (state) 
@@ -61,4 +61,15 @@ React:
                 + constraints 
                 -> help you pick the right tool for the job 
 
-        
+## INTERGRATE REACT WITH OTHER LIBRARIES  
+
+Problem: 
+    React is unaware of changes made to the DOM outside of React 
+        -> It's can't update accordingly 
+    other library also interact with the DOM directly, not through React 
+
+Solution: 
+    avoid conflicts by prevent the React Component from updating.
+        -> Rendering elements that React has no reason to update -> vd: an empty <div /> 
+
+    Using ref: 
