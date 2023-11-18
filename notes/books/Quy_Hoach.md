@@ -243,3 +243,15 @@ Bai toan quy hoach roi rac co dang:
             c = 3 -> u0 + u1 + u2  
             ?? 
             ** These things is still questioning 
+
+
+
+## 3 APPROACHES TO SOLVE: 
+    Vet can 
+
+    Quy hoach tuyen tinh: 
+        + hinh hoc (it bien, 2 bien, 3 bien)
+        + fourier-mozkin elimination (nhieu bien)
+
+    Tham Lam 
+        

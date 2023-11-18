@@ -1,0 +1,3 @@
+# READ SOURCE CODE SHELL COMMANDS 
+notes from this blog: https://www.baeldung.com/linux/read-source-code-shell-commands
+... 
