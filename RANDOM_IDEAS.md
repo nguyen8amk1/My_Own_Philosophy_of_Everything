@@ -71,6 +71,12 @@
         Create a knowledge graph of tat xau 
             -> inform you which of them to eliminate first 
 
+    + Remind "important" long time no touch Topic 
+
+    + Category and Related Topic ??  
+        among: 
+            + your own knowledge ?? 
+            + sharing friends knowledge ?? 
 
     ***TODO: 
         -> may be do a few notes on how the diary format should be 
@@ -88,6 +94,9 @@
     QUESTIONS: 
         Should i use Notion for references ? 
         Did my idea is even close to Notion ?? 
+
+
+
 
 3. UNO Reverse card (THIS IDEA IS PRETTY CONCRETE, NOT RANDOM AT ALL)
     each card have 2 sides: 

@@ -61,9 +61,6 @@ MY TOOLBOX:
     Design pattern:  
         ....
 
-    Problem solving tools (http://www.syque.com/quality_tools/toolbook/toolbook.htm): 
-        ....
-
     How to be a pragmatic programmer: 
         ....
 
