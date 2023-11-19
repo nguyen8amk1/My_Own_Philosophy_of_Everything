@@ -48,10 +48,17 @@
 
         BUT the most BASIC and possible feature would be: 
             FUZZY FINDING through the brain knowledge 
-            Input: some questions -> vd: How to choose between A and B?   
-            Output: the search result of the page that relate to your knowledge   
+            Input: some questions/query -> vd: How to choose between A and B?   
+            Output: the search result of the page that "relate" to that input  
             
             -> GOOGLE SEARCH BUT THE RESULT ARE ONLY THE ONES YOU HAVE ALREADY KNOW :V (somewhere inside your virtual brain)
+
+    + Diary writing might be the KEY TO SCALE this platform, 
+        instead of strict markdown format 
+        know we have gpt model which can understand the content and do some processing on it 
+
+        -> We can actually have a interconnected knowledge tree that people can share their mental status and health through diary writing 
+        -> Matching people with the same brain ?? 
 
     ***TODO: 
         -> may be do a few notes on how the diary format should be 
@@ -62,6 +69,9 @@
         "At the beginning it was paper, 
         then it was markdown 
         and finally it's diary in a virtual brain"
+
+    NOTE: 
+        I really should document the process of bulding this platform using the ealier version of the platform 
 
     QUESTIONS: 
         Should i use Notion for references ? 
