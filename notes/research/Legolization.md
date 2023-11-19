@@ -90,6 +90,7 @@ Related works are called: PHYSICAL REALIZATION OF 3D MODELS
 
             In the stability-aware refinement step:
                 use force-based analysis -> return SRL, WRL 
+
 ## Layout Reconfiguration 
     Given: 
         + current layout L 

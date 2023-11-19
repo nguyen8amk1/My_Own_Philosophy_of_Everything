@@ -1,0 +1,7 @@
+# THINGS TO KNOW BEFORE GET INTO REAL LIFE  
+
+## LUAT LAO DONG:
+    ... 
+
+## BAO HIEM XA HOI 
+    ... 
