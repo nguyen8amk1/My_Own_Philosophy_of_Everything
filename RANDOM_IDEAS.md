@@ -7,10 +7,28 @@
     Create a knowledge graph out of your diary ?? 
         diary with some specific syntax of course 
         -> Later we can use a GPT MODEL to PARSE HUMAN DIARY into our DIARY LANGUAGE  
-    + EXTracts your spider graph of different aspect of your
-    -> Create plans to accomodate that 
+
+    + Extracts your spider graph of different aspect of your
+        -> CREATE PLANS to accomodate that 
+
     with a bunch of researches of course 
     -> Auto generate the Wikipeadia-like page in the 1.
+
+    + Have a history representation in some ways
+        knowledge history 
+        emotion history ?? 
+        ...  
+
+    + HEALTH MODELING: 
+        this app is originally about storing and visualizing your knowledge, brain function  
+        NOW WE EXTEND IT INTO YOUR WHOLE BODY 
+        ** there are so many information could be included in your diary   
+        -> Just modeling your entire health and stuff into there 
+        EMOTION Modeling ?? 
+
+    -> the OVERALL IDEAS of the program is to: 
+        Visualize and Analyze CONCRETELY 
+        your CURRENT STATE of MENTAL and HEATLH 
 
     QUESTIONS: 
         Should i use Notion for references ? 
