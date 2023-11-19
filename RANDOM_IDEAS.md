@@ -78,3 +78,20 @@
     QUESTIONS: 
         Should i use Notion for references ? 
         Did my idea is even close to Notion ?? 
+
+3. UNO Reverse card (THIS IDEA IS PRETTY CONCRETE, NOT RANDOM AT ALL)
+    each card have 2 sides: 
+        + OPPOTUNITY 
+        + PROBLEM 
+        the back comes from the front one (which ever can be the front one) 
+
+        vd: 
+            If you Write the down the oppotunity first  
+            then Write the problem stems from the oppotunity 
+            and the opposite 
+        
+    -> BASICALLY JUST PROS and CONS cards, 
+        but the main goal is remember: 
+            "Any PROBLEM stems OPPOTUNITIES, and the opposite"
+
+    -> BASICALLY IT'S SWOT (Strengths, Weaknesses, Oppotunities, Threats), but just the OT :v
