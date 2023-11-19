@@ -11,5 +11,11 @@ Human on the other hand normally deal with uncertainty/"fuzzy" like:
 -> Basically: 
     Crisp input -> Fuzzify them -> Inference(suy luan, using some predefined rules) -> Crisp output
 
+If dealing with uncertainty without using fuzzy logic 
+    -> You have to combine series of if statement in order to accomodate with different thresholds of states
+    -> when rule changes -> have to maintain a lot of tangled code in the inference if statement 
+
+-> Using fuzzy logic system -> you don't have to change the code itself, just CHANGE THE RULES that inputed into the INFERENCE MODULE 
+
 QUESTIONS: 
     Fuzzy logic vs Neural Network ?? 
