@@ -73,3 +73,7 @@ Recursion:
         + Guessing and Induction (Doan nghiem va quy nap)
             pros: 
             cons: 
+
+## Big O Notation  
+solving frameworks 
+Proving things  

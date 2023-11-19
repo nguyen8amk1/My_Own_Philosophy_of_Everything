@@ -58,9 +58,19 @@
         know we have gpt model which can understand the content and do some processing on it 
 
         -> We can actually have a interconnected knowledge tree that people can share their mental status and health through diary writing 
-        -> Matching people with the same brain ?? 
-            matching people with opposite SPIDER GRAPH ?? 
+        -> Matching people with:
+                + the same brain ?? 
+                + opposite SPIDER GRAPH ?? 
                 -> they can compensate each other weaknesses 
+
+        -> DATING APP: 
+            based on THEIR SPIDER GRAPH 
+            -> HIGH IQ DATING APP ?? 
+
+    + Tat xau input:  
+        Create a knowledge graph of tat xau 
+            -> inform you which of them to eliminate first 
+
 
     ***TODO: 
         -> may be do a few notes on how the diary format should be 

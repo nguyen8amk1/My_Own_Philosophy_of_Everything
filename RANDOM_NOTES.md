@@ -6,6 +6,7 @@
     -> Try to find another level of abstraction
 
 ## Aspect Oriented Programming seems very powerful 
+.... 
 
 ## MASTERBATION IS ONLY MAKE THINGS WORST 
     19/11/2023 - 4:37 - VIETNAM
