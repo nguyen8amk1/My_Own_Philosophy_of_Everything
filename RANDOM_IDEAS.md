@@ -59,6 +59,8 @@
 
         -> We can actually have a interconnected knowledge tree that people can share their mental status and health through diary writing 
         -> Matching people with the same brain ?? 
+            matching people with opposite SPIDER GRAPH ?? 
+                -> they can compensate each other weaknesses 
 
     ***TODO: 
         -> may be do a few notes on how the diary format should be 
