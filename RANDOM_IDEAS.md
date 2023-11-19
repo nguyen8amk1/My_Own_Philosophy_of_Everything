@@ -41,6 +41,18 @@
     + Mental and Health SHARING ?? 
         WITH some RESTRICTIONS of course 
 
+    + A REALLY COOL FEATURE: 
+        Your logical brain is on the computer 
+        which means you can communicate to yourself with all of those knowledge on how to to deciding things 
+        -> ACTUALLY COMMUNICATE TO YOURSELF, asking, communicating, or certain things
+
+        BUT the most BASIC and possible feature would be: 
+            FUZZY FINDING through the brain knowledge 
+            Input: some questions -> vd: How to choose between A and B?   
+            Output: the search result of the page that relate to your knowledge   
+            
+            -> GOOGLE SEARCH BUT THE RESULT ARE ONLY THE ONES YOU HAVE ALREADY KNOW :V (somewhere inside your virtual brain)
+
     ***TODO: 
         -> may be do a few notes on how the diary format should be 
         (actually til this point (11/19/2023) we don't even know how the KNOWLEDGE REPRESENTATION should be,
