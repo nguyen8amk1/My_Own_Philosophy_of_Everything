@@ -4,11 +4,19 @@
     -> convert the markdown(readme) format to wiki format (or just render the markdown file) 
 
 2. Create a web app that can help your self improvement journey 
-    Create a knowledge graph out of your diary ?? 
+    Create a KNOWLEDGE GRAPH out of your diary ?? 
         diary with some specific syntax of course 
         -> Later we can use a GPT MODEL to PARSE HUMAN DIARY into our DIARY LANGUAGE  
 
-    + Extracts your spider graph of different aspect of your
+    KNOWLEDGE GRAPH OF YOUR: 
+        + pros 
+        + cons   
+
+        -> Create a MASTER STRATEGY to 
+            + BUFF your PROS  
+            + NERF your CONS
+
+    + Extracts your SPIDER GRAPH of DIFFERENT ASPECT of your
         -> CREATE PLANS to accomodate that 
 
     with a bunch of researches of course 
