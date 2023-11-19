@@ -30,6 +30,9 @@
         Visualize and Analyze CONCRETELY 
         your CURRENT STATE of MENTAL and HEATLH 
 
+    + Mental and Health SHARING ?? 
+        WITH some RESTRICTIONS of course 
+    
     QUESTIONS: 
         Should i use Notion for references ? 
         Did my idea is even close to Notion ?? 
