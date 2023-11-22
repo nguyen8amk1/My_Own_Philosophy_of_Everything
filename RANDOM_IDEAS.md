@@ -88,14 +88,23 @@
         then it was markdown 
         and finally it's diary in a virtual brain"
 
+    + Finantial Management ?? 
+        Big problem: 
+            how could i track my spending without actually manually input into the program ?? 
+
+            -> May be have an middleware app on phone that tracks all the transaction of you 
+            but not actually label the transaction 
+            the labeling will be done manually at the end of the day by human 
+
+    ** HELP YOU STICK WITH YOUR "ĐẠO" when you're the most vulnerable 
+
     NOTE: 
         I really should document the process of bulding this platform using the ealier version of the platform 
 
     QUESTIONS: 
         Should i use Notion for references ? 
         Did my idea is even close to Notion ?? 
-
-
+    
 
 
 3. UNO Reverse card (THIS IDEA IS PRETTY CONCRETE, NOT RANDOM AT ALL)
