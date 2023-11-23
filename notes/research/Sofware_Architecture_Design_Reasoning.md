@@ -61,8 +61,30 @@ notes from this research: https://www.researchgate.net/publication/228768552_Sof
 
 ## Software Architecture Design Reasoning: 
     Simple Reasoning model, comprises: 
-        + inputs 
-        + decisions 
-        + outputs  
+        + inputs:  
+            + requirements
+            + goals 
+            -> contextual information -> that tells us WHY WE NEED THE DESIGN 
 
-    
+            that need to be MET BY A SYSTEM 
+
+        + decisions: 
+            decisions made in designing the system 
+            -> understand the justifications/reasons for choosing a design 
+
+        + outputs: 
+            result of the design 
+        Along with their RELATIONSHIP 
+
+    -> Design Reasoning model: 
+        + Design CONTEXT
+        + Design JUSTIFICATION 
+        + Design OUTPUT 
+        + and their RELATIONSHIP 
+
+    -> AREL model: 
+        Design CONCERNS -raise-> a design DECISION
+        Design DECISIONS -captures-> design ISSUES and RATIONALE (ly le)
+        Design OUTCOMES -result of-> design DECISIONS
+
+

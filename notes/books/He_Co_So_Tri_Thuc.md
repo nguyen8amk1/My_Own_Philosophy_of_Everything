@@ -1,0 +1,2 @@
+# HE SO CO TRI THUC
+notes from book: GIAO TRINH HE CO SO TRI THUC UIT 
