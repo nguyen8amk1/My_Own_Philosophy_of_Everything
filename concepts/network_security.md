@@ -31,3 +31,42 @@ Week 5:
     -> 2 tool: sniff, spoof 
     
     IF BYPASS THE KERNEL -> HAVE TO DO ALL THE WORK OF PROTOCOL STACK (the work of OS)
+
+Week 10: 
+    routing table - doc tu phai qua trai 
+    ICMP smurt attack: 
+        ping broadcast
+        gia danh ip cua nguoi khac 
+        -> nguoi ta bi ddos ping 
+
+        -> solution: chan ping broadcast 
+
+    ICMP tien ich nhma phai han che 1 so tinh nang de tranh bi tan cong.
+
+    Congestion control: Outdate, not used 
+
+    Border routing bsp ???
+    Cang len cao thi cang phuc tap (in NETWORKING MODEL)
+    SDN
+
+    Transport layer:
+        + xac dinh phuong thuc truyen: tcp, udp, quic
+        + identify sender, receiver
+
+    Scan for port, have a list of port 
+        -> attack the weak one
+
+    Tai nguyen port la huu han -> het roi thi teo 
+
+    How to kill a host: 
+        heavy:
+            + computation
+            + payload
+    
+    Reverse path: kiem tra xem ip request co phai that khong  
+
+    Doi vua phai 
+    Mo limit 
+
+    tan cong:
+        icmp redirect -> ddos - spoof ip

@@ -16,3 +16,5 @@
         things got worst, i feel so much pain, 
         i can't even dare to walk down the hall and print some documents  
         FUCK MY LIFEEEEEE
+
+## I REALLY SHOULD FINISH READING THE EQ BOOK (24/11/2023) 
