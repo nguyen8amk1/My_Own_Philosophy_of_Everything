@@ -1,4 +1,9 @@
 # RANDOM QUOTES (that should be added to some topic):
+
+## IMPORTANT: KNOW YOUR TOOLS WELL 
+	Stick to a tool and have good performance in it 
+	Can operate fast on it 
+
 ## ***You only USE something(tool) when you need its BENEFITS
 	-> Not use it just because you can use it, or other tell you to ...
 
@@ -63,7 +68,6 @@
 
 	vd: you already now how to move a circle according to time
 		-> you can do that in any language(js, node, java,...), environment(web canvas, DOM, desktop, ...)
-
 
 
 ## ABSTRACTION: IS KINDA LIKE SUBSTRACTION 
