@@ -2,7 +2,9 @@
 
 ## IMPORTANT: KNOW YOUR TOOLS WELL 
 	Stick to a tool and have good performance in it 
-	Can operate fast on it 
+	Can operate fast on it
+
+## PERFECT IS LOTS OF SMALL THINGS DONE WELL 
 
 ## ***You only USE something(tool) when you need its BENEFITS
 	-> Not use it just because you can use it, or other tell you to ...

@@ -101,7 +101,6 @@
     BASICALLY: 
         it's a KNOWLEDGE-BASED PROGRAM wrapped by a DIARY WRITING PROGRAM 
 
-
     NOTE: 
         I really should document the process of bulding this platform using the ealier version of the platform 
 

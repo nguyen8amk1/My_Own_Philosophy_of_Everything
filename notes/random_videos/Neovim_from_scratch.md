@@ -24,5 +24,34 @@ LIST OF PLUGINS TO USE, with configs
 
     TODO: LSP thingy still NOT WORKING 
 
+    Neovim have 2 ways to load plugins: 
+        Startup loading: 
+            automatically load when nvim start up
+
+        Lazy loading: 
+            Only start up when you call it through some COMMANDS that you SPECIFY in the PLUGIN FILE  
+
+## VIM TERMINOLOGIES: 
+    + Files: 
+        ... 
+
+    + Buffers:
+        contains the text of the file 
+        and is WHAT YOU EDIT 
+
+    + Windows: 
+        CONTAINS a BUFFER to DISPLAY 
+        A window can be closed 
+        But the buffer remains in memory 
+
+    + Tabs: 
+        is like another viewport    
+            -> can have multiple windows, splits per tab 
+
+    + Splits: 
+        splitting a viewport into n section 
+        to display windows
+
 NOTE: 
     =ap -> auto format code 
+    
