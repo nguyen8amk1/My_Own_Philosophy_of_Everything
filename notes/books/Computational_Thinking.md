@@ -403,6 +403,7 @@ notes from book: Computational Thinking, A beginner's guide to problem solving a
                             kept track of by a program/algorithm in one instant of time 
                             -> CLEARLY SEQUENCING the steps ENSURES that 
                             all STATE ALWAYS CHANGES in the SAME WAY whenever the algorithm is executed
+
             IMPORTANT: 
                 there is NO "GLOBAL VIEW" when it comes to algorithms
                     at EACH INSTANT IN TIME
@@ -429,3 +430,85 @@ notes from book: Computational Thinking, A beginner's guide to problem solving a
                             between: 
                                 + performing a set of steps or not 
                         -> ENCAPSULATE the INFORMATION needed to MAKE that DECISION.
+
+## PROBLEM-SOLVING AND DECOMPOSITION: 
+### Problem solving is partly a CREATIVE PROCESS.
+    -> it can not be totally systematised 
+    -> BUT:
+        + strategies 
+        + heuristics(kinh nghiem) 
+        + good practices 
+
+        exists to help 
+
+### Systematic approach: 
+    First proposed by Polya in the book "How to solve it"
+    steps: 
+        1. Understand the problem 
+        2. Devise a plan 
+        3. Execute the plan 
+        4. Review and extend
+
+    -> We FOCUS on the FIRST 2 STEPS: 
+
+### Don't panic: 
+    the:
+        + Size 
+        + Complexity 
+        + Huge number of Unknowns
+        -> can frustate your attempts to start 
+
+    few HINTS to help starting: 
+        + "don't be put off by perceived size and complexity"
+            Big problems are RARELY a SOLID MONOLITH BLOCK 
+                -> they are a GROUP of SMALL, INTERRELATED PROBLEMS
+            -> The tricks is: 
+                to PICK THEM APART and REDUCE a big problem into a:
+                    + smaller 
+                    + simpler 
+                    + more manageable ones 
+
+        + "resist the urge to jump straight into writing a solution"
+            -> if you jump straight to writing solution 
+                your solution will only solve a very specific version of the problem (not so good)
+
+### Defining the problem  
+    The hardest part of problem solving: 
+        is CHARACTERISING THE PROBLEM. 
+
+    Problem solving involves: 
+        TRANSFORMING an UNDESIRABLE state of affairs (tinh huong)- the STARTING POINT
+        INTO an desirable state of affairs - the GOAL
+        -> the STARTING POINT and the GOAL are INTIMATELY LINKED 
+
+    EXAMINING the starting point: 
+        -> NAIL DOWN exactly: 
+            + WHAT is undesirable 
+            + WHY  
+
+    "It's foolish to answer question that you do not understand"
+    -> advice: 
+        + try RESTATING the problem in YOUR OWN WORDS 
+        + represent the problem using PICTURES and DIAGRAMS 
+        + There will be: 
+            + knowns 
+            + unknowns 
+            at the start
+            -> should make sure that enough information is known to form a solution.  
+            if there isn't -> MAKE THE UNKNOWNS EXPLICIT. 
+            
+    KEYPOINTS: 
+        + the goal defines: 
+            WHAT need to be done
+            NOT HOW it should be done. 
+
+        FOCUS on WHAT YOUR GOAL LOOKS LIKE. 
+        -> Describing how a working solution should look
+        MAKE SURE: 
+            + clear 
+            + specific 
+
+        IF the goal is COMPLICATED 
+            -> DESCRIBE the DESIRED FEATURES of the solutions.
+            -> Write a specification.
+

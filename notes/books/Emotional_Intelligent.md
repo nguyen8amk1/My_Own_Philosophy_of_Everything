@@ -142,3 +142,10 @@
         FEELINGS AFFECT AS MUCH and OFTEN MORE than THOUGHT
 
     When FEELINGS in CHARGES, INTELLIGENCE is daubuoirerach
+
+    Our EMOTIONS (which have evolved over a long period) 
+    may have been an EFFECTIVE GUIDE for survival in the PAST. 
+    BUT the FAST CHANGES from our modern society OUTPACED the slow process of BIOLOGICAL EVOLUTION. 
+
+    -> Just rely on the innate emotions is no good in developed society 
+        -> people create RULES to SUPPRESS some BAD INNATE EMOTIONS (vd: kinh thanh, ...)
