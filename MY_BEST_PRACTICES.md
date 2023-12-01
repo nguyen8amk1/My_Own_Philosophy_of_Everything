@@ -43,8 +43,11 @@
     GIT and GITHUB
     -> Git flow ?? 
 
+-> A good measure for how efficient you are at any of these tools: 
+    be able to whip up some idea prototype in short amount of time (30 minutes??)
+
 ## REMEMBER: 
-    [GOOD ENOUGH PHILOSOPHY](./frameworks/good_enough_philosophy.md)
+    Don't learn too deeply, learn enough to be dangerous [GOOD ENOUGH PHILOSOPHY](./frameworks/good_enough_philosophy.md)
 
 -> NEED TO KNOW THESE EFFICIENTLY (currently(27/11/2023) i know about 10% of each of them ) 
     -> May be learning these Tet ?? 

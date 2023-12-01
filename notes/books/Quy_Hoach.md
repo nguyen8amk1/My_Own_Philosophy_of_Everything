@@ -201,6 +201,8 @@ Thuat toan can:
 
                 + the cost to do operations between nodes (LINK VALUE)
                     vd: aij 
+                    or the AMOUNT of stuff TRANSFER from i to j ...
+
 
     Contraints: 
         Checking for resources usage 

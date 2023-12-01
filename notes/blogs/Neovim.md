@@ -74,6 +74,7 @@ Editor setting:
 
     To apply the config use command: :source 
 
+
 ## How to install plugin 
 How to install plugin manually: 
     -> download them in a SPECIFIC FOLDER 
@@ -94,3 +95,5 @@ colorscheme:
     + darkplus.nvim 
     + monokai.nvim 
     + 
+
+Nerd-font: is a developer font in which  

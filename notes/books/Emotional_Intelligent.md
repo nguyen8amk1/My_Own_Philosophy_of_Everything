@@ -109,10 +109,36 @@
         How can we manage our emotional life with intelligence ? 
         Passions(emotions), when well excercised  have wisdom -> guide our thinking, values, survival 
             BUT can easily go in the wrong direction.
+
 ## Notes: 
     -> Emotions have not inherently bad, 
         BUT what MATTER is whether they are:
             + APPROPRIATE to the SITUATION
             + HOW they are EXPRESSED
+
     -> It's not about having emotions or not 
         but about USING them in a BALANCED and VIRTUOS(co dao duc) ways
+
+## What are emotions for ??
+    Our EMOTIONS GUIDE us when dealing with TASKS 
+    that are TOO IMPORTANT to DECIDE using INTELLECT alone 
+    vd: 
+        + danger
+        + painful loss 
+        + presisting toward a goal despite frustrations
+        + bonding with a mate
+        + building a family 
+
+    Each EMOTIONS POINTS us in a DIRECTION that has WORKED WELL 
+    to handle the recurring CHALLENGES of human life.
+    
+    These EMOTION has become IMPRINTED into our NERVES through out evolutionary.  
+
+    A HUMAN that IGNORES the POWER of EMOTIONS -> SHORT SIGHTED 
+
+    When it comes to shaping our: 
+        + decisions
+        + actions
+        FEELINGS AFFECT AS MUCH and OFTEN MORE than THOUGHT
+
+    When FEELINGS in CHARGES, INTELLIGENCE is daubuoirerach
