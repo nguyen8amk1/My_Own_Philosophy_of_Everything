@@ -52,6 +52,25 @@ LIST OF PLUGINS TO USE, with configs
         splitting a viewport into n section 
         to display windows
 
+## WHERE TO CONFIGURE THE PLUGIN (Notable places of course):  
+    Colorscheme: 
+        ... 
+    Fuzzy finder (telescope): 
+        ... 
+    LSP (): 
+        ... 
+    Autocompletion (): 
+        ... 
+
+    Autopairs: 
+        ... 
+
+    Snippets: 
+        ... 
+
+    NerdFont: 
+        ... 
+
 NOTE: 
     =ap -> auto format code 
     
