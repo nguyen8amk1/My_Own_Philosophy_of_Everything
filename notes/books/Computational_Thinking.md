@@ -541,7 +541,7 @@ notes from book: Computational Thinking, A beginner's guide to problem solving a
         -> use when: 
             problem TOO LARGE or COMPLEX to deal with ALL AT ONCE 
 
-    -> Apply Decomposition -> PICK ALL THE STEPS APART 
+    -> Apply Decomposition = PICK ALL THE STEPS APART 
 
     Decomposition normally (recursively) BREAKS all the STEPS down into a TREE-STRUCTURE 
 
@@ -551,4 +551,66 @@ notes from book: Computational Thinking, A beginner's guide to problem solving a
         Getting bogged down in the details of: HOW TO SOLVE THE SUB-PROBLEMS. 
             -> At this stage -> just focus on WHAT TO DO, not HOW TO DO IT 
 
+    NOTE: 
+        Decomposition WON'T result in: A COMPLETE PLAN OF ACTION 
+        But:
+            + it can give you a STARTING POINT for FORMULATING one.
+
+        It can SHOWS: INDIVIDUAL TASKS  
+        But it DOESN'T SHOW: the ORDER in which to TACKLE them 
+        But the RELATIONSHIP between the sub-problems is APPARENT. 
+
+### OTHER EFFECTIVE STRATEGIES
+    -> These are some of the most useful strategies, 
+    it may not work all the time, but they are very useful.
+
+#### Think critically 
+    "ALL KEY DECISIONS SHOULD HAVE A GOOD REASON BEHIND THEM" 
+
+     + VALIDATING IDEA (1): 
+        vd: Design a layout of a bookshop
+            Initial question:
+                -> Have i chosen the RIGHT STRUCTURE for laying out the books on the shelf ? 
+                -> NOT CLEAR what "right structure" actually mean  
+                -> LOOK AT YOUR GOAL TO CLARITY IT (2)
+                -> vd: Goal: 
+                    + (pros) QUICK and EASY for ADDING NEW BOOK to the shelf.
+                        -> the structure could be: UNORDERED
+                        cons: the CUSTOMER have to MANUALLY BROWSE the book 
+
+                    + (pros) Easy to LOCATE a SPECIFIC BOOK. 
+                        ->  the structure could be: ORDERED in some order (alphabetically, author, ...)
+                        cons: the OWNER have to SPEND TIME SORTING the books.
     
+     + EXPOSE ASSUMPTION to the ideas (very important): (3)
+        -> ASSUMPTIONS made IMPLICITLY COULD well turn out to be FALSE.
+
+        vd:  
+            Deciding: books need to be sorted 
+                -> ASSUMES that the bookshop OWNER CAN AFFORD to put the TIME REQUIRED for it
+                -> RAISE THE QUESTIONS: is that ASSUMPTION JUSTIFIED ? (4)
+                    -> It may turn out that you need ANOTHER SOLUTION or get MORE EMPLOYEES for that job
+
+        NOTE: 
+            For any system you put in place -> Always ask the questions: 
+            -> "WHAT IF IT GOES WRONG" (5) 
+            vd: For the bookshop scenario, you might ask: 
+                -> What if the book is NOT IN THE CORRECT PLACE on the shelf.  
+
+            -> Your RESPONSE can vary: (6)
+                + IMPROVE the solution 
+                + ELEMINATe the possibility of that problem occur 
+                + put a PLAN in place to EXECUTE when the problem occur.
+
+
+#### Solve a CONCRETE instance 
+    ...
+
+#### Find a RELATED PROBLEM
+    ... 
+
+#### Work backwards (top down)
+    ...  
+
+### PATTERN and GENERALIZATION
+    ...
