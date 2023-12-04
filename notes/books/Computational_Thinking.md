@@ -472,7 +472,7 @@ notes from book: Computational Thinking, A beginner's guide to problem solving a
             -> if you jump straight to writing solution 
                 your solution will only solve a very specific version of the problem (not so good)
 
-### Defining the problem  
+### DEFINING the problem  
     The hardest part of problem solving: 
         is CHARACTERISING THE PROBLEM. 
 
@@ -512,3 +512,43 @@ notes from book: Computational Thinking, A beginner's guide to problem solving a
             -> DESCRIBE the DESIRED FEATURES of the solutions.
             -> Write a specification.
 
+### DEVISING(nghi ra) a solution: 
+    Once you have: 
+        + a finished problem DEFINITION complete with GOAL
+            -> it's time to find the strategy or a solution 
+
+    There are multiple solutions.
+        some good, some terrible 
+        -> SHOULD FOCUS ON FINDING THE BEST SOLUTION YOU CAN.
+
+    Quality: 
+        INDIVIDUAL PARTS of a problem CAN found the PERFECT SOLUTIONS.
+        But the OVERALL SOLUTION CAN'T BE PERFECT since the trade-offs between competing part always happens.
+
+    Iteration:     
+        Take an ITERATIVE APPROACH instead of trying to solve everything in one swoop   
+        -> go back and improve the current solution 
+
+        HOW MANY STEPS to repeat DEPENDS ON: 
+            the solution SHORT-COMINGS
+
+### DECOMPOSITION
+    HEURISTIC problem solving technique: 
+        vd: trial and error, rule of thumb, drawing an analogy 
+        -> Decomposition
+
+    Is a DIVIDE AND CONQUER strategy 
+        -> use when: 
+            problem TOO LARGE or COMPLEX to deal with ALL AT ONCE 
+
+    -> Apply Decomposition -> PICK ALL THE STEPS APART 
+
+    Decomposition normally (recursively) BREAKS all the STEPS down into a TREE-STRUCTURE 
+
+    TREE can represent a huge range of DIFFERENT STRUCTURES @NeedInvestigation ?? 
+
+    **AVOID: 
+        Getting bogged down in the details of: HOW TO SOLVE THE SUB-PROBLEMS. 
+            -> At this stage -> just focus on WHAT TO DO, not HOW TO DO IT 
+
+    
