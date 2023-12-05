@@ -107,7 +107,8 @@
     QUESTIONS: 
         Should i use Notion for references ? 
         Did my idea is even close to Notion ?? 
-    
+
+    -> ****I KNOW WHAT'S THIS PROGRAM CALLED - KNOWLEDGE-BASE    
 
 
 3. UNO Reverse card (THIS IDEA IS PRETTY CONCRETE, NOT RANDOM AT ALL)

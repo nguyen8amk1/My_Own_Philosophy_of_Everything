@@ -18,3 +18,7 @@
         FUCK MY LIFEEEEEE
 
 ## I REALLY SHOULD FINISH READING THE EQ BOOK (24/11/2023) 
+
+## LEARN HOW TO WRITE CRUD PROBABLY FIRST @MUST 
+    -> FRONT END HANDLING -> ... still don't know 
+    -> BACK END HANDLING -> (REST API ERROR HANDLING)(./notes/blogs/Rest_API_Error_Handling_Best_Practices.md)

@@ -3,6 +3,8 @@
 ## IMPORTANT: KNOW YOUR TOOLS WELL 
 	Stick to a tool and have good performance in it 
 	Can operate fast on it
+    -> a good measurements is:
+        you can create a WORKING PROTOTYPE of YOUR IDEAS in 30MINS - 3 DAYS 
 
 ## PERFECT IS LOTS OF SMALL THINGS DONE WELL 
 
