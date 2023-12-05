@@ -20,5 +20,18 @@
 ## I REALLY SHOULD FINISH READING THE EQ BOOK (24/11/2023) 
 
 ## LEARN HOW TO WRITE CRUD PROBABLY FIRST @MUST 
-    -> FRONT END HANDLING -> ... still don't know 
-    -> BACK END HANDLING -> (REST API ERROR HANDLING)(./notes/blogs/Rest_API_Error_Handling_Best_Practices.md)
+    -> FRONT END HANDLING -> 
+        https://rollbar.com/blog/guide-to-frontend-error-handling/
+        https://www.staticapps.org/articles/front-end-error-handling/
+
+    -> BACK END HANDLING
+        -> (REST API ERROR HANDLING)(./notes/blogs/Rest_API_Error_Handling_Best_Practices.md)
+        -> write an http server from scratch 
+
+    https://thenewstack.io/error-handling-from-backends-to-the-frontend/
+    https://www.linkedin.com/advice/0/how-do-you-educate-train-your-developers
+    https://www.brainstobytes.com/defensive-programming-fundamentals/
+
+
+    -> ***Defensive programming 
+    https://www.youtube.com/watch?v=_3q4xayI-I4
