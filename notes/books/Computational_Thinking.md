@@ -593,7 +593,7 @@ notes from book: Computational Thinking, A beginner's guide to problem solving a
 
         NOTE: 
             For any system you put in place -> Always ask the questions: 
-            -> "WHAT IF IT GOES WRONG" (5) 
+            -> "WHAT IF IT GOES WRONG" (5) -> :@Questions: Are there any structure to map this out(could we just use a tree-structure for it ??)
             vd: For the bookshop scenario, you might ask: 
                 -> What if the book is NOT IN THE CORRECT PLACE on the shelf.  
 
@@ -604,13 +604,41 @@ notes from book: Computational Thinking, A beginner's guide to problem solving a
 
 
 #### Solve a CONCRETE instance 
-    ...
+    Abstraction is very useful 
+    But it can be CHALLENGING to SOLVE a problem WHEN things are NOT DEFINED IN DETAIL.
+    -> It's easier to deal with problems in concrete terms 
+        -> because "the DETAILS are more readily MANIPULATED (conviently handled) and UNDERSTOOD."
+
+    vd: Try to automate the drawing of complex shapes
+        the idea of a "shape" is rather abstract. -> since there are many types of shapes and patterns exist.
+        -> to gain an understanding of the problem 
+            -> just TAKE A CONCRETE SHAPE such as: a smiley face 
+            -> THINKING ON HOW TO SOLVE THAT SINGLE EXAMPLE.
+    NOTE: 
+        COMBINING: 
+            + solve concrete instance 
+            + decomposition
+        -> CHOOSE a CONCRETE EXAMPLE first 
+        then DECOMPOSE it into SUB-PROBLEMS to solve  
 
 #### Find a RELATED PROBLEM
-    ... 
+    Look at the solution to another simlilar problem (one that analogous or a simplified version)
+        -> Can POINT the way to the SOLUTION OF YOUR OWN PROBLEM. 
+
+    But: you will NEED TO ADAPTS it rather than reuse the solution entirely 
 
 #### Work backwards (top down)
-    ...  
+    STARTING with a GOAL STATE 
+    GOING BACKWARD STAGE BY STAGE
+    At each step, LOOK AT the CURRENT STAGE and DEDUCE what is REQUIRED to arrive at. 
+        -> deduce -> the nature of the next stage
+
+    NOTE: 
+        this strategy is EFFECTIVE when: 
+            have WELL-DEFINED GOAL STATE (something that very clear)
+
+        vd: Given the goal state = THAO CAM VIEN TPHCM at 4PM -> when should to start to go ? 
+        -> You can work backward to find out the exact time to should start. 
 
 ### PATTERN and GENERALIZATION
     ...
