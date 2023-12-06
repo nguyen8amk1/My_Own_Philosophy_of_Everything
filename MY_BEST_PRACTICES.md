@@ -21,6 +21,7 @@
 
     learning link: ... 
 
+
 ## 4. WHAT IS MY GO TO IMAGE EDITOR 
     GIMP :))
     because it's easier to install 
@@ -42,6 +43,11 @@
 ## 7. WHAT IS MY GO TO VERSION CONTROL SYSTEM: 
     GIT and GITHUB
     -> Git flow ?? 
+
+## 8. DIAGRAM DRAWING PROGRAM
+    -> draw.io 
+
+
 
 -> A good measure for how efficient you are at any of these tools: 
     be able to whip up some idea prototype in short amount of time (30 minutes??)
