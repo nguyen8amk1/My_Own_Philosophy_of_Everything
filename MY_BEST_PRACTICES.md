@@ -61,9 +61,12 @@
 ### NOTE: A good measure for how efficient you are at any of these tools: 
     be able to whip up some idea prototype in short amount of time (30 minutes??)
 
-Actually tested the effeciency of these tools: 
-    ...None 
 
+### Actually tested the effeciency of these tools: 
+    each test will be 30 minutes, with a topic: 
+        DRAW.IO []
+        GIMP []
+        LINUX []
 
 
 ## REMEMBER: 
