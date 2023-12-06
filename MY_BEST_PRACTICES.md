@@ -58,6 +58,10 @@
 ## 10. QUICK TEST SCRIPT LANGUAGE (for super fast mathematical prototype of somesort)
     Python
 
+## 11. 3D MODELING SOFTWARE
+    SOLIDWORKS 
+
+
 ### NOTE: A good measure for how efficient you are at any of these tools: 
     be able to whip up some idea prototype in short amount of time (30 minutes??)
 
