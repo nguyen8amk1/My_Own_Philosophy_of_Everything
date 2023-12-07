@@ -51,7 +51,7 @@
         High level language: Javascript with p5JS 
 
     A little more SERIOUS or need more PERFORMANCE: 
-        Low level language: C with GunSlinger  
+        Low level language: C with SDL2 
 
     -> Should have MY OWN TEMPLATE for it as well 
 
@@ -59,14 +59,14 @@
     Python
 
 ## 11. 3D MODELING SOFTWARE
-    SOLIDWORKS 
+    FREECAD
 
 ## 12. GUI library
     For SUPER FAST prototype: 
         High level language: Javascript with p5JS 
 
     A little more SERIOUS or need more PERFORMANCE: 
-        Low level language: C with GunSlinger and Nukclear
+        Low level language: C with SDL2 and ImGUI
 
 
 ### NOTE: A good measure for how efficient you are at any of these tools: 

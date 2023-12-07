@@ -16,7 +16,7 @@ learn from this course: https://www.youtube.com/watch?v=Z2w_IFU_He4&list=PLqazFF
     Feature: 
         + Can edit things only in the selection (brushing, color adjust,...)
         + Can have MULTIPLE SELECTION when holding the <shift> key while creating selection
-        + BINARY OPERATIONS with different selection region: 
+        + BOOLEAN OPERATIONS with different selection region: 
             + Add 
             + Subtract
             + Intersect 
@@ -26,12 +26,29 @@ learn from this course: https://www.youtube.com/watch?v=Z2w_IFU_He4&list=PLqazFF
 
 ## NOTE:     
     Each tool have different modes -> with different features 
-        vd: binary operations, ... 
+        vd: boolean operations, ... 
 
     -> in the TOOLS OPTIONS box 
 
 ## LAYERS
+    Create new layer from selection (is not as straight forward as PTS)
+        copy the content in the selection         
+        paste (ctrl  v) 
+            -> it will generate a "floating something" 
+        click create layer from ... in the bottom of the stack 
 
 ## CROP AND MOVE TOOLS 
+    Crop: 
+        Hold control to scale relative to the center
+    Move tool: 
+        Can move either: 
+            + layer 
+            + selection 
+            + path 
+
+    If you want to CROP just the SELECTED LAYER -> Have to CHOOSE specific OPTION
 
 ## ROTATE AND SCALE 
+
+
+
