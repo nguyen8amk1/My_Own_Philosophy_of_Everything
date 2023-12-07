@@ -67,3 +67,8 @@ along with its source code: https://github.com/MrFrenik/gunslinger/
 
 ## + Asset Manager Layer
     loading files ... 
+
+
+## HOW TO ACTUALLY USE IT 
+### THE STRUCTURE OF THE CODE ?? 
+    ... 

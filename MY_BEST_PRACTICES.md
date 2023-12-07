@@ -61,6 +61,13 @@
 ## 11. 3D MODELING SOFTWARE
     SOLIDWORKS 
 
+## 12. GUI library
+    For SUPER FAST prototype: 
+        High level language: Javascript with p5JS 
+
+    A little more SERIOUS or need more PERFORMANCE: 
+        Low level language: C with GunSlinger and Nukclear
+
 
 ### NOTE: A good measure for how efficient you are at any of these tools: 
     be able to whip up some idea prototype in short amount of time (30 minutes??)

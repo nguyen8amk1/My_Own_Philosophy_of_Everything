@@ -41,3 +41,25 @@ They(LP, IP) can:
     -> MORE EQUATIONS THAN UNKNOWNS MEANS there are unlimited solutions to the problem  
     -> But matrix can't find the optimal one from those 
     -> BUT LP and IP CAN -> FIND THE OPTIMAL SOLUTION IN THE VAST SET OF SOLUTIONS 
+
+
+## ALGORITHMs: 
+### Backtracking: 
+    key thing to identify: 
+        + S = <S1, S2,...,Sn> - what is it 
+        + The choices of each Si (each Si have their own set of choices or all same)
+            vd: 
+                S1 could have 3 choices (2, 3, 4)
+                S2 could have 5 choices (2, 3, 4, 4, 4)
+                S3 could have 2 choices (2, 3)
+
+        + Validation constraints: 
+            ... 
+            -> This is probably the hardest parts (i still can't defined it correctly)
+
+    -> **Identify these wrong everything is wrong
+
+
+### Greedy: 
+    key thing to remember: 
+        ...
