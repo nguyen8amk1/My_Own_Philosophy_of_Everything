@@ -8,6 +8,14 @@
 
 ## PERFECT IS LOTS OF SMALL THINGS DONE WELL 
 
+## YOU SHOULD BE ABLE TO MAKE YOUR SOFTWARE DO WHAT YOU WANT IT TO DO 
+    (within the reasonable limits of its capabilities)
+    -> the KEY to ATTAINING THIS POWER: 
+        -> UNDERSTANDING the FUNDAMENTALS of: 
+            + WHAT the software does 
+            + HOW It works
+    -> From the book: [How Linux Works](./notes/books/How_Linux_Works.md)
+
 ## ***You only USE something(tool) when you need its BENEFITS
 	-> Not use it just because you can use it, or other tell you to ...
 

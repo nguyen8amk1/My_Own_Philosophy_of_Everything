@@ -127,3 +127,7 @@
             "Any PROBLEM stems OPPOTUNITIES, and the opposite"
 
     -> BASICALLY IT'S SWOT (Strengths, Weaknesses, Oppotunities, Threats), but just the OT :v
+
+4. THE FIRST UNIX-PHILOPHIES-BASED TERMINAL TOOL: 
+    a program that takes a pixel matrix and show it on a screen 
+        (this is probably violated the philosophies already :v )

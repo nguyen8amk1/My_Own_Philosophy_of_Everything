@@ -51,7 +51,7 @@
         High level language: Javascript with p5JS 
 
     A little more SERIOUS or need more PERFORMANCE: 
-        Low level language: C with SDL2 
+        Low level language: C++ with SDL2 
 
     -> Should have MY OWN TEMPLATE for it as well 
 
@@ -66,8 +66,13 @@
         High level language: Javascript with p5JS 
 
     A little more SERIOUS or need more PERFORMANCE: 
-        Low level language: C with SDL2 and ImGUI
+        Low level language: C++ with SDL2 and ImGUI
 
+## 13. 3D Physics engine 
+    ODE: Open Dynamic Engine 
+
+## 14. 3D Library  
+    ?? 
 
 ### NOTE: A good measure for how efficient you are at any of these tools: 
     be able to whip up some idea prototype in short amount of time (30 minutes??)
