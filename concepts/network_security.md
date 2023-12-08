@@ -6,7 +6,7 @@ prime256v1
 apache luu key va cert trong conf/ssl 
 protocol + TLS = secure protocol
 
-Week 5: 
+## Week 5: 
     What can be sniffed ?? 
         + Unencrypted Data
         + Metadata
@@ -32,7 +32,7 @@ Week 5:
     
     IF BYPASS THE KERNEL -> HAVE TO DO ALL THE WORK OF PROTOCOL STACK (the work of OS)
 
-Week 10: 
+## Week 10: 
     routing table - doc tu phai qua trai 
     ICMP smurt attack: 
         ping broadcast
@@ -70,3 +70,43 @@ Week 10:
 
     tan cong:
         icmp redirect -> ddos - spoof ip
+
+## Week 12: 
+    Filter at the application layer of the end point
+    the link level:
+        work using the ARP table (table of router's mac address)
+            -> vulnerable if the ARP table is attack 
+
+    P2P: done upload and download at the same time 
+        -> acts as client and server at the same time
+
+    Bug 
+        + SOFTWARE: 
+            if function want A but it done B
+        + SECURITY: 
+            if function want A but it done B and C
+            vd: Rather than answer yes/no but it answer the correct answer as well 
+
+    Session Hijacking: 
+
+    2 Huong khai thac:
+        Header -> cuop session
+        Payload -> gui ma doc 
+
+    Injection: 
+
+    Login should have a separate page with their own url 
+        -> user can check if the url is valid 
+
+    Time-based token
+    Clicked-based token
+
+    Exceptional case: 
+        Gmail: stole just token is not enough to login 
+        -> Hidden input in the frontend 
+
+    DNS: local dns is only a CACHE SERVER, and can be contaminated  
+        2 types: 
+            Authorative
+            Caching 
+
