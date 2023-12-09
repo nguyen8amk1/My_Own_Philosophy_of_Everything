@@ -219,16 +219,77 @@ Kernel manage 4 SYSTEM AREAS:
              
 
 1.3.2: Memory Management:     
-    ... 
+    THE KERNEL MUST MANAGE MEMORY DURING A CONTEXT SWITCH  
 
+    These CONDITIONS must hold: 
+        Kernel: 
+            + the KERNEL must have its OWN PRIVATE AREA in MEMORY that USER PROCESSES CAN'T ACCCESS
+
+        User process: 
+            + EACH USER PROCESS needs its OWN SECTION in MEMORY 
+            + ONE user PROCESS may NOT ACCESS the PRIVATE MEMORY of ANOTHER PROCESS. 
+            + User process CAN SHARE MEMORY.
+            + Some memory can be READ-ONLY
+
+        The system can USE MORE MEMORY than is PHYSICAL PRESENT by using DISK SPACE AS AUXILIARY 
+
+    ...virtual memory stuff @NotDone
+    
 1.3.3: Device Drivers and Management: 
-    ... 
+    A device ACCESSIBLE only in KERNEL MODE 
+    because:
+        + IMPROPER ACCESS (vd: user process asking to turn off the power) 
+            -> CRASH THE MACHINE 
+
+        + different devices RARELY have the SAME PROGRAMMING INTERFACE.
+            -> DEVICE DRIVERS present a UNIFORM INTERFACE to the user processes 
+            -> Device drivers traditionally been part of the kernel 
 
 1.3.4: System calls and support: 
-    ...     
+    other kinds of Kernel features that are available to the user processes: 
+        + System calls 
+            -> PERFORM specific TASKS that USER PROCESS alone CANNOT DO well or at all 
+            vd: open, read, write files
+
+            -> is an INTERACTION between: 
+                + process 
+                + kernel
+
+    2 IMPORTANT SYSTEM CALLS: 
+        -> understand HOW PROCESS START UP
+
+        + fork(): 
+            1. a PROCESS: called fork()
+            2. the KERNEL: CREATE (nearly) identical COPY of the PROCESS
+
+        + exec(): 
+            1. a PROCESS: called exec()
+            2. the KERNEL: 
+                STARTS program, 
+                REPLACING the CURRENT PROCESS.  
+    
+    -> ALL user processes on Linux system START as a result of FORK();         
+    -> then run EXEC() to start a new program. 
+
+    vd: ls command: 
+        1. User enter "ls" to the terminal 
+        2. The SHELL running inside the terminal 
+            CALL FORK() -> CREATE A COPY OF THE SHELL
+        3. THE NEW COPY OF THE SHELL CALLED EXEC(LS) to run "ls"
+        
+    SUPPORT FEATURES: 
+        + PSEUDODEVICES: 
+            -> LOOK LIKE DEVICES(hardware) to user processes, 
+            BUT they're IMPLEMENTED purely in SOFTWARE
+
+    NOTE:
+        -> a USER PROCESS that ACCESSES a PSEUDODEVICES 
+        still HAS TO USE a SYSTEM CALL to OPEN THE DEVICE 
+
+        -> PROCESSES CAN'T entirely AVOID SYSTEM CALLS 
 
 ### 1.4: USERSPACE 
-    
+    ... 
 
 ### USERS 
     ...
