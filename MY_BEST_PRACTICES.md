@@ -74,6 +74,14 @@
 ## 14. 3D Library  
     ?? 
 
+### ALL OF THESE SHOULD BE RELATIVELY EFFICIENT 
+    ALONG WITH A GOOD ENVIRONMENT TO KEEP ME IN THE "FLOW STATE"
+    "A MENTAL STATE OF OPERATION in which a PERSON PERFORMING AN ACTIVITY is FULLY IMMERSED in a feeling of:
+        + ENERGIZED FOCUS
+        + full INVOLVEMENT
+        + ENJOYMENT
+        in the process of the activity" 
+
 ### NOTE: A good measure for how efficient you are at any of these tools: 
     be able to whip up some idea prototype in short amount of time (30 minutes??)
 
