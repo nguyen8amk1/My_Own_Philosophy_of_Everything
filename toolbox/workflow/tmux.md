@@ -3,22 +3,26 @@
 notes from many sources: 
     https://www.youtube.com/watch?v=Yl7NFenTgIo
 
+## NOTE: Leader: Ctrl b 
+
 ## Create a session: 
     command: tmux 
 
 ## Create a pane: 
     command: 
-        ctrl b + % (create a pane on the RIGHT)
-        ctrl b + " (create a pane on the BOTTOM)
+        Leader + % (create a pane on the RIGHT)
+        Leader + " (create a pane on the BOTTOM)
 
     -> Switch between pane: 
-        ctrl b + <- or -> (left arrow or right arrow)
+        Leader + <- or -> (left arrow or right arrow)
+
+    Change different layout: Leader space 
 
 ## Create window: 
     A separate viewport that can contains n pane (Basically like tab in VIM)
-    command: ctrl b + c 
+    command: Leader + c 
     -> Move between window:  
-        ctrl b + window_index (vd: 0, 1, 2,...)
+        Leader + window_index (vd: 0, 1, 2,...)
 
 ## TMUX most powerful feature is SESSION: 
     it store states ... 
@@ -31,11 +35,19 @@ notes from many sources:
         detatch session: 
             command: tmux new -s <name>
         ATTACH SESSION: 
-            command: ...  
+            command: 
         create new session with name: 
             command: ... 
         kill session: 
             command: tmux kill-session -t <name>    
+
+    Tmux also have command window: 
+        Leader : (almost like Vim)
+        we can:
+            rename window: 
+            COMMAND: rename-window <name> 
+
+    Switch back to the previous window:  Leader n
 
     NOTE: the session exist longer than your terminal 
         -> your terminal closed, the session still there 
