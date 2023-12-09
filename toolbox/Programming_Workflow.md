@@ -16,6 +16,10 @@ THE CONTROL GRANULARITY GET'S FINER THE FURTHER DOWN.
     ...
     -> still not understand very well :v 
 
+    -> allow closing the terminal without killing the working sessions
+        vd: nodejs server is running, code working,...  
+        -> just reattach the tmux with session and everything will be fine.
+
 ## TEXT EDITOR - NEOVIM 
 THE SETUP AND WORKFLOW THAT I COMFORTABLE WITH 
 ...

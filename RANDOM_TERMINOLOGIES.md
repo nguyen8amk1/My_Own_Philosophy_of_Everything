@@ -1,6 +1,6 @@
 # RANDOM TERMINOLOGIES
 
-Scaling: 
+## Scaling: 
     make node(s) process more inputs 
     2 types:
         Vertical Scaling:
@@ -14,10 +14,10 @@ Scaling:
 
     -> Each have its own pros and cons 
 
-Specification: 
+## Specification (Dac ta): 
     ....
 
-Hook: 
+## Hook: 
     + What TYPE of TOOL is this ?
         Behaviour modifier
         -> 3 Types (In the context of programming): 
@@ -52,7 +52,7 @@ Hook:
             + constraints 
             -> help you pick the right tool for the job 
 
-Higher-Order-Components:
+## Higher-Order-Components:
     Definition: 
         Is a Components that does at least 1 of the following: 
             + takes functions as arguments
@@ -94,7 +94,7 @@ Conclusion:
         -> Higher Order Function which is more concrete (lower level of abstraction)
             -> can be use to implement Hooks
 
-Middleware: 
+## Middleware: 
     a service that could be used in multiple situations 
     provide abilities that you don't have to build everything from scratch everytime working on a new project
     to reuse the handling of complex repsonsibility that you don't want to develop from scratch 
@@ -109,7 +109,7 @@ Middleware:
             modify request, response object  (passing info to the next middleware)
             calling next middleware in the chain
 
-Normalize: 
+## Normalize: 
     the process that makes something more 'normal'
         the "normal" meaning might change in different context:
         vd: 
@@ -117,16 +117,16 @@ Normalize:
             Database normalization: reduce to normal form to reduce data redundancy, increase integrity 
             ....
 
-Intergration: Find the AREA under the curve ()
+## Intergration: Find the AREA under the curve ()
     -> using small rectangles 
 
-Differentiation: Find the GRADIENT of the curve (Opposite process to intergration)
+## Differentiation: Find the GRADIENT of the curve (Opposite process to intergration)
     -> using small triangles
 
-Synchronous: 
+## Synchronous: 
     ... 
 
-Asynchronous: 
+## Asynchronous: 
     ...
 
 ## Định tính: 
@@ -136,3 +136,7 @@ Asynchronous:
 ## Định lượng:
     Quantitative
     thông tin và dữ liệu dưới dạng số học, số liệu có tính chất thống kê để có được những thông tin cơ bản, tổng quát về đối tượng nghiên cứu
+
+## Context (programming-term): 
+    ... 
+

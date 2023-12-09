@@ -52,7 +52,7 @@ The most EFFECTIVE WAY to UNDERSTAND HOW AN OPERATING SYSTEM WORKS:
             + HOW TO USE them.
 
 
-### 1.2: LEVELS and LAYERS of ABSTRACTION in Linux System 
+### 1.1: LEVELS and LAYERS of ABSTRACTION in Linux System 
 Using Abstraction to SPLIT computing systems into components 
     -> Makes thing easier to understand 
 
@@ -121,15 +121,65 @@ Kernel vs User Process:
         -> USER SPACE: the parts of main memory that the user process can access. 
     
 
+### 1.2: HARDWARE: Understanding the Main Memory 
+MAIN MEMORY is perhaps THE MOST IMPORTANT
+CPU is just an OPERATOR on memory 
+    + READ: 
+        + instruction
+        + data 
+        from the memory 
 
-### 1.3: HARDWARE: Understanding the Main Memory 
-    ...
+    + WRITE:
+        + data 
+        to the memory  
 
-### THE KERNEL
-    ...
+State: is just a particular arragment of bits 
+    vd: 0100, 0100, are different states 
 
-### USERSPACE 
-    ...
+NOTE: 
+    "it commmonly refer to the STATE in ABSTRACT TERMS
+    rather than to the ACTUAL BITS
+    -> the term IMAGE: refer to a particular physical arrangement of bits"
+
+
+### 1.3: THE KERNEL
+Nearly EVERYTHING that the KERNEL DOES revolves around MAIN MEMORY 
+vd: 
+    + SPLIT memory into many SUBDIVISIONS
+    + MAINTAIN certain STATE INFORMATION about those SUBDIVISIONS at all times
+    + Ensure the process only use it's own share of memory 
+    
+Kernel manage 4 SYSTEM AREAS: 
+    + Processes: 
+        DETERMINE WHICH PROCESSES are ALLOWED TO USE THE CPU. 
+    + Memory: 
+        KEEP TRACK of ALL MEMORY: 
+            + what is currently ALLOCATED to a particular process
+            + what might be SHARED between processes
+            + what is FREE
+
+    + Device drivers: 
+        acts as INTERFACE between HARDWARE (vd: disk) and PROCESSES
+        KERNEL job to OPERATE the HARDWARE
+            
+    + System calls and support: 
+        PROCESSES normally USE SYSTEM CALLS 
+        to COMMUNICATE with the KERNEL
+
+1.3.1: Process Management:     
+    ...    
+
+1.3.2: Memory Management:     
+    ... 
+
+1.3.3: Device Drivers and Management: 
+    ... 
+
+1.3.4: System calls and support: 
+    ...     
+
+### 1.4: USERSPACE 
+    
 
 ### USERS 
     ...
