@@ -167,7 +167,56 @@ Kernel manage 4 SYSTEM AREAS:
         to COMMUNICATE with the KERNEL
 
 1.3.1: Process Management:     
-    ...    
+    describe: 
+        + starting 
+        + pausing 
+        + resuming 
+        + terminating 
+        of processes
+    The processes do not run at exactly the same time. Even though it seems like it :v 
+    FACT: 
+        each process use a small fraction of a second 
+        then pause
+        then another process take turn and also use a small fraction of a second 
+
+    Time slice: the small fraction of a second that the process use the CPU 
+        -> give the process ENOUGH TIME for SIGNIFICANT COMPUTATION
+            the task often FINISH the current TASK during a SINGLE SLICE 
+    
+    Context switch: the act of ONE PROCESS GIVING UP CONTROL of the CPU TO ANOTHER PROCESS
+        -> the KERNEL is RESPONSIBLE for it 
+
+    vd:
+        CPU(hardware):  
+            + 1. INTERUPTS the current PROCESS based on an INTERNAL TIMER.
+                -> SWITCHES to KERNEL MODE, hands control back to the kernel 
+
+        Kernel:
+            + 2. RECORDS the CURRENT STATE of:
+                + CPU 
+                + MEMORY  
+                -> essentially to RESUMING the PROCESS That was just interupted. 
+
+            + 3. PERFORMS any tasks (syscalls) that might have been called from the previous process 
+                (collecting data from I/O, ...)
+                -> with every SYSCALL the PROCESS does have to WAIT until the KERNEL IN CHARGE for that call to be executed 
+
+            + 4. ANALYZE the LIST OF PROCCESSES that are ready to run and CHOOSE ONE.
+
+            + 5. PREPARE:
+                + MEMORY for this new process, 
+                + CPU
+
+            + 6. SWITCHES the CPU into USER MODE 
+                 hands the control of the CPU to the process
+
+        -> ANSWERS the IMPORTANT QUESTION: 
+            + WHEN the kernel runs: 
+                it RUNS BETWEEN TIME SLICES during a context switch 
+
+
+    In the case of multi-CPU system, things slighty more complicated (i don't care about it :v)
+             
 
 1.3.2: Memory Management:     
     ... 
