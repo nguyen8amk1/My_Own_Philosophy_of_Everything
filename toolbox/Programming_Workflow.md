@@ -55,6 +55,7 @@ THIS IS WORKFLOW "CHEATSHEET" :V
         set Leader key to Ctrl w: set -g prefix C-w
         move through pane like vim: setw -g mode-keys vi 
             -> can use "Leader h,j,k,l" to move through panes 
+            i don't know why but mine didn't work :))
 
     Key bindings: 
         NOTE: Leader: Ctrl b, (originally) 
