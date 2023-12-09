@@ -120,8 +120,6 @@ Kernel vs User Process:
 
         -> USER SPACE: the parts of main memory that the user process can access. 
     
-    
-
 
 
 ### 1.3: HARDWARE: Understanding the Main Memory 

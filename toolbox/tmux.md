@@ -30,12 +30,17 @@ notes from many sources:
     you can: 
         detatch session: 
             command: tmux new -s <name>
-        attach session: 
+        ATTACH SESSION: 
             command: ...  
         create new session with name: 
             command: ... 
         kill session: 
-            command: tmux kill-session -t <name> 
+            command: tmux kill-session -t <name>    
+
+    NOTE: the session exist longer than your terminal 
+        -> your terminal closed, the session still there 
+        -> just ATTACH to it can everything still there 
 
 ## Closing pane, session, window: 
     command: exit  
+
