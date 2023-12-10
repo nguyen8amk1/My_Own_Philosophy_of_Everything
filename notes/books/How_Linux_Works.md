@@ -289,7 +289,66 @@ Kernel manage 4 SYSTEM AREAS:
         -> PROCESSES CAN'T entirely AVOID SYSTEM CALLS 
 
 ### 1.4: USERSPACE 
-    ... 
+    The MAIN MEMORY that KERNEL ALLOCATES for USER PROCESSES is called "User space". 
+    Process is simple a state(image) in memory.    
 
-### USERS 
-    ...
+    There are a LAYER STRUCTURE to user processses: 
+        + Bottom Layers (closest to the kernel): 
+            Basic services: small components that perform single, uncomplicated tasks. 
+
+        + Middle layer: 
+            Ultility services: larger components such as: mail, print, database services.
+
+        + Top Layer:  
+            Application that directly interactive with user 
+            complicated tasks that user often control directly.
+
+    If one component wants to use another components
+    -> The second component is either at:
+        + the SAME service LEVEL
+        + the level BELOW
+
+    In reality it's difficult to classify the layer of an application, 
+    since it's just relative 
+
+### 1.5: USERS 
+    an ENTITY that CAN:
+        + RUN processes 
+        + OWN files
+    
+    associate with a: USERNAME
+    BUT the KERNEL does NOT MANAGE USERNAME
+    instead by IDENTIFY users by USERID
+    
+    Exist to SUPPORT:  
+        + PERMISSIONS
+        + BOUNDARIES 
+
+    Every user-space process has a:
+        + OWNER (user)
+        -> the processes are said RUN AS THE OWNER
+
+    User can: 
+        + TERMINATE
+        + MODIFY the behaviour of its own processes 
+        + OWN FILES 
+        + CHOOSE whether to SHARE the file with other users 
+     
+    Linux system has a number of users 
+    in addition to the ones that correspond to the real human who use the system.
+
+    the MOST IMPORTANT user is ROOT
+
+    ROOT:
+        + is an EXCEPTION to the 
+            PERMISSIONS and BOUNDARIES rules
+
+        + can:
+            + terminate 
+            + alter 
+            another user's processes
+            + read any file on the local system.
+
+    GROUPS: SET of users 
+        -> ALLOW user to SHARE FILE ACCESS to other users in a group.
+          
