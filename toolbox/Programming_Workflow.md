@@ -26,6 +26,19 @@ THIS IS WORKFLOW "CHEATSHEET" :V
         https://www.youtube.com/watch?v=XQcCywaD4y4
     ... 
 
+    Workspace mapping: 
+        1. entertainment browsing 
+        2. work browsing  
+        3. work terminal 
+        4. Git Desktop ?? 
+
+        5. My slack ?? 
+        6. Ultility window 
+
+    Problem: 
+        Can't use alt arrow for history traversal any more (in chrome)
+        -> since the Alt key is already occupied  
+        -> It's great sacrifies anyway 
 
 ## TERMINAL MULTIPLEXER - TMUX
     ...
@@ -130,3 +143,6 @@ Key bindings:
     buffers related things?? 
     registers releated things?? 
 
+
+## TERMINAL EMULATOR: 
+    currently still using the standard Gnome   
