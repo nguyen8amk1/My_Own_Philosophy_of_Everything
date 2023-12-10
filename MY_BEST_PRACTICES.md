@@ -74,6 +74,13 @@
 ## 14. 3D Library  
     ?? 
 
+## 15. Front end Libs: 
+    Css: Bootstrap 
+    React 
+
+## 16. Backend Technology: 
+    Java Spring  
+
 ### ALL OF THESE SHOULD BE RELATIVELY EFFICIENT 
     ALONG WITH A GOOD ENVIRONMENT TO KEEP ME IN THE "FLOW STATE"
     "A MENTAL STATE OF OPERATION in which a PERSON PERFORMING AN ACTIVITY is FULLY IMMERSED in a feeling of:
@@ -98,3 +105,4 @@
 
 -> NEED TO KNOW THESE EFFICIENTLY (currently(27/11/2023) i know about 10% of each of them ) 
     -> May be learning these Tet ?? 
+

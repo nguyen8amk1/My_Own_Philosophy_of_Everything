@@ -56,6 +56,10 @@ notes from many sources:
 ## Closing pane, session, window: 
     command: exit  
 
+## Configuration: 
 ## MAKE TMUX EVEN BETTER: 
     works good: https://www.youtube.com/watch?v=ceRYL271cao
     looks good: https://www.youtube.com/watch?v=H70lULWJeig
+
+
+

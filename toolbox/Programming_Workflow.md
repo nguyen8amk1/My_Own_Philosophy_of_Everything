@@ -79,12 +79,12 @@ THIS IS WORKFLOW "CHEATSHEET" :V
             + SESSIONs
                 -> Leader s  
                 and choose which session you would want to use: 
-                -> use arrow key and enter 
+                -> use arrow key or j, k  and enter 
 
             + WINDOWs:  
                 -> Leader w 
                 and choose which window you would want to use: 
-                -> use arrow key and enter 
+                -> use arrow key or j, k and enter 
                 
 
     Terminal commands: 
