@@ -131,3 +131,5 @@
 4. THE FIRST UNIX-PHILOPHIES-BASED TERMINAL TOOL: 
     a program that takes a pixel matrix and show it on a screen 
         (this is probably violated the philosophies already :v )
+
+5. NOTE SOME DAMN THING ABOUT THAT LEARNING STRATEGY CEC or something ?? 
