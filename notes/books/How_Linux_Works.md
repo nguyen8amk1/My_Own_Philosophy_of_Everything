@@ -351,4 +351,28 @@ Kernel manage 4 SYSTEM AREAS:
 
     GROUPS: SET of users 
         -> ALLOW user to SHARE FILE ACCESS to other users in a group.
-          
+
+## CHAPTER 2: BASIC COMMANDS and DIRECTORY HIEARCHY
+...
+### 2.1 The Bourne Shell:  /bin/sh
+...
+
+### 2.2 Using the Shell 
+    The Shell Window: 
+    Command: cat
+    Standard Input and Standard Output: 
+
+### 2.3 Basic Commands 
+    Command: ls 
+    Command: cp
+    Command: mv
+    Command: touch 
+    Command: rm 
+    Command: echo
+
+### 2.4 Navigating Directories
+    Command: cd
+    Command: mkdir
+    Command: rmdir
+
+### 2.5 

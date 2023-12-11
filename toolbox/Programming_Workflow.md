@@ -40,6 +40,11 @@ THIS IS WORKFLOW "CHEATSHEET" :V
         -> since the Alt key is already occupied  
         -> It's great sacrifies anyway 
 
+        Don't know how to suspend ?? 
+
+    Configuration: 
+        ... 
+
 ## TERMINAL MULTIPLEXER - TMUX
     ...
     -> still not understand very well :v 
@@ -108,26 +113,32 @@ THIS IS WORKFLOW "CHEATSHEET" :V
     Tmux internal commands: (move to this state by hitting "Leader :", almost like vim)
         Change window name: rename-window <name>  
         Change session name: rename-session <name> 
+
+    Configuration: 
+        ... 
         
 
 ## TEXT EDITOR - NEOVIM 
 THE SETUP AND WORKFLOW THAT I COMFORTABLE WITH 
 ...
 
-Font: 
-    Nerdfont Hack ?? (i haven't test this yet :v)
+1. Configuration: 
+    Font: 
+        Nerdfont Hack ?? (i haven't test this yet :v)
 
-Plugin:
-    ... 
-    Commenter: ?? 
-    Snippet: ?? 
-    LSP: ?? 
-    Tabline: ?? 
-    File system tree: Neotree
-    Fuzzy finder: Telescope
-        ripgrep: need gripgrep package to do the grepping 
-    Main file markers: Harpoon: 
-    FILE SYSTEM EDITING like text: Oil.nvim:
+    Plugin:
+        ... 
+        Commenter: ?? 
+        Snippet: ?? 
+        LSP: ?? 
+        Tabline: ?? 
+        File system tree: Neotree
+        Fuzzy finder: Telescope
+            ripgrep: need gripgrep package to do the grepping 
+        Main file markers: Harpoon: 
+        FILE SYSTEM EDITING like text: Oil.nvim:
+
+    Have some keymap as well :v 
 
 Key bindings: 
     ... 
