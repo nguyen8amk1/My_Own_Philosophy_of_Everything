@@ -53,7 +53,7 @@ The most EFFECTIVE WAY to UNDERSTAND HOW AN OPERATING SYSTEM WORKS:
 
 
 ### 1.1: LEVELS and LAYERS of ABSTRACTION in Linux System 
-Using Abstraction to SPLIT computing systems into components 
+Using ABSTRACTION to SPLIT computing SYSTEMS into COMPONENTS 
     -> Makes thing easier to understand 
 
 BUT it DOESN'T WORK without ORGANIZATION   
@@ -452,4 +452,60 @@ NOTE:
     Command: mkdir
     Command: rmdir
 
-### 2.5 
+### 2.5 INTERMEDIATE Commands  
+    ... 
+### 2.6 CHANGING your PASSWORD, SHELL
+    ... 
+### 2.7 Dot Files 
+    ... 
+### 2.8 ENVIRONMENT and SHELL VARIABLES 
+    ... 
+### 2.9 The Command PATH 
+    ... 
+### 2.10 SPECIAL Characters
+    ... 
+
+### 2.11 Command-Line Editing 
+### 2.12 Text Editor 
+
+### 2.13 Getting Online Help
+    ... 
+### 2.14 Shell Input and Output
+    ... 
+### 2.15 Understanding Error Messages 
+    ... 
+### 2.16 Listing and Manipulating Processes
+    ... 
+    1. Command Options: 
+    2. KILLING Processes: 
+    3. Job Control: 
+    4. Background Processes: 
+
+### 2.17 File Modes and Permissions
+    ... 
+    1. Modifying Permissions
+    2. Symbolic Links
+    3. Creating Symbolic Links 
+
+### 2.18 ARCHIVING and COMPRESSING Files 
+    ... 
+    1. gzip 
+    2. tar 
+    3. Compressing Archives (.tar.gz)
+    4. zcat 
+    5. Other Compression Ultilities  
+
+### 2.19 Linux DIRECTORY HIERARCHY Essentials 
+    ... 
+    1. Other Root Subdirectories 
+    2. /user Directory 
+    3. Kernel Location 
+
+### 2.20 Running Commands as the Superuser
+    ... 
+    1. sudo 
+    2. /etc/sudoers
+
+
+## CHAPTER 3: Devices
+... 
