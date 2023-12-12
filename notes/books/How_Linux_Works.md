@@ -390,7 +390,7 @@ Kernel manage 4 SYSTEM AREAS:
 
         general SYNTAX: cat file1 file2 ...
 
-    3. Standard Input and Standard Output: 
+    3. Standard Input (stdin) and Standard Output (stdout): 
         Unix PROCESSES use: I/O STREAMS 
         to: 
             + read 
@@ -402,11 +402,34 @@ Kernel manage 4 SYSTEM AREAS:
             WRITE data from an OUTPUT STREAM 
 
         STREAMS are very FLEXIBLE,
+
         vd: the SOURCE of an INPUT STREAM can be: 
             + a file
             + a device 
             + a terminal 
             + OUTPUT STREAM from ANOTHER PROCESS. 
+        
+        vd: Enter cat without filenames
+        -> cat now READ from the STANDARD INPUT STREAM (provided by the Linux kernel)
+            -> STANDARD INPUT was CONNECTED to the TERMINAL.
+        -> rather than READ from the STREAM CONNECTED to a FILE
+
+        "cat" command always WRITES its OUTPUT to the STANDARD OUTPUT.
+        When you run "cat" in the terminal, the STANDARD OUTPUT is CONNECTED to that TERMINAL 
+        -> you saw the OUTPUT on the TERMINAL
+
+        
+        **NOTE: 
+            Many commands,
+                if you DON'T SPECIFY INPUT FILE -> the commands READS from STDIN 
+                Output is a little different, send output ONLY to STDOUT 
+                    But others have options to send output directly to files.
+
+        One of the BEST FEATURES of STANDARD STREAMS: 
+            EASILY MANIPULATE THEM, to READ, WRITE to places other than the terminal 
+            -> how to CONNECT STREAMS to FILES and other PROCESSES
+
+        Further notes: https://nus-unix-workshop.github.io/2021-s1/stdio/
 
 NOTE: 
     CTRL d: 
