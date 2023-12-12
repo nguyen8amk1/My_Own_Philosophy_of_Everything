@@ -376,9 +376,45 @@ Kernel manage 4 SYSTEM AREAS:
         -> /bin/sh on Linux is normally refer to BASH 
 
 ### 2.2 Using the Shell 
-    The Shell Window: 
-    Command: cat
-    Standard Input and Standard Output: 
+    -> When you install Linux, 
+    you should CREATE at least one REGULAR USER in addition to the root user
+    -> Your PERSONAL ACCOUNT 
+
+    1. The Shell Window (Terminal): 
+        -> when the Terminal open it STARTS a SHELL INSIDE THE WINDOW. 
+
+    2. Command: cat (conCATination)
+
+        OUTPUTS the CONTENTS of:
+            -> ONE or MORE FILES 
+
+        general SYNTAX: cat file1 file2 ...
+
+    3. Standard Input and Standard Output: 
+        Unix PROCESSES use: I/O STREAMS 
+        to: 
+            + read 
+            + write 
+            data
+
+        PROCESSES: 
+            READ data from an INPUT STREAM 
+            WRITE data from an OUTPUT STREAM 
+
+        STREAMS are very FLEXIBLE,
+        vd: the SOURCE of an INPUT STREAM can be: 
+            + a file
+            + a device 
+            + a terminal 
+            + OUTPUT STREAM from ANOTHER PROCESS. 
+
+NOTE: 
+    CTRL d: 
+        -> STOP the current STANDARD INPUT ENTRY from the terminal 
+        -> Affect current standard input entry (NOT INTENTIONALLY TERMINATE THE PROGRAM)
+
+    CTRL c: 
+        -> TERMINATES A PROGRAM regardless of its input or output.
 
 ### 2.3 Basic Commands 
     Command: ls 
