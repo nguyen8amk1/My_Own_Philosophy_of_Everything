@@ -1,7 +1,9 @@
 # WEB DEVELOPMENT CONCEPTS (UIT)
 notes from DO THI HUONG LAN PDF
 
-## Lab4: State Storing 
+## LAB3: 
+
+## LAB4: STATE MANAGEMENT 
     Session
     Cookie
     Web storage 
@@ -113,6 +115,37 @@ notes from DO THI HUONG LAN PDF
                 vd: Trang thai dang nhap (Login state??)
 
 ### Web storage: 
+    -> Co che LUU TRU DU LIEU tren BROWSER 
+    -> Cho phep luu tru thong tin duoi dang key-value pairs
+    -> 2 loai web storage: 
+        + local storage 
+        + session storage 
+    -> Local storage: 
+        -> Pham vi luu tru: 
+            -> TON TAI VINH VIEN tru khi bi xoa boi nguoi dung 
+        -> CHIA SE DU LIEU giua cac trang web:  
+            -> Duoc chia se voi tat ca cac trang web o 1 domain cu the (Same-Origin Policy)
+    -> Session storage: 
+        -> Pham vi luu tru: 
+            -> Luu tru trong suot PHIEN lam viec cua BROWSER, sau khi ket thuc phien (vd: close browser), sessionStorage se bi xoa 
+        -> CHIA SE DU LIEU giua cac trang web:  
+            -> Duoc CHIA SE giua cac trang in the SAME BROWSER WINDOW  
+        API: 
+            + setItem(key, value)
+            + getItem(key)
+            + removeItem(key)
+            + clear()
+
+    -> Thuong duoc su dung: 
+        -> Can luu tru du lieu lon hon Cookie
+        -> Khong can gui du lieu trong moi request 
+        -> Thich hop de luu tru: 
+            + CAI DAT nguoi dung (user setting)
+            + TRANG THAI ung dung (app state ??)
+            + du lieu CACHE 
+
+        -> NOTE: khong luu thong tin nhay cam 
+
     + PHAM VI luu tru: 
         -> Chi LUU phia CLIENT
         -> KHONG duoc gui toi SERVER trong moi request 

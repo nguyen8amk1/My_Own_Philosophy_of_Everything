@@ -353,9 +353,27 @@ Kernel manage 4 SYSTEM AREAS:
         -> ALLOW user to SHARE FILE ACCESS to other users in a group.
 
 ## CHAPTER 2: BASIC COMMANDS and DIRECTORY HIEARCHY
-...
 ### 2.1 The Bourne Shell:  /bin/sh
-...
+    The SHELL:
+        -> a PROGRAM that RUNS COMMANDS 
+        -> one of the MOST IMPORTANT part of a Unix system.  
+        -> serve as a SMALL PROGRAMMING ENVIRONMENT 
+
+    Unix programming often: 
+        + BREAK COMMON TASKS into little COMPONENTS 
+        -> use the SHELL to:
+            + MANAGE tasks 
+            + PIECE things TOGETHER
+
+    SHELL SCRIPT: a FILE that contains a SEQUENCE OF SHELL COMMANDS  
+
+    There are MANY different UNIX SHELLS: 
+        all derive several of their features from the Bourne shell /bin/sh
+        Every Unix system needs the Bourne shell in order to function correctly 
+
+    Linux use an enhanced version of the Bourne shell called BASH, the "Bourne-again" shell
+        -> is the default shell in Linux 
+        -> /bin/sh on Linux is normally refer to BASH 
 
 ### 2.2 Using the Shell 
     The Shell Window: 

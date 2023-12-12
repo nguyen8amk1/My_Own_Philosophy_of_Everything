@@ -157,3 +157,36 @@ Key bindings:
 
 ## TERMINAL EMULATOR: 
     currently still using the standard Gnome   
+
+
+## FINGER PLACEMENT 
+    i3: 
+        close window: alt shift q
+            left hand: 
+                thumb - alt
+                ring - q
+            right hand: 
+                pinky - shift 
+
+        workspace navigation: alt <index>
+            Primary index: 1, 2, 3
+            left hand: 
+                thumb - alt 
+                index:
+                    1 - ring 
+                    2 - middle 
+                    3 - pointer 
+    
+    tmux: 
+        ... 
+
+## OPERATIONS THAT I USUALLY DO, NOT TYPING RELATED 
+    Taking a snapshot, snipping: 
+        ...
+    Gimping: 
+        ...
+
+    Incognito web browsing: 
+        ... 
+    ... 
+        
