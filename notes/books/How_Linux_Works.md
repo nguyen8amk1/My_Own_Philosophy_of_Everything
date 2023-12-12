@@ -429,7 +429,7 @@ Kernel manage 4 SYSTEM AREAS:
             EASILY MANIPULATE THEM, to READ, WRITE to places other than the terminal 
             -> how to CONNECT STREAMS to FILES and other PROCESSES
 
-        Further notes: https://nus-unix-workshop.github.io/2021-s1/stdio/
+        Further notes: [Unix Standard Input/Output](../blogs/Unix_Standard_Input_Output.md)
 
 NOTE: 
     CTRL d: 
