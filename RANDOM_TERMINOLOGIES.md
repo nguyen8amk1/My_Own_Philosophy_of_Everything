@@ -140,3 +140,9 @@ Conclusion:
 ## Context (programming-term): 
     ... 
 
+## Methodology (phuong phap luan): 
+    ... 
+## Epistemology (khoa hoc luan): 
+    ...
+
+## Methodology vs Epistemology: 
