@@ -128,6 +128,7 @@ THE SETUP AND WORKFLOW THAT I COMFORTABLE WITH
 
     Plugin:
         ... 
+        ...: flash.nvim ?? 
         Commenter: ?? 
         Snippet: ?? 
         LSP: ?? 

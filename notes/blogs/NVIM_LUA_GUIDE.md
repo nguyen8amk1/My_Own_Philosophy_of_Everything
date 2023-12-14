@@ -1,0 +1,3 @@
+# GETTING STARTED USING LUA IN NEOVIM
+notes from blog: https://github.com/nanotee/nvim-lua-guide
+...
