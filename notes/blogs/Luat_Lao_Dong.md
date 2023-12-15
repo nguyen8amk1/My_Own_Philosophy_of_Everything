@@ -1,0 +1,3 @@
+# LUAT LAO DONG 
+notes from blog: https://voz.vn/t/tra-loi-tat-tan-tat-cac-thac-mac-cua-cac-thim-ve-luat-lao-dong-bhxh-bhtn-sa-thai-mua-dich-covid19.23240/
+... 

@@ -107,6 +107,35 @@ protocol + TLS = secure protocol
 
     DNS: local dns is only a CACHE SERVER, and can be contaminated  
         2 types: 
-            Authorative
-            Caching 
+            Authorative: store the original information of the url 
+            Caching: 
+                pros:
+                    khong ton bang thong di ra ngoai 
+                    tra loi nhanh
 
+        but If you check using nslookup you will see that the Authorative is not atually Authorative, 
+        it have higher level Authorative even :v
+
+## Week 13: 
+    2 types: 
+        + A lot of attack related to HEADER 
+            since header is use for session management  
+        + Message is also attacked,
+        since people use different 
+
+    After authentication: 
+        + Authorization
+        + Session management 
+
+    Where does local DNS located ?? 
+
+    EXPLOIT the local DNS UPDATE MECHANISM 
+        -> since localDNS is only save temp version of the mapping 
+
+    if Authorative server get DDOS -> EVERYTHING is DOWN 
+
+    CACHE POISONING ATTACK:  
+        man in the middle attack
+            spoofing DNS reply 
+
+    DNSSEC 
