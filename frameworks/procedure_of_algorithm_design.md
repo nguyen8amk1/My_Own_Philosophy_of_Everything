@@ -63,3 +63,24 @@ They(LP, IP) can:
 ### Greedy: 
     key thing to remember: 
         ...
+
+### (Greedy) Best-First-Search (BFS): 
+    Prerequisites: 
+        + Uninformed Search: 
+            -> Have no information about the search space 
+            vd: Breath-First-Search, Depth First Search 
+        + Heuristic, Informed Search: 
+            -> Know some information about the search space ?? (what are the some information ??)
+                vd: 
+                    HOW FAR we are from the goal? 
+                    HOW TO reach the goal?
+
+             vd: Best-First-Search
+
+    Best-First-Search: 
+        -> Pick the "best" node as next node to expand 
+            according to some RULES-OF-THUMB -> called Heuristic
+
+        -> Heuristic: an APPROXIMATE MEASURE of HOW CLOSE you are to the TARGET ? 
+                f(n) = h(n)
+                where h(n) = estimated cost from node n to the goal. 

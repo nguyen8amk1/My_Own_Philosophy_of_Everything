@@ -138,4 +138,11 @@ protocol + TLS = secure protocol
         man in the middle attack
             spoofing DNS reply 
 
+    Root DNS -> output: Top Level Domain server 
+    TLD DNS -> output: Authorative server 
+
     DNSSEC 
+    If the attacker sniff at the link between TLD and Local DNS 
+        -> they can change the pointer to Fake Authorative server
+
+    TLS Record Protocol 
