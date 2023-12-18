@@ -394,3 +394,9 @@ steps:
         NOTE: 
             Express <-> Mongoose <-> MongoDB 
 
+    TODO: DOING THE THING
+        yc1: 
+            Cai dat hosting
+            Cau hinh ket noi Database
+
+        yc2: Cai dat domain ?? 
