@@ -496,9 +496,88 @@ NOTE:
                 + VARIABLES (vd: $HOME)
 
 ### 2.4 Navigating Directories
-    Command: cd
-    Command: mkdir
-    Command: rmdir
+    Unix has a DIRECTORY HIERARCHY that STARTS AT / aka "root directory"
+    -> There are several STANDARD SUBDIRECTORIES in the ROOT DIRECTORY (vd: /usr)
+
+    When you REFER to a FILE or DIRECTORY 
+        -> specify a PATH or PATHNAME
+
+    Parent of a directory: ../
+
+    ABSOLUTE path: the path the STARTS WITH /
+    RELATIVE path: the path the not STARTS WITH /
+
+    + Command: cd
+        CURRENT WORKING DIRECTORY: is the DIRECTORY that a PROCESS (vd: shell) is CURRENTLY IN. 
+        -> cd = CHANGE CURRENT DIRECTORY
+        If: omit dir -> the shell returns to your home_directory
+        
+    + Command: mkdir
+        -> mkdir: MAKE NEW DIRECTORY
+
+    + Command: rmdir
+        vd: rmdir dir 
+        -> removes the EMPTY directory
+        -> if not empty -> command failed :v (STUPID :v)
+
+        **Using rm -rf instead: 
+            options: 
+                -r: recursive delete to repeatly delete everything inside dir 
+                -f: forces the delete operations
+
+            **NOTES(IMPORTANT): 
+                this is one of few commands that can do SERIOUS DAMAGE
+                DON'T USE the -rf flags with GLOBS such as a *  
+
+    + Shell Globbing (Wildcards) (Very cool)
+        SHELL can:
+            + MATCH simple PATTERNS to: 
+                + file names
+                + directory names
+            -> the PROCESS OF MATCHING PATTERNS called: GLOBBING
+            -> Similar to the concept of WILDCARDS in other systems.
+    
+        GLOB CHARACTERS: 
+            + *
+                -> MATCH ANY NUMBER of ABITRARY CHARACTERS
+                -> the SHELL :
+                    1. 
+                        + MATCHES: ARGUMENTS containing globs 
+                        + TO: FILENAMES
+                    2. 
+                        + SUBSTITUDES: the FILENAMES 
+                            -> the SUBSTITUTION process called: EXPANSIONS
+                        + FOR: those ARGUMENTS
+
+                Some ways to use * to expand filenames: 
+                    +  at* -> expands to all filenames that START with at  (vd: attent, attick,...)
+                    + *at  -> expands to all filenames that END with at    (vd: flat, twat,...)  
+                    + *at* -> expands to all filenames that CONTAIN at (vd: ditmesatgon, ...)
+
+                NOTE: 
+                    If: NO FILES MATCHES a glob -> the SHELL PERFORMS NO EXPANSION 
+                    -> the commands still got the * in the arguments since there are no SUBSTITUTION
+                        vd: echo *sdfjskdfjk
+                            -> *sdfjskdfjk (the command just got the original arguments since the SHELL does not done any EXPANSIONS before hand)
+
+                    In the Unix SHELL:  
+                        the command: echo *.*
+                        only match files and directories with the dot(.) in their NAMES 
+                        -> the dot does NOT MEAN to CHECK FOR EXTENSIONS or anything 
+                        Unix FILENAMES do NOT NEED EXTENSIONS, and often do not carry them. ?? 
+            + ? 
+                -> INSTRUCTS the SHELL to MATCH EXACTLY ONE ABITRARY CHARACTER 
+
+                vd: b?at matches -> boat, brat 
+                    -> only 1 CHARACTER get SUBSTITUDES into the ? 
+                                 
+            There are still a lot more Glob Characters 
+
+            NOTE(IMPORTANT): 
+                -> **Remember that the SHELL PERFORMS EXPANSIONS BEFORE running COMMANDS
+                -> If you DON'T WANT the SHELL to EXPAND a glob in a command 
+                    -> ENCLOSE the glob inside ''
+                        vd: echo '*'
 
 ### 2.5 INTERMEDIATE Commands  
     ... 
