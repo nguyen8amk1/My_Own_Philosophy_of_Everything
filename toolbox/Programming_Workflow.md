@@ -144,7 +144,9 @@ THE SETUP AND WORKFLOW THAT I COMFORTABLE WITH
 Key bindings: 
     ... 
     go back to the i-1 in the cursor position history: ctrl o 
-    go back to the i in the cursor position history: 
+
+    go back to the i in the cursor position history: ??
+
     go to the next ','(any character though): f , 
     go to the end of the function body: ??  
     TOGGLE between the current and previous pane/split: ctrl w (2 times)

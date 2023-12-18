@@ -440,12 +440,60 @@ NOTE:
         -> TERMINATES A PROGRAM regardless of its input or output.
 
 ### 2.3 Basic Commands 
-    Command: ls 
-    Command: cp
-    Command: mv
-    Command: touch 
-    Command: rm 
-    Command: echo
+    Most Unix commands take MULTIPLE: 
+        + ARGUMENTS 
+        + OPTIONS
+        + FORMATS 
+
+    We're just going LOOK at them at their MOST BASIC USAGE 
+            
+    + Command: ls 
+        -> LIST the CONTENTS of a DIRECTORY(default is the current directory)    
+        use options: 
+            + -l: 
+                -> long(DETAILED) listing 
+            + -F: 
+                -> display FILE TYPE INFORMATION
+    + Command: cp
+        + simplest form: COPIES(content) FILES
+            vd: copy file1(content) to file2 
+            -> cp file1 file2 
+
+        + Copy A NUMBER OF FILES to a DIRECTORY 
+            vd: cp file1 file2 dir 
+
+    + Command: mv
+        + simplest form: RENAMES A FILE 
+            vd: rename file1 into file2
+            -> mv file1 file2
+        + Move A NUMBER OF FILES to a to a different directory: 
+            vd: mv file1 file2 dir 
+        
+
+    + Command: touch 
+        -> CREATES a FILE 
+        If: the file already exists.   
+            -> file existed file content does not change 
+            -> **BUT: it UPDATED the file modification time stamp (printed with the ls -l command) 
+    
+    + Command: rm 
+        -> REMOVE(delete) a file
+
+        NOTE: After you remove a file, 
+              it's gone from your system and generally can't be unremove
+
+    + Command: echo
+        -> PRINTS its ARGUMENTS to the STDOUT 
+        vd: echo Hello again
+            -> Hello again.
+
+        NOTE: 
+            echo is VERY USEFUL for FINDING:
+                + EXPANSIONS of shell GLOBS (vd: *)
+                    vd: echo * 
+                        ->  will list everything in your directory (kinda like ls) 
+
+                + VARIABLES (vd: $HOME)
 
 ### 2.4 Navigating Directories
     Command: cd
