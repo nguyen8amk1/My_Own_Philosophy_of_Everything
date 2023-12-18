@@ -113,3 +113,55 @@ VLAN:
 
 Access List (ACL): 
     have to understand the flow and topology of the network to setup this 
+
+### FINAL REPORT STRUCTURE:
+    I. Introduction 
+    II. Implementation
+    III. Conclusion
+    Appendix
+    (3 bang)
+    1. Self-evaluation:
+        Report / toi da 1
+        Presentation / toi da 1
+        Demo / 
+        (Theo mo ta trong file tren course)
+
+    2. Task Assignment
+        bang: 
+        Member, Task, %
+
+    3. Questions and Answers
+        Tra loi cac cau hoi cua cac nhom khac hoi :v
+
+    Chia loai de tai: 
+        + Service: trien khai dich vu cho nguoi dung tren server 
+        (vd: mail server, application server)     
+            vd: Web:
+                + local server
+                + cloud
+
+            vd: File Server: 
+                + NFS
+                + SMB
+                + FTP
+
+        + Management: 
+            + vd: ADDS (ACTIVE DIRECTORY DOMAIN SERVICE): he thong PHAN CAP quan li cac may cung join vao cung 1 domain 
+                +  
+
+        + Monitor: 
+            + vd: Nagios, Zabbix, Wazuh:
+
+        + Access Control: 
+            + vd: IPtable:
+                doc phan nao cua goi tin de 
+            + vd: Squid Proxy / Application Gateway
+                doc du lieu o tang ?? 
+
+        + SECURITY: SNORT 
+            Dua tren cac signature nao ??  
+
+        Reverse Proxy: 
+            tiep nhan request (nhan ve)
+        Forward Proxy: 
+            chuyen tiep request (gui di)

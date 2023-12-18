@@ -2,6 +2,7 @@
 notes from DO THI HUONG LAN PDF
 
 ## LAB3: 
+    ... 
 
 ## LAB4: STATE MANAGEMENT 
     Session
@@ -169,3 +170,112 @@ notes from DO THI HUONG LAN PDF
             + du lieu lon hon (large data),
             need quick interaction from client  
 
+## LAB5: AJAX RESTFUL API
+
+### AJAX: Asynchronous Javascript and XML 
+    -> NOT a PROGRAMMING LANGUAGE or TOOL 
+    A METHOD: 
+        to:
+            + TRAO DOI DU LIEU voi SERVER 
+            + CAP NHAT cac phan cua trang web 
+
+            ma KHONG CAN TAI LAI TOAN BO TRANG 
+
+    1. Co che hoat dong:         
+        1. Browser:  
+            Create an event: 
+                + CREATE an XMLHttpRequest object 
+                + SEND HTTPRequest
+
+        2. Server:  
+            + PROCESS the HTTPRequest
+            + SEND the reponse back to the BROWSER
+            
+        3. Browser:  
+            + PROCESS the output value 
+            + UPDATE the web content 
+    
+    2. Loi ich: 
+        + Callback: 
+            ... ?? 
+        + Asynchronous calls:
+            ... ??
+
+        + Than thien nguoi dung:
+            Toc do nhanh hon
+        + Tang toc do: 
+            ... 
+
+    3. Cac cong nghe AJAX: 
+        Ajax KHONG phai la 1 CONG NGHE, ma la 1 NHOM CONG NGHE lien quan den nhau, bao gom: 
+            + HTML/XHTML and CSS
+            + DOM
+            + XML and JSON
+            + XMLHttpRequest (XHR): 
+            + Javascript
+
+        NOTE: 
+            + XMLHttpRequest (XHR): 
+                -> an API that could be used through javascript, VBScripts and other languages,... 
+                -> giao tiep khong dong bo giua CLIENT and SERVER
+                it does: 
+                    + SEND du lieu tu CLIENT to SERVER in the BACKGROUND
+                    + RECEIVE data from SERVER
+                    + UPDATE the website WITHOUT RESTART the website 
+
+    4. Doi tuong XMLHttpRequest trong AJAX: 
+        ... 
+
+### REST API: 
+    1. Khai niem: 
+        REST (Repretational state transfer): 
+            mot dang CHUYEN DOI CAU TRUC DU LIEU ?? 
+            mot kieu KIEN TRUC viet API 
+
+            use HTTP to COMMUNICATE  
+
+        RESTful API: 
+            -> a STANDARD use for DESIGN API that use for RESOURCE MANAGEMENT 
+            -> **CHUC NANG QUAN TRONG NHAT: 
+                + QUY DINH CACH:
+                    + SU DUNG HTTP METHODs (vd: GET, POST, UPDATE, DELETE,...) 
+                    + DINH DANG URL
+            
+
+    2. Resource: 
+        Quan ly Resource: 
+            bao gom 4 TAC VU chinh: 
+                + CREATE a new Resource 
+                + READ a Resource 
+                + UPDATE a Resource 
+                + DELETE a Resource 
+
+            Co rat NHIEU CACH KHAC NHAU de 1 website THUC HIEN 4 tac vu tren: 
+            vd: mot trang web chay duoi ten mien: http://my-blog.xyz 
+                -> xem noi dung bai viet voi ID la 123, co the lam theo 1 trong cac cach sau: 
+                + http://my-blog.xyz/posts?id=123, method: GET
+                + http://my-blog.xyz/posts/123, method: GET
+                + http://my-blog.xyz/action=view_post&id=123, method: GET
+                + http://my-blog.xyz/view_post&id=123, method: GET
+
+                + http://my-blog.xyz/posts?id=123, method: POST
+                + http://my-blog.xyz/posts/123, method: POST
+                ... 
+        Da THONG NHAT cac TIEU CHUAN khac nhau de thuc hien viec QUAN LY RESOURCE. 
+            -> Tieu chuan nay duc goi la Web API/HTTP API, thong nhat viec quan ly cac resource cua web.  
+            -> RESTful la mot trong cac Web API duoc su dung pho bien hien nay. ??
+
+            **PHAN LOP HE THONG: 
+                -> trong he thong REST
+                CHIA TACH thanh phan he thong theo tung LAYERS
+
+                Each layer only:
+                    + USE the layer DIRECTLY BELLOW IT 
+                    + COMMUNICATE with the layer DIRECTLY ON TOP of it 
+
+    3. Uu diem cua REST: 
+        + **REST URL:
+                REPRESENT: RESOURCE
+                NOT ACTION 
+
+        + REST FOCUS ON RESOURCE cua he thong  

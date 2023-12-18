@@ -77,6 +77,28 @@ They(LP, IP) can:
 
              vd: Best-First-Search
 
+    Breath-First-Search idea:
+        have an OPEN queue to save the states 
+
+    COST FUNCTION: 
+        f(n) = g(n) + h(n)
+        NOTE: 
+            we have 3 nodes: 
+                + s: start node
+                + n: current node
+                + e: end node 
+
+            g(n): the accumulative length from s to n  
+                (the CONCRETE VALUE that you actually adding every time you move to the next node)  
+
+            f(n): the estimate length from n to e 
+                (the value that you got given from the problem statement or in real life is some information that you one given to you pre-hand)
+
+        Basically f(n) is like this: 
+            f(n) = s -> n -> e = concrete(s, n) + fuzzy(n, e)
+
+
+
     Best-First-Search: 
         -> Pick the "best" node as next node to expand 
             according to some RULES-OF-THUMB -> called Heuristic
@@ -84,3 +106,4 @@ They(LP, IP) can:
         -> Heuristic: an APPROXIMATE MEASURE of HOW CLOSE you are to the TARGET ? 
                 f(n) = h(n)
                 where h(n) = estimated cost from node n to the goal. 
+
