@@ -279,3 +279,46 @@ notes from DO THI HUONG LAN PDF
                 NOT ACTION 
 
         + REST FOCUS ON RESOURCE cua he thong  
+
+    TODO: DOING THE THING: 
+        yc1: 
+            + Write a RESTFUL api for a TODO list app 
+                with CREATE, READ, UPDATE, DELETE
+            Detail: 
+                API Endpoints:
+                    + (READ) List all tasks:
+                        Endpoint: GET /tasks
+                        Description: Retrieve a list of all tasks.
+
+                    + (READ) Get a single task:
+                        Endpoint: GET /tasks/{taskId}
+                        Description: Retrieve details of a specific task using its ID.
+
+                    + CREATE a new task:
+                        Endpoint: POST /tasks
+                        Description: Create a new task.
+                        Request Body: JSON with task details (e.g., title, description, due date).
+
+                    + UPDATE a task:
+                        Endpoint: PUT /tasks/{taskId}
+                        Description: Update an existing task identified by its ID.
+                        Request Body: JSON with updated task details.
+
+                    + DELETE a task:
+                        Endpoint: DELETE /tasks/{taskId}
+                        Description: Delete a task using its ID.
+
+        yc2: 
+            Choose 3 with UI : 
+            + Xu ly form dang nhap 
+                use the previous dang nhap and move the checking to the backend 
+                that's it :v 
+            + Kiem tra su ton tai cua tai khoan
+                use the previous dang nhap and move the checking to the backend 
+                that's it :v 
+            + Load more, Lazy load 
+
+            Step: 
+                1. Step create an account, with serverside checking 
+                2. Login, with serverside checking
+                3. Go into a page with tons of picture waiting to be loaded :v 
