@@ -309,7 +309,7 @@ notes from DO THI HUONG LAN PDF
                         Description: Delete a task using its ID.
 
         yc2: 
-            Choose 3 with UI : 
+            Choose 3 with UI: 
             + Xu ly form dang nhap 
                 use the previous dang nhap and move the checking to the backend 
                 that's it :v 
@@ -322,3 +322,75 @@ notes from DO THI HUONG LAN PDF
                 1. Step create an account, with serverside checking 
                 2. Login, with serverside checking
                 3. Go into a page with tons of picture waiting to be loaded :v 
+
+## LAB6: WEB APPLICATION DEPLOYMENT 
+
+### MO HINH TRIEN KHAI ung dung web 
+
+#### Mo hinh chung 
+steps: 
+
+    1. Browser: SEND REQUEST to WEB SERVER 
+
+    2. Web Server: SEND REQUEST data to WEB APPLICATION
+
+    3. Web Application: 
+        have 3 INPUTS: 
+            + File system: HTML Templates  
+            + Database: data 
+            + Web Server: Request Data (vd: URL Encoding, GET/POST data, Cookies)
+
+    4. Web Application: SEND HTML (compose from the 3 inputs) back to the WEB SERVER 
+    5. Web Server: SEND RESPONSE to the BROWSER
+        The reponse have 2 INPUTS: 
+            + Web Application: HTML
+
+            + File system: STATIC RESOURCES
+                vd: 
+                    + CSS
+                    + Javascript
+                    + Images 
+                    + other files
+
+   **NOTE: the STATIC RESOURCES could be sent through Ajax 
+        -> it's not actually need to be done in this step 
+        -> it can be done as the 7th step 
+
+    6. Browser: DISPLAY the Receive information 
+
+#### NOTE: 
+    WEB SERVER is a SOFTWARE that runs on SERVERs (hardware)
+        vd: Nginx, Apache,... are WEB SERVERS  
+    WEB APPLICATION runs on WEB SERVER 
+    
+#### Co che hoat dong 
+    + Web Server:  
+        -> xu ly request tu Client/Browser through HTTP 
+        -> send response to client through HTTP
+        -> use to SERVE WEB APPLICATION
+
+        Requirements to work well:
+            need a large storage
+            high internet speed 
+            works at all time, high performance 
+        -> some webservers that can do that:             
+            vd: Apache, Nginx
+
+    + Database:  
+        CSDL allow users to: 
+            + STORE 
+            + QUERY
+            + UPDATE
+            Data
+        Categories: 
+            + Simple: text, xml, json, ... 
+            + SQL: SQL Lite, SQLServer, MySQL... 
+            + No-SQL: MongoDB, Redis,... 
+
+#### Mot so Fullstack trien khai ung dung 
+    + LAMP (Linux Apache MySQL PHP) Stack 
+    + LEMP (Linux Nginx MySQL PHP) Stack 
+    + MERN (MongoDB Express React Nodejs) Stack 
+        NOTE: 
+            Express <-> Mongoose <-> MongoDB 
+
