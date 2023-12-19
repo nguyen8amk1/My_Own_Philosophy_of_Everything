@@ -15,6 +15,7 @@ THIS IS WORKFLOW "CHEATSHEET" :V
         NVIM: 
             -> Finish adding all the lsps and plugin 
             -> FIX THE CLIPBOARD PROBLEM
+            -> MAYBE LEARN TO USE GIT ON NVIM AS WELL ?? (optional)
 
         TMUX: 
             -> Make it look pretty  
@@ -224,4 +225,5 @@ Key bindings:
         -> Might be a TREE-SITTER problem, the link below to see more details
         -> But the problem seems a little bit deeper than that :))
         https://github.com/nvim-treesitter/nvim-treesitter/issues/1004
+    + Commentings is not working as expected, it can't uncomment the VSCODE comment style
     + ...
