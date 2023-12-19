@@ -579,8 +579,54 @@ NOTE:
                     -> ENCLOSE the glob inside ''
                         vd: echo '*'
 
-### 2.5 INTERMEDIATE Commands  
-    ... 
+### 2.5 INTERMEDIATE(trung binh, kho dung hon cai truoc 1 xiu :v) Commands  
+    + Command: grep: 
+        -> PRINTS the LINES from:
+            + files
+            + input stream 
+
+            that MATCHES an EXPRESSION
+        vd: Print a the lines in the /etc/passwd file that contain the text "root" 
+            -> grep root /etc/passwd
+
+        -> SUPER HANDY when operating on MULTIPLE FILES at once 
+        MOST IMPORTANT OPTIONS: 
+            + -i: case-INSENSITIVE matches 
+            + -v: invert the search 
+                -> print all lines that DON'T MATCH 
+                
+        egrep is another POWERFUL VARIANTS of grep 
+
+        grep UNDERSTANDS:
+            + REGULAR EXPRESSION 
+                (more powerful than wildcard-style pattern)
+                (have different syntax)
+                2 things to understand: 
+                    + .* : matches ANY NUMBER OF CHARACTERS 
+                    + .  : matches ONE ABITRARY CHARACTER
+
+        **NOTE: some BOOKS about REGULAR EXPRESSION: 
+            + Mastering Regular Expression
+            + Programming Perl, regular expression chapter 
+            + Introduction to Automata Theory, Languages and Computation (for MATH of regular expression)
+            
+
+    + Command: less: 
+    + Command: pwd: 
+    + Command: diff: 
+    + Command: file: 
+
+    + Command: find: 
+    + Command: locate: 
+
+    + Command: head: 
+    + Command: tail: 
+
+    + Command: sort: 
+
+    + Command: passwd: ??Don't know how to actually use it 
+    + Command: chsh: ??Don't know how to actually use it 
+
 ### 2.6 CHANGING your PASSWORD, SHELL
     ... 
 ### 2.7 Dot Files 
