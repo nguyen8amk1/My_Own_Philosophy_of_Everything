@@ -16,6 +16,8 @@ THIS IS WORKFLOW "CHEATSHEET" :V
             -> Finish adding all the lsps and plugin 
             -> FIX THE CLIPBOARD PROBLEM
             -> MAYBE LEARN TO USE GIT ON NVIM AS WELL ?? (optional)
+            -> TRY TO USE THE PLUGINS THAT MR.TJ USE: 
+                -> https://www.youtube.com/watch?v=39eF0ucBrUU (the beginning of this video is kinda cool)
 
         TMUX: 
             -> Make it look pretty  
