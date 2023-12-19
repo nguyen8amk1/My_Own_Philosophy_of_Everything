@@ -609,7 +609,6 @@ NOTE:
             + Mastering Regular Expression
             + Programming Perl, regular expression chapter 
             + Introduction to Automata Theory, Languages and Computation (for MATH of regular expression)
-            
 
     + Command: less: 
     + Command: pwd: 
