@@ -1,9 +1,12 @@
 # WEB SERVER TECHNOLOGY 
 
+## DEFINITION: 
+    ... 
+
 ## Nginx: 
     ... 
     things to do in order to make it work: 
-        + enable firewall 
+        + enable firewall ?? 
         + create '/var/www/your_domain/html' folder and the 'html' folder will contain the front-end 
 
         + create '/etc/nginx/sites-enabled/your_domain' -> configuration file for nginx to serve the frontend  

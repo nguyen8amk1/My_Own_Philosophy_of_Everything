@@ -1,0 +1,19 @@
+# CISCO PACKET TRACER 
+notes from course: https://www.youtube.com/watch?v=rurs7cdT5cc&list=PLBlnK6fEyqRgneraVKkEXrwyLVx2vJUvt&index=20
+## BASIC NETWORKING COMMANDS: 
+... 
+
+## BASIC OF CISCO PACKET TRACER: 
+... 
+
+## BASIC OF CISCO PACKET TRACER - HUB: 
+... 
+
+## BASIC OF CISCO PACKET TRACER - SWITCH: 
+... 
+
+## BASICS OF ROUTER: 
+...
+
+## BASIC OF CISCO PACKET TRACER - ROUTER: 
+... 

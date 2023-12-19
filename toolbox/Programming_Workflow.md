@@ -4,6 +4,30 @@ THIS WORKFLOW IS A COPY FROM PRIMAGEAN:
     https://www.youtube.com/watch?v=bdumjiHabhQ
 THIS IS WORKFLOW "CHEATSHEET" :V 
 
+## TODO: 
+    FIND FASTER NAVIGATION FOR ALL 3 I3, NVIM, TMUX 
+    TMUX: 
+        faster window, session navigation 
+
+    CONFIG: 
+        COMPLETE THE WORK ENVIRONMENT by Configure all of them. 
+
+        NVIM: 
+            -> Finish adding all the lsps and plugin 
+            -> FIX THE CLIPBOARD PROBLEM
+
+        TMUX: 
+            -> Make it look pretty  
+            -> PUSH THE CONFIG TO GITHUB, OR AT LEAST TRACK IT  
+
+        I3: 
+            -> Make it look better
+            -> May be learn some new keybindings ?? 
+
+    PUSH ALL THE CONFIG TO GITHUB: 
+        TMUX HAVE SOME CONFIG THAT HAVEN'T GET TRACKED
+        ALL OF THEM HAVEN'T GET UPDATE FOR A WHILE NOW 
+
 ## WINDOW MANAGER - I3 
     ... 
     -> Basically separate the viewport for different tasks 
@@ -192,4 +216,12 @@ Key bindings:
     Incognito web browsing: 
         ... 
     ... 
-        
+
+## ERRORS THAT I GOT: 
+
+### NVIM: 
+    + "file exists, add ! to override".
+        -> Might be a TREE-SITTER problem, the link below to see more details
+        -> But the problem seems a little bit deeper than that :))
+        https://github.com/nvim-treesitter/nvim-treesitter/issues/1004
+    + ...
