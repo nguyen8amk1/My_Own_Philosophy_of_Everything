@@ -29,6 +29,7 @@ THIS IS WORKFLOW "CHEATSHEET" :V
                     Since capslock got processes through OS before it reach NEOVIM  
                     -> you have tackle the program on OS level rather User level 
                     -> Have to remap using i3 -> also means i have to use CAPSLOCK for other stuff as well ?? 
+                    
 
         TMUX: 
             -> Make it look pretty  
@@ -39,6 +40,8 @@ THIS IS WORKFLOW "CHEATSHEET" :V
             -> May be learn some new keybindings ?? 
             -> REMAP CAPSLOCK TO CONTROL
                 link: https://www.reddit.com/r/i3wm/comments/2xoo9m/what_is_the_best_way_to_remap_ctrlkey_with/
+                current using: setxkbmap -option ctrl:swapcaps
+
 
     PUSH ALL THE CONFIG TO GITHUB: 
         TMUX HAVE SOME CONFIG THAT HAVEN'T GET TRACKED
