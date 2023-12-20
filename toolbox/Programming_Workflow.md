@@ -15,9 +15,20 @@ THIS IS WORKFLOW "CHEATSHEET" :V
         NVIM: 
             -> Finish adding all the lsps and plugin 
             -> FIX THE CLIPBOARD PROBLEM
+                some links related to the problem: 
+                    https://askubuntu.com/questions/1486871/how-can-i-copy-and-paste-outside-of-neovim
+
+                -> SOLUTION: INSTALL XCLIP or any other clipboard provider and it will magically works 
+
             -> MAYBE LEARN TO USE GIT ON NVIM AS WELL ?? (optional)
             -> TRY TO USE THE PLUGINS THAT MR.TJ USE: 
                 -> https://www.youtube.com/watch?v=39eF0ucBrUU (the beginning of this video is kinda cool)
+
+            -> REMAP CAPSLOCK TO CONTROL (should i ??, optional)
+                -> Solution: 
+                    Since capslock got processes through OS before it reach NEOVIM  
+                    -> you have tackle the program on OS level rather User level 
+                    -> Have to remap using i3 -> also means i have to use CAPSLOCK for other stuff as well ?? 
 
         TMUX: 
             -> Make it look pretty  
@@ -26,6 +37,8 @@ THIS IS WORKFLOW "CHEATSHEET" :V
         I3: 
             -> Make it look better
             -> May be learn some new keybindings ?? 
+            -> REMAP CAPSLOCK TO CONTROL
+                link: https://www.reddit.com/r/i3wm/comments/2xoo9m/what_is_the_best_way_to_remap_ctrlkey_with/
 
     PUSH ALL THE CONFIG TO GITHUB: 
         TMUX HAVE SOME CONFIG THAT HAVEN'T GET TRACKED
