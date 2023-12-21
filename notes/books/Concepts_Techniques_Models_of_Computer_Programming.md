@@ -2,4 +2,5 @@
 notes from book: CONCEPTS, TECHNIQUES and MODELS of COMPUTER PROGRAMMING, by PETER VAN ROY and SEIF HARIDI 
 (i have physical books :) ) 
 
-# PREFACE 
+# PREFACE: 
+    ... 
