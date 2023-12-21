@@ -60,3 +60,7 @@
 
 every one have their OWN COMBINATION of these traits 
     -> it could make learning confusing or easy at certain time. 
+
+## WHAT IS MY OWN VERSION OF THESE TRAITS ?? 
+    ...
+    

@@ -2,6 +2,9 @@
 notes from book: HOW LINUX WORKS (by: Brian Ward) 
 https://ia801706.us.archive.org/14/items/linux-books/How%20Linux%20Works%202nd%20Edition.pdf
 
+kinda NICE PLAYLIST to watch about terminal:
+    https://www.youtube.com/playlist?list=PL4Cg9LzTkW8-LKeyWRi-VUMVCbbZNqTNn
+
 ## PREFACE 
 You should be able to make your software do what you want it to do 
 (within the reasonable limits of its capabilities)

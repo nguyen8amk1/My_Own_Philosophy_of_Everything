@@ -199,6 +199,7 @@ Key bindings:
 
     buffers related things?? 
     registers releated things?? 
+    format the code: wrap the code in visual then =
 
 
 ## TERMINAL EMULATOR: 
@@ -244,4 +245,5 @@ Key bindings:
         -> But the problem seems a little bit deeper than that :))
         https://github.com/nvim-treesitter/nvim-treesitter/issues/1004
     + Commentings is not working as expected, it can't uncomment the VSCODE comment style
-    + ...
+
+    + Why the NEOVIM copies directly copy to the system clipboard ?? 
