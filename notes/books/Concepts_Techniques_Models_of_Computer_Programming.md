@@ -181,4 +181,44 @@ notes from book: CONCEPTS, TECHNIQUES and MODELS of COMPUTER PROGRAMMING, by PET
                             + laws that the simple concepts obey.   
                         )
                         
-                
+#### Comparisons with OTHER APPROACHES                
+    + Foundational Calculus (vd: Lambda calculus,...):
+        -> REDUCES programming into a MINIMAL NUMBER OF ELEMENTS.
+        -> The elements are CHOSEN to:
+                SIMPLIFY MATHEMATICAL ANALYSIS 
+                NOT to AID programmer INTUITION
+            -> better for theoreticians, NOT USEFUL for practical programmer
+        -> USEFUL for: 
+            + studying fundamental PROPERTIES and LIMITS of Programming 
+            NOT for writing/reasoning general application
+
+    + Virtual machine: 
+        -> DEFINES a LANGUAGE in terms of an IMPLEMENTATION on an IDEALIZED MACHINE. 
+        -> give OPERATIONAL SEMANTICS, with CONCEPTS that are CLOSE TO HARDWARE.
+        -> USEFUL for: 
+            + DESIGNING computers, doing SIMULATIONS 
+            NOT for REASONING about PROGRAMS and their ABSTRACTIONS
+
+    + Multiparadigm Language: 
+        -> language that encompasses(bao gom) several programming paradigms. 
+        -> USEFULNESS of a Multiparadigm language DEPENDS on: 
+            HOW WELL the different paradigms INTERGRATED.
+
+    -> The kernel language approach COMBINES FEATURES of ALL these APPROACHES. (@@ NOT EASY TO UNDERSTAND THIS PART)
+        -> a well designed kernel language COVERS a WIDE RANGE OF CONCEPTS, (like a well designed MULTIPARADIGM LANGUAGE)
+
+        -> if the CONCEPTS are INDEPENDENT -> kernel language can be given a SIMPLE FORMAL SEMANTICS (like a FOUNDATIONAL CALCULUS)
+
+        -> FORMAL SEMANTICS can be a VIRTUAL MACHINE (at a HIGH LEVEL OF ABSTRACTIONS)
+        
+    -> Made easy for programmer to reason about programs 
+
+        NOTE: 
+            Basically: kernel language combines features: 
+                + CONCEPTS of MULTIPARADIGM LANGUAGE
+                + FORMAL SEMANTICS of FOUNDATIONAL CALCULUS
+                + VIRTUAL MACHINEs of Virtual machine  ?? 
+
+            Concepts -> Formal Semantics -> Virtual machines
+
+#### Designing abstractions
