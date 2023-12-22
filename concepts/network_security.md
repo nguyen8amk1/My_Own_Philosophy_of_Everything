@@ -147,6 +147,67 @@ protocol + TLS = secure protocol
 
     TLS Record Protocol 
 
+## Week 14: 
+    DNS Rebinding Attack (kha la cong phu):  
+        loi dung 1 node trong lan de tan cong target 
+        -> giai phap khong toi uu: keo dai thoi gian caching 
+
+    Depth Defence:   
+    Network secure protocols: 
+        goals: 
+            + Authentication: network nodes (hosts), application API (apps)
+            + Key agreement; 
+            + Cryptographic algorithm negotiation (ciphers, MAC)    
+
+    Key agreement: 
+        Diffie-hellman key exchange + extra (to prevent man-in-the-middle)
+
+    Certification goals: 
+        no la ai 
+        giay chung nhan la gi 
+        ai chung nhan 
+
+    Network authentication API: 
+        + static strings
+        + dynamic tokens
+        + User-delegate token
+        + Attributed-based Access Control 
+
+    API gateway: 
+        
+    3 nhom: 
+        1 nhom xu ly nguoi dung 
+        1 nhom xu ly thong tin 
+        1 nhom ... 
+
+    Covert channel attack: 
+        dung 1 node khac de bypass qua 1 node khac trong mang lan        
+
+    Noi luu giu public key = Trusted Domain 
+        -> de bi tan cong 
+        vd: kiem soat Trusted Domain  cho ki (dung nhu Windows)
+        -> Phai Xac thuc de xem co quyen duoc luu hay khong, Xac thuc truoc khi luu 
+
+    Secure: 
+        Application + TLS: only hide header and payload of application level, not the lower one  
+            -> the lowerone could still get attacked
+        IP layer + Ipsec, VPN protocols: 
+        Datalink layer + WEB, WPA, WPA2, WPA3: 
+
+    VPN: 
+        2 modes: 
+            ternal mode: giau luon ip 
+            transport mode: khong giau ip
+
+        Them 1 layer/header de giao tiep voi ben ngoai 
+
+    VPN trong LAN: 
+    VPN de ket noi voi thiet bi noi bo. trong LAN
+
+    Hardware = Legacy system 
+        vd: ATM 
+
+    SSH protocols:
 
 PROJECT: 
 sample web app: 
