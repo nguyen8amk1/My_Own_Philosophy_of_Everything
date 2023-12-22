@@ -51,7 +51,9 @@ notes from book: CONCEPTS, TECHNIQUES and MODELS of COMPUTER PROGRAMMING, by PET
 
 ### GOALS OF THE BOOK: 
 #### MAIN GOAL: 
-    Teaching programming as a UNIFIED DISCIPLINE with a SCIENTIFIC FOUNDATION. 
+    Teaching:
+        + programming as a UNIFIED DISCIPLINE with a SCIENTIFIC FOUNDATION. 
+        + how to design programming abstractions
 
 #### Programming: 
     the act of EXTENDING/CHANGING a SYSTEM'S FUNCTIONALITY.
@@ -222,3 +224,40 @@ notes from book: CONCEPTS, TECHNIQUES and MODELS of COMPUTER PROGRAMMING, by PET
             Concepts -> Formal Semantics -> Virtual machines
 
 #### Designing abstractions
+    Teach how to design programming abstractions (the most difficult work)
+
+    Programming a computer is primarily:
+        + DESIGNING abstractions
+        + USING abstractions 
+
+        -> to ACHIEVE new GOALS 
+        
+    ABSTRACTION:
+        -> uses as a TOOL that SOLVES a particular PROBLEM. 
+        -> The SAME ABSTRACTIONS can be used to SOLVE many DIFFERENT PROBLEMS.
+            -> VERSATILITY: one of the KEY PROPERTIES of abstractions
+
+    Teaching APPROACH: 
+        1. Start with Programming CONCEPTS
+            -> RAW MATERIALS for building abstractions
+            such as: 
+                + lexical scoping 
+                + higher order programming
+                + compositionality 
+                + encapsulation 
+                + concurrency
+                + exceptions
+                + lazy execution 
+                + security 
+                + explicit state
+                + inheritance
+                + nondeterministic choice.
+
+        2. Each CONCEPTS, give TECHNIQUES for building abstractions with it.
+
+        3. General LAWS for building abstractions 
+    
+        Basically: CONCEPTS -> TECHNIQUES -> LAWS  
+
+#### Main features
+    ... 
