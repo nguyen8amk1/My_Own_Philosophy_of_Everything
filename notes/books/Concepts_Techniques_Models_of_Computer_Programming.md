@@ -146,4 +146,39 @@ notes from book: CONCEPTS, TECHNIQUES and MODELS of COMPUTER PROGRAMMING, by PET
         ** -> SHOULDN'T ADD the LOW-LEVEL DIFFICULTIES to the Program SPECIFICATIONS
 
 #### The kernel language approach: 
-    ...
+    Practical Programming Language provide a Rich set of ABSTRACTIONS and SYNTAX.
+    -> How can we SEPARATE the language's:
+            + FUNDAMENTAL CONCEPTS (which underlie the language success).
+            + Historical accidents 
+
+        Kernel language approach shows 1 way:  
+            -> TRANSLATE - PRACTICAL LANGUAGE into KERNEL LANGUAGE
+
+        KERNEL LANGUAGE:
+            + consist of: 
+                + SMALL numbers of programmer-significant elements.
+            + has: 
+                + simple FORMAL SEMANTIC that allows REASONING about program's: 
+                    + CORRECTNESS
+                    + COMPLEXITY
+
+        Languages and Programming Paradigms can be modeled by a subset of the kernel language 
+            -> Every paradigms can be modeled by 1 big kernel language (-> Unity :v)
+
+        **REDUCING a COMPLEX PHENOMENON to its PRIMITIVE ELEMENTS         
+            is CHARACTERISTIC of the SCIENTIFIC METHODS
+
+            -> successful approach that is used in all "exact sciences" (Google for more info).
+
+            -> give DEEP UNDERSTANDING that has PREDICTIVE POWER. 
+                vd: structural science lets one:
+                        + DESIGN all bridges 
+                        + PREDICTS all bridges behaviours in terms of SIMPLE CONCEPTS (such as: 
+                            + force
+                            + energy
+                            + stress
+                            + strain 
+                            + laws that the simple concepts obey.   
+                        )
+                        
+                
