@@ -53,7 +53,69 @@ notes from books: Co so tri tue nhan tao (KHTN), tg: LE HOAI BAC, TO HOAI VIET
             + to: tim DUONG DI: 
                 + from: trang thai ban dau 
                 + to: trang thai dich 
-    2. Do thi 
+    **2. Do thi 
+        De GIAI QUYET bai toan tim kiem: 
+            -> **XAC DINH KHONG GIAN TRANG THAI phu hop
+            + Dua vao: 
+                + Trang thai ban dau
+                + Ham trang thai con 
+                -> suy ra KHONG GIAN TRANG THAI cua bai toan tim kiem 
+
+        + KHONG GIAN TRANG THAI: 
+            ->  a SET of trang thai, CO THE DEN duoc tu TRANG THAI BAN DAU 
+            *Bieu dien: do thi (do thi khong gian trang thai, do thi trang thai)
+        + DO THI:  
+            a SET of VERTICES duoc NOI voi nhau boi cac CUNG 
+            Cung noi co the: 
+                + co huong (directional) 
+                + khong co huong (non-directional)
+                + co trong so  (weighted)
+                + khong co trong so (non-weighted)
+                
+        VERTICIE: corresponse to STATE
+        CUNG NOI: corresponse to ACTION/TRANSFORMATION: 
+            + from: one state 
+            + to: another state 
+
+    **3. Trang thai
+        TRANG THAI trong bai toan tim kiem:  
+            -> REPRESENTATION of a STEP in the PROCESS of solving the problem 
+            -> BAO GOM - THONG TIN VE THE GIOI trong bai toan tim kiem 
+            vd: 
+                + Bai toan 8 puzzles: 
+                    THE GIOI cua bai toan:
+                        -> MOT BAI CO, bao gom: 
+                            + kich thuoc: 3x3 
+                            + 8 quan co
+
+                    -> **Trang thai(THONG TIN ve THE GIOI): mot cach sap xep 8 quan co tren ban co 3x3
+
+                + Bai toan tim duong: 
+                    THE GIOI cua bai toan:
+                        -> Mot thanh pho, bao gom: 
+                            + Nhieu diem tren ban do
+                            + Co duong noi tu diem nay den diem khac
+
+                    -> **Trang thai(THONG TIN ve THE GIOI): 
+                        (Diem hien tai dang dung, cac duong co the di tu diem do) ?? maybe
+                    
+
+    **4. Ham TRANG THAI CON 
+            Ham mo ta: 
+                -> ACTION/TRANSFORMATION that CAN BE DONE on a particular STATE 
+
+            -> Give a particular STATE X
+            ham Con(x):
+                + return: a set of pairs of { (action1, trang thai con1), (action2, trang thai con2),... }
+                    + trong do: 
+                        + action: ONE of the VALID ACTIONS on STATE X 
+                        + trang thai con: RESULTED STATE from action(x) 
+            vd: 
+                State: From(Ha Giang)
+                Ham Trang thai: Con(From(Ha Giang)) 
+                    return: a set of pairs = { ( Di(Tuyen Quang), From(Tuyen Quang)),...}
+
+    **5. CHI PHI duong di 
         ... 
 
 ## CHUONG 2:      
