@@ -466,3 +466,10 @@ Category theory:
 		ways: composition, associativity
 
 	it's all about the relationship
+
+
+[Computer programming concepts](./notes/books/Concepts_Techniques_Models_of_Computer_Programming.md): 
+**"One does NOT programs with MODEls,
+But with:
+    + programming CONCEPTS  
+    + WAYS to COMBINE the programming CONCEPTS"

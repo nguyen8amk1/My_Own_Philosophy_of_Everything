@@ -260,4 +260,97 @@ notes from book: CONCEPTS, TECHNIQUES and MODELS of COMPUTER PROGRAMMING, by PET
         Basically: CONCEPTS -> TECHNIQUES -> LAWS  
 
 #### Main features
+    + Pedagodical(giao duc) approach: 
+        2 ways to teach programming as a rigorous(chinh xac) discipline:
+            + Computational-based: 
+                -> present programming as : a way to define EXECUTION ON MACHINE 
+                + Formal semantics: in terms of ABSTRACT MACHINES
+
+            + Logic-based: 
+                -> present programming as : a branch of MATHEMATICAL LOGIC 
+                -> LOGIC does NOT speak of EXECUTION 
+                    BUT of program PROPERTIES
+                    -> Higher level of abstractions ?? 
+
+                + Programs: are mathematical CONSTRUCTS that OBEY LOGICAL LAWS.
+                + Formal semantics: in terms of MATHEMATICAL LOGIC
+                + Essential for: DEFINING precise SPECIFICATION of WHAT PROGRAMS DO.
+                + Reasoning: done with LOGICAL ASSSERTION.  
+
+    + Broad overview of computation models: 
+        It's NOT TRUE that models with MORE CONCEPTS are BETTER or WORSE 
+        New concepts is like a two-edge sword
+
+        ADDING A CONCEPT to a computation model 
+            -> introduces new forms of expressions 
+                 + pros: making some PROGRAMS SIMPLER 
+                 + cons: REASONINGS about programs HARDER 
+
+            vd: Adding a explicit state (mutable variables) to FP model 
+                -> pros: can do OOP in FP 
+                -> cons: Reasoning about OOP is harder than FP 
+
+    + IMPORTANCE of USING MODELS TOGETHER: 
+        **"One does NOT programs with MODEls,
+        But with:
+            + programming CONCEPTS  
+            + WAYS to COMBINE the programming CONCEPTS"
+
+        -> Depend on which concepts one uses 
+            -> consider the programming style in in which model 
+
+        -> The MODELS appears as a SIDE EFFECTS 
+
+    + LIMITS of single models: 
+        A GOOD PROGRAMMING STYLE requires USING programming CONCEPTS 
+        that are usually ASSOCIATED with DIFFERENT COMPUTATION MODELS 
+        -> language that implemented only 1 computation model make programming difficult 
+
+        vd: 
+            + OOP: 
+                -> encourages OVERUSE of:
+                    + STATE
+                        -> makes concurrency difficult  
+                    + INHERITANCE
+                        -> often get misused
+                        -> violates separation of concerns
+                    
+            + FP: 
+                -> OVERUSE of: 
+                    + higher-order programming
+                        vd: 
+                            + monads: 
+                                -> makes program intricate 
+                                but does not achive modularity properties
+                            + currying: 
+                                ...
+
+            + Logic: 
+               ...
+
+#### Teaching from the book: 
+    3 core topics: 
+        1. Concepts and Techniques
+        2. Algorithms and Data Structure
+        3. Program design and Software Engineering
+
+    Note: 
+        There is a STRONG INTERDEPENDENCY between 1. and 3.
+            -> Concepts -> EXPRESS the DESIGN 
+            -> Program design -> AVOID bad habits 
+    Courses: 
+        + Concepts and Techniques: 
+            -> Chapter 1 - 8
+
+        + Applied Programming Models: 
+            -> Chapter 9 - 12
+
+        + Concurrent Programming: 
+            -> start with: chapters 2, 3, 6, 7
+            -> then: chapters 4, 5, 8, 11
+
+        + Computation models and their relationships: 
+            -> Chapter 13
+
+## CHAPTER 1: INTRODUCTION TO PROGRAMMING CONCEPTS 
     ... 
