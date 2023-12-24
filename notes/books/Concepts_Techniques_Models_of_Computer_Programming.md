@@ -425,8 +425,20 @@ NOTE: **These knowledge applies to the Mozarts Programming system
 
         -> **DECOMPOSE L according to the "pattern" H|T
 
-### 4. Functions over Lists      
-    ...
+### 4. Functions over Lists
+
+    Top-down software development: 
+        -> The Methodology of:
+                + first WRITING the MAIN FUNCTION
+                + FILLING in the BLANKS AFTERWARDS 
+
+        Steps: 
+            1. UNDERSTAND how to do the calculation BY HAND
+
+            2. Write a main function to solve the problem 
+                **ASSUMING that the AUXILIARY FUNCTIONS are KNOWN (vd: ShiftLeft, ShiftRight, AddList,...)
+
+            3. Complete the solution by writing the auxiliary functions
 
 ### 5. Correctness
     ...
