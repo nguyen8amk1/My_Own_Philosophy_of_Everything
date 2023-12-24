@@ -33,7 +33,9 @@
             + TOOLS
             + TECHNIQUES
 
-
 # "Cookbook" series: 
     -> CONTENT: PRACTICAL SOLUTIONS and RECIPIES for SPECIFIC PROGRAMMING TASKS    
     vd: Python Cookbook, Javascript Cookbook
+
+# "Grokking" series: 
+    ... 

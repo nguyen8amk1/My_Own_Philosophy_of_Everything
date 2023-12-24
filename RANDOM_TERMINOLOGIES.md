@@ -150,3 +150,7 @@ Conclusion:
 
 ## Reasoning: 
     ...
+
+
+## Evaluate: 
+    FINDING the numerical value or RESULT of a mathematical EXPRESSION or EQUATION.

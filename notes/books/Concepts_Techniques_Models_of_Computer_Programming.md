@@ -353,7 +353,7 @@ notes from book: CONCEPTS, TECHNIQUES and MODELS of COMPUTER PROGRAMMING, by PET
             -> Chapter 13
 
 ## CHAPTER 1: INTRODUCTION TO PROGRAMMING CONCEPTS 
-NOTE: **These knowledge applies to the Mozarts Programming system
+NOTE: **These code examples applies directly to the Mozarts Programming system
 
 ### 1. Variables      
     -> are just SHORTCUTS for VALUES 
@@ -373,7 +373,7 @@ NOTE: **These knowledge applies to the Mozarts Programming system
 
     **"declare" statement: 
         -> CREATE: a NEW STORE VARIABLE 
-        -> REFER: the IDENTIFIER to the new STORE VARIABLE
+        -> REFER/BIND: the IDENTIFIER to the new STORE VARIABLE
 
         -> **PREVIOUS calculations using the same indentifier are not changed  
             -> because the identifier REFERS to ANOTHER STORE VARIABLE 
@@ -427,7 +427,7 @@ NOTE: **These knowledge applies to the Mozarts Programming system
 
 ### 4. Functions over Lists
 
-    Top-down software development: 
+    TOP-DOWN SOFTWARE DEVELOPMENT: 
         -> The Methodology of:
                 + first WRITING the MAIN FUNCTION
                 + FILLING in the BLANKS AFTERWARDS 
@@ -441,25 +441,37 @@ NOTE: **These knowledge applies to the Mozarts Programming system
             3. Complete the solution by writing the auxiliary functions
 
 ### 5. Correctness
-    ...
+    
+
 ### 6. Complexicty
     ...
+
 ### 7. Lazy evaluation
     ...
+
 ### 8. Higher-order Programming
     ...
+
 ### 9. Concurrency 
     ...
 ### 10. Dataflow
     ...
-### 11. Explicit state
+
+### 11. Explicit State
     ...
+
 ### 12. Objects 
     ...
+
 ### 13. Classes
     ...
+
 ### 14. Nondeterminism and time
     ...
+
 ### 15. Atomicity 
+    ...
+
+### 16. Where to we go from here ? 
     ...
         
