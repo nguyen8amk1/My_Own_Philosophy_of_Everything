@@ -363,11 +363,11 @@ NOTE: **These knowledge applies to the Mozarts Programming system
         -> the PREVIOUS CALCULATION that used it are NOT CHANGED 
 
     + 2 CONCEPTS: 
-        + identifier:   
-            -> the NAME of a variable (Start with capital letter followed by any number of letters of digit)  
+        + IDENTIFIER:   
+            -> the NAME of a VARIABLE (Start with capital letter followed by any number of letters of digit)  
             -> what the PROGRAMMER USES  
             
-        + store variable: 
+        + STORE VARIABLE: 
             -> part of SYSTEM'S MEMORY, store variable value 
             -> what the SYSTEM USES to calculate with 
 
@@ -379,11 +379,55 @@ NOTE: **These knowledge applies to the Mozarts Programming system
             -> because the identifier REFERS to ANOTHER STORE VARIABLE 
 
 ### 2. Functions      
-    ...
+    + Functional abstraction: 
+        -> Use EXISTING functions when DEFINING NEW functions
+
 ### 3. Lists      
-    ...
+    NOTE: 
+        + Empty list = nil (for historical reasons)
+
+    + List: a SEQUENCE of elements 
+        vd: [1, 2, 3, 4] 
+
+        + The notation: [1, 2, 3, 4] is just a SHORTCUT 
+            -> it actually a CHAIN of LINKS: 
+            ->  each LINK, contains 2 things: 
+                + a list ELEMENT
+                + a REFERENCE to the rest of the chain.
+
+        + Always created 1 element at a time 
+            -> starting with "nil" and adding link 1 by 1
+            -> a NEW LINK is written: H|T
+                + H: new element 
+                + T: old part of the chain
+            vd: 
+                Z = nil 
+                Y = 7|Z -> [7]
+                X = 6|Y -> [6, 7]
+
+                -> TAKEN the link APART, get back the HEAD or TAIL: 
+                    use operator '.': 
+                        "X.1": give the head: 6
+                        "X.2": give the tail: [7]
+
+        Terminologies: 
+            + the LINK H|T: "cons", list pair 
+            + CREATING a new link: "consing"
+
+    + PATTERN MATCHING: 
+        a MORE COMPACT WAY to TAKE APART a list 
+            -> "case" instruction
+                -> gets both HEAD and TAIL in ONE STEP
+        vd: 
+        declare
+        L=[5,6,7,8]
+        case L of H|T then {Browse H} {Browse T} end 
+
+        -> **DECOMPOSE L according to the "pattern" H|T
+
 ### 4. Functions over Lists      
     ...
+
 ### 5. Correctness
     ...
 ### 6. Complexicty

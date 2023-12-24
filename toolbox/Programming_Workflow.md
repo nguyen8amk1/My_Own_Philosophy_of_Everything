@@ -162,6 +162,9 @@ THIS IS WORKFLOW "CHEATSHEET" :V
         
 
 ## TEXT EDITOR - NEOVIM 
+new workflow links:
+    text substitution: https://www.youtube.com/watch?v=k_PBlhH-DKk
+
 THE SETUP AND WORKFLOW THAT I COMFORTABLE WITH 
 ...
 

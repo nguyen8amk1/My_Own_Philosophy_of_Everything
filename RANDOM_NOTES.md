@@ -35,3 +35,19 @@
 
     -> ***Defensive programming 
     https://www.youtube.com/watch?v=_3q4xayI-I4
+
+## DKHP hk6: 
+    NT538.O21.MMCL;
+    NT538.O21.MMCL.1;
+    SE334.O21.PMCL;
+    NT334.O21.ATCL;
+    NT334.O21.ATCL.1;
+    NT230.O22.ATCL;
+    NT230.O22.ATCL.1;
+    NT213.O22.ATCL.1;
+    NT213.O22.ATCL;
+    SE356.O22.PMCL;
+    SE356.O22.PMCL.1
+
+
+
