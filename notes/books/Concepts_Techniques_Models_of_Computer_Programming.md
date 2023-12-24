@@ -353,4 +353,57 @@ notes from book: CONCEPTS, TECHNIQUES and MODELS of COMPUTER PROGRAMMING, by PET
             -> Chapter 13
 
 ## CHAPTER 1: INTRODUCTION TO PROGRAMMING CONCEPTS 
-    ... 
+NOTE: **These knowledge applies to the Mozarts Programming system
+
+### 1. Variables      
+    -> are just SHORTCUTS for VALUES 
+    -> CAN'T be ASSIGNED more than once ( ~~ const)
+    -> CAN DECLARE another variable with the SAME NAME as previous one 
+        -> the PREVIOUS VARIABLE then become INACCESSIBLE 
+        -> the PREVIOUS CALCULATION that used it are NOT CHANGED 
+
+    + 2 CONCEPTS: 
+        + identifier:   
+            -> the NAME of a variable (Start with capital letter followed by any number of letters of digit)  
+            -> what the PROGRAMMER USES  
+            
+        + store variable: 
+            -> part of SYSTEM'S MEMORY, store variable value 
+            -> what the SYSTEM USES to calculate with 
+
+    **"declare" statement: 
+        -> CREATE: a NEW STORE VARIABLE 
+        -> REFER: the IDENTIFIER to the new STORE VARIABLE
+
+        -> **PREVIOUS calculations using the same indentifier are not changed  
+            -> because the identifier REFERS to ANOTHER STORE VARIABLE 
+
+### 2. Functions      
+    ...
+### 3. Lists      
+    ...
+### 4. Functions over Lists      
+    ...
+### 5. Correctness
+    ...
+### 6. Complexicty
+    ...
+### 7. Lazy evaluation
+    ...
+### 8. Higher-order Programming
+    ...
+### 9. Concurrency 
+    ...
+### 10. Dataflow
+    ...
+### 11. Explicit state
+    ...
+### 12. Objects 
+    ...
+### 13. Classes
+    ...
+### 14. Nondeterminism and time
+    ...
+### 15. Atomicity 
+    ...
+        

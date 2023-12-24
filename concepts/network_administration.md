@@ -165,3 +165,9 @@ Access List (ACL):
             tiep nhan request (nhan ve)
         Forward Proxy: 
             chuyen tiep request (gui di)
+
+
+
+## ON TAP: 
+    link: https://thu4n.dev/posts/network-admin-review/?fbclid=IwAR1iGGU9MW0wQQCmI0WFpGq-h5bmCHjf3ABE77EFRTyZWSQhAAS7DnV2h_Y
+
