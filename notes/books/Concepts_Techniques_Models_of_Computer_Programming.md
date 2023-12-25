@@ -499,10 +499,43 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
                                 + the MULTIPLICATION is correct
                             -> {Fact N} return the RIGHT ASNWERS
 
-### 6. Complexicty
-    ...
+### 6. Complexity
+    **"Knowing the exact time is LESS IMPORTANT 
+    than knowing that the TIME will NOT BLOW UP with INPUT SIZE"
+
+    TIME COMPLEXITY: 
+        -> The EXECUTION TIME of a program AS a FUNCTION OF INPUT SIZE, 
+            up to a constant factor.   
 
 ### 7. Lazy evaluation
+    + EAGER evaluation (DATA-DRIVEN evaluation): 
+        -> do their calculation as soon as they are called. 
+
+    + LAZY evaluation (DEMAND-DRIVEN evaluation): 
+        -> calculation DONE ONLY WHEN IS NEEDED.
+
+        vd: 
+            fun lazy {Ints N}
+                N | {Ints N + 1}
+            end
+
+            -> if this in eager evaluation mode  
+                -> this will run infinitely 
+            but we have the "lazy" keyword 
+                -> ENSURES that the function will ONLY EVALUATED when it is NEEDED.
+    
+        ->  **Advantage: 
+            + can CALCULATE with potentially INFINITE DATA STRUCTURE 
+            WITHOUT any loop BOUNDARY CONDITIONS.
+
+
+        L = {Ints 0}
+        {Browse L} -> this will print L<Future> (no element get printed)
+            -> If some elements of the L are needed,
+             then this function will be CALLED AUTOMATICALLY.
+        {Browse L.1} -> display the first element (it will print out 0)
+        ...
+    
     ...
 
 ### 8. Higher-order Programming

@@ -49,6 +49,4 @@ learn from this course: https://www.youtube.com/watch?v=Z2w_IFU_He4&list=PLqazFF
     If you want to CROP just the SELECTED LAYER -> Have to CHOOSE specific OPTION
 
 ## ROTATE AND SCALE 
-
-
-
+    ... 
