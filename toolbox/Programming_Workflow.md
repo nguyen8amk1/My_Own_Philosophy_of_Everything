@@ -204,6 +204,8 @@ Key bindings:
     registers releated things?? 
     format the code: wrap the code in visual then =
 
+    when in neotree: 
+        show hidden files: shift h
 
 ## TERMINAL EMULATOR: 
     currently still using the standard Gnome   

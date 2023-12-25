@@ -497,7 +497,7 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
                             -> We know/assume that:
                                 + {Fact N-1} is correct
                                 + the MULTIPLICATION is correct
-                            -> Fact {N} return the right asnwers
+                            -> {Fact N} return the RIGHT ASNWERS
 
 ### 6. Complexicty
     ...
