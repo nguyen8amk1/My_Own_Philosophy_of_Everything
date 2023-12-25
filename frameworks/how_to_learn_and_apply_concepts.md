@@ -2,7 +2,7 @@
     # + HOW TO LEARN NEW CONCEPTS FROM A CONCRETE EXAMPLE -> Procedure Abstraction (get the general procedure to solve a type of problem)
     # + HOW TO APPLY CONCEPTS -> Pattern matching (how to find the right tool for the right job)
 
-Procedure Abstraction (Removing Hooks): 
+## Procedure Abstraction (Removing Hooks): 
     Scenario: Procedure of solving a math problem
         -> we have step a, b, c, d, e, f, ...
         and then the problem solved 
@@ -32,7 +32,7 @@ Procedure Abstraction (Removing Hooks):
         that can be LEARNED SEPARATELY
         to INSERT between steps of a DEFINED PROBLEM SOLVING PROCEDURE(Business Logic)
 
-Pattern matching: one of the most powerful method to problem solving 
+## Pattern matching: one of the most powerful method to problem solving 
     it's closely ties to Category Theory 
     -> it's main method is to FOCUS ON THE RELATIONSHIP between Objects rather than the object itself
     -> means the OBJECTS DETAILS are just DISTRACTING you from seeing the ABSTRACT PATTERN 
@@ -50,7 +50,7 @@ Pattern matching: one of the most powerful method to problem solving
             -> match with the design pattern(in string pattern/diagram form) -> can choose the right one 
 
 
-
--> STORE THE PATTERN/RELATIONSHIP OF OBJECTS IN YOUR HEAD 
-    -> OUTSOURCE(STORE THEM ELSEWHERE, vd: papers, other people head :v) THE OBJECTS DETAILS 
-    -> Pattern/Relationship of Objects is actually the thing you need to solve problems (or come up with solutions)
+## NOTE: 
+    -> STORE THE PATTERN/RELATIONSHIP OF OBJECTS IN YOUR HEAD 
+        -> OUTSOURCE(STORE THEM ELSEWHERE, vd: papers, other people head :v) THE OBJECTS DETAILS 
+        -> Pattern/Relationship of Objects is actually the thing you need to solve problems (or come up with solutions)
