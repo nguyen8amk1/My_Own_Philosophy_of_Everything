@@ -524,25 +524,54 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
             but we have the "lazy" keyword 
                 -> ENSURES that the function will ONLY EVALUATED when it is NEEDED.
     
-        ->  **Advantage: 
+        ->  **ADVANTAGES: 
             + can CALCULATE with potentially INFINITE DATA STRUCTURE 
             WITHOUT any loop BOUNDARY CONDITIONS.
+            + avoids redoing all the work. 
+                vd: calculate the pascal triangle
+                    + eager evaluation: {Pascal 10} 
+                        -> the function calculate the from 0 to 10 
+                        -> if we call {Pascal 11} -> will have to RECALCULATE everything from 0 to 11
 
+                    + lazy evaluation: L = {Pascal} 
+                        -> L.1 the function will AUTOMATICALLY CALCULATE the first row 
+                        -> L.2.1 the function will AUTOMATICALLY CALCULATE the second row 
 
-        L = {Ints 0}
-        {Browse L} -> this will print L<Future> (no element get printed)
-            -> If some elements of the L are needed,
-             then this function will be CALLED AUTOMATICALLY.
-        {Browse L.1} -> display the first element (it will print out 0)
-        ...
+        vd: 
+            L = {Ints 0}
+            {Browse L} -> this will print L<Future> (no element get printed)
+                -> If some elements of the L are needed,
+                 then this function will be CALLED AUTOMATICALLY.
+            {Browse L.1} -> display the first element (it will print out 0)
+            
+            case L of A|B|C_ then {Browse A + B + C} end
+                this will prints the FIRST THREE ELEMENTS of L to be CALCULATED and NO MORE.
+
     
-    ...
-
 ### 8. Higher-order Programming
-    ...
+    -> The ability to: PASS FUNCTIONS AS ARGUMENTS 
 
 ### 9. Concurrency 
-    ...
+    -> a Program have several INDEPENDENT ACTIVITIES,
+                        each EXECUTES at its OWN PACE.
+        There should be: NO INFERENCE AMONG THE ACTIVITIES 
+        UNLESS the programmer decides that the ACTIVITIES need to COMMUNICATE there are 
+        
+    Introduce concurrency by creating THREADS.
+    THREAD: 
+        executing program like the functions that we saw before. 
+    A program can HAVE MORE THAN 1 THREAD
+    **we can call a function inside its own thread: 
+        -> the function will NOT STOP other calculations from doing their jobs.
+        vd: 
+            thread P in 
+                P = {Pascal 30}
+                { Browse P }
+            end 
+            {Browse 999}
+        -> We call { Pascal } inside its own thread.  
+        -> The {Pascal} may run slow but it will not prevent {Browse 999} from running immediately (since it's fast :v)
+
 ### 10. Dataflow
     ...
 

@@ -154,3 +154,11 @@ Conclusion:
 
 ## Evaluate: 
     FINDING the numerical value or RESULT of a mathematical EXPRESSION or EQUATION.
+
+
+
+## Arguments: 
+    ...
+## Parameters: 
+    ...
+
