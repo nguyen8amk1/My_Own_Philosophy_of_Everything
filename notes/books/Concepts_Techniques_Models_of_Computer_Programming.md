@@ -573,7 +573,28 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
         -> The {Pascal} may run slow but it will not prevent {Browse 999} from running immediately (since it's fast :v)
 
 ### 10. Dataflow
-    ...
+    + DATAFLOW:
+        -> if an OPERATION tries to USE A VARIABLE that is NOT yet BOUND.  
+            -> it WILL just WAIT
+            -> maybe until some other thread will bind that variable, then the operation can continue. 
+
+    + DATAFLOW and CONCURRENCY TOGETHER:
+        vd:
+            declare X in 
+            thread {Delay 10000} X=99 end  -> X BINDING in Thread A
+            {Browse start} {Browse X*X}   -> X PRINTING in Thread B
+
+            declare X in 
+            thread {Browse start} {Browse X*X} end  -> X PRINTING in Thread A
+            {Delay 10000} X=99                      -> X BINDING in Thread B
+
+        -> 1. The calculation work correctly INDEPENDENT of HOW they are PARTITIONED between threads.  
+        -> 2. Calculations are patient, they do NOT SIGNAL ERRORS, but simply WAIT 
+
+    **Key property: 
+        + Aa long as the SAME OPERTATION are INVOKED with the SAME ARGUMENTS, ?? 
+            -> it does NOT CHANGE the program's RESULTS at all.
+        -> DATAFLOW CONCURRENCY GIVE MOST OF THE ADVANTAGES OF CONCURRENCY without the complexities that are usually associated with it. 
 
 ### 11. Explicit State
     ...
