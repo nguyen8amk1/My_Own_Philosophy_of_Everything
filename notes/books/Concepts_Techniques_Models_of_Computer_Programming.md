@@ -441,7 +441,63 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
             3. Complete the solution by writing the auxiliary functions
 
 ### 5. Correctness
-    
+    How can we tell whether a program is correct ?     
+        -> to PROVE CORRECTNESS in GENERAL, 
+        **we have to REASON about the PROGRAM. 
+        -> means 3 things: 
+            + 1. LANGUAGE'S SEMANTICS: 
+                -> Mathematical MODEL of the OPERATIONS of the PROGRAMMING LANGUAGE 
+                -> The Model - DEFINING what the OPERATIONs should DO 
+            + 2. PROGRAM'S SPECIFICATION: 
+                -> What we would like the program to do. 
+                -> Mathematical definition of: 
+                    + the INPUTS that the program NEEDS
+                    + the OUTPUT that the program CALCULATE 
+            + 3. REASON ABOUT THE PROGRAM: 
+                -> using MATHEMATICAL TECHNIQUES  
+                -> DEMONSTRATES that the program SATISFIES the SPECIFICATIONS
+
+    + Mathematical INDUCTION: 
+        + 2 steps: 
+            + 1. show that the program is correct for SIMPLEST CASE.
+            + 2. show that: 
+                    IF the program is CORRECT for a GIVEN CASE
+                    THEN it is CORRECT for the NEXT CASE 
+
+                If we can be sure that: ALL CASES are eventually COVERED.
+                    -> can concludes that the program is ALWAYS CORRECT.
+
+        **This technique can APPLIED for INTEGERS and LISTS:  
+        vd: 
+            + Integers: 
+                1. Simplest case: 0 
+                2. Given integer: n 
+                    -> next case: n + 1
+            + Lists: 
+                1. Simplest case: nil
+                2. Given list: T
+                    -> next case: H|T (with no condition on H)
+
+        Test the Induction method on the Fact function: 
+            declare 
+            fun {Fact N}
+                if N == 0 then 1 
+                else N*{Fact N - 1} end 
+            end 
+            
+            1. Show that the program is CORRECT for SIMPLEST CASE: 
+                **{Fact 0} -- (N = 0) return 1  -> Correct 
+            2. show that: 
+                    IF the program is CORRECT for a GIVEN CASE (N-1)
+                        -> **ASSUME that {Fact N-1} is CORRECT
+
+                    THEN it is CORRECT for the NEXT CASE (N)
+                        -> when call {Fact N} 
+                            the function will PERFORM this CALCULATION: N*{Fact N-1} 
+                            -> We know/assume that:
+                                + {Fact N-1} is correct
+                                + the MULTIPLICATION is correct
+                            -> Fact {N} return the right asnwers
 
 ### 6. Complexicty
     ...
