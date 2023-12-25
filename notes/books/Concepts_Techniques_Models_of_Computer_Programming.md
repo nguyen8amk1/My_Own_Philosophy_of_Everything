@@ -665,13 +665,19 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
             because the SAME PROGRAM can give DIFFERENT RESULTS from one execution to the next. 
                 -> NONDETERMINISM 
 
-    Nondeterminism: 
+    + Nondeterminism: 
         -> exists because we LACK KNOWLEDGE of the EXACT TIME when each basic OPERATION EXECUTES 
             -> Because the THREADS are INDEPENDENT
                 -> Since they KNOW NOTHING OF EACH OTHER 
                     -> they DO NOT KNOW WHAT INSTRUCTIONS each has EXECUTED. 
-        ...
-    ... 
+        -> Nondeterminism BY ITSELF is NOT A PROBLEM (we already have it with concurrency)
+        -> The problem occurs when it's OBSERVABLE (shows up in programs) 
+            Observable Nondeterminism = Race Condition
+            vd: 
+                ...
+
+    + Interleaving:
+        ... 
 
 ### 15. Atomicity 
     ...
