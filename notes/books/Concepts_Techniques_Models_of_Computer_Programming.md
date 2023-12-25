@@ -549,7 +549,9 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
 
     
 ### 8. Higher-order Programming
-    -> The ability to: PASS FUNCTIONS AS ARGUMENTS 
+    -> The ability to: 
+        + PASS FUNCTIONS AS ARGUMENTS 
+        + RETURN FUNCTIONS AS RESULTS
 
 ### 9. Concurrency 
     -> a Program have several INDEPENDENT ACTIVITIES,
@@ -592,19 +594,68 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
         -> 2. Calculations are patient, they do NOT SIGNAL ERRORS, but simply WAIT 
 
     **Key property: 
-        + Aa long as the SAME OPERTATION are INVOKED with the SAME ARGUMENTS, ?? 
+        + As long as the SAME OPERTATION are INVOKED with the SAME ARGUMENTS, ?? 
             -> it does NOT CHANGE the program's RESULTS at all.
         -> DATAFLOW CONCURRENCY GIVE MOST OF THE ADVANTAGES OF CONCURRENCY without the complexities that are usually associated with it. 
 
 ### 11. Explicit State
-    ...
+    + Explicit state: 
+        -> The memory that needed for functions that can:
+            + CHANGE their BEHAVIOUR 
+            + LEARNING from their PAST 
+    + Memory cell: 
+        -> Simplest way to define explicit state, a single memory cell.
+        -> Many programming language call this "variable"
+        -> We call it 'cell' to avoid confusions with the term 'variable' that we define previously
+            -> our 'variable' means: Mathematical variable - SHORTCUTS FOR VALUES
+
+        3 functions: 
+            + CREATE a new cell 
+            + ASSIGNMENT - PUTS a NEW VALUE in a cell 
+            + ACCESS - gets the CURRENT VALUE stored in the cell 
 
 ### 12. Objects 
-    ...
+    + Object: 
+        -> a FUNCTION with INTERNAL MEMORY 
+    + Encapsulation: 
+        -> Implies that: users cannot mess with the function's/object's internals
+        -> GUARANTEE that the counter will ALWAYS WORK CORRECTLY no matter how it is used.  
+            -> as long as the INTERFACE of the object is the SAME  
+                -> the user program DOESN'T NEED TO KNOW the IMPLEMENTATION
+            -> the SEPARATION of: 
+                + INTERFACE
+                + IMPLEMENTATION
+                -> the Essence of Data Abstraction 
+    
+    + Polymorphism: 
+        -> A programs that use an object will WORK CORRECTLY for ANY IMPLEMENTATION    
+           as long as the INTERFACE is the SAME. 
 
 ### 13. Classes
-    ...
+    + Class: 
+        -> A FACTORY that can make as many objects as we need. 
+        -> It's basically a FUNCTION that RETURNS a FUNCTION (with internal state) - ie: an object 
+            -> higher-order programming =))
 
+    + Toward OOP:
+        A class can be used to make as many objects as we need. 
+        -> All these objects:
+            + SHARE: SAME methods
+            + OWN: SEPARATE internal memory 
+
+        Programming with: 
+            + classes
+            + objects
+            = OBJECT-BASED PROGRAMMING
+
+        OOP =  Object-based programming + INHERITANCE
+
+        + INHERITANCE: 
+            -> NEW CLASS can be DEFINED in terms of EXISTING CLASSES 
+                -> by SPECIFYING: HOW the NEW CLASS is DIFFERENT
+            -> Powerful CONCEPTS for STRUCTURING program
+            -> let's a class be DEFINED INCREMENTALLY, in different parts of the program  
+            
 ### 14. Nondeterminism and time
     ...
 
