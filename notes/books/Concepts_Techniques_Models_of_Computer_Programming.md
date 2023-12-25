@@ -617,6 +617,7 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
 ### 12. Objects 
     + Object: 
         -> a FUNCTION with INTERNAL MEMORY 
+
     + Encapsulation: 
         -> Implies that: users cannot mess with the function's/object's internals
         -> GUARANTEE that the counter will ALWAYS WORK CORRECTLY no matter how it is used.  
@@ -657,7 +658,20 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
             -> let's a class be DEFINED INCREMENTALLY, in different parts of the program  
             
 ### 14. Nondeterminism and time
-    ...
+    Having both: 
+        + concurrency
+        + state
+        -> at the SAME TIME is TRICKY 
+            because the SAME PROGRAM can give DIFFERENT RESULTS from one execution to the next. 
+                -> NONDETERMINISM 
+
+    Nondeterminism: 
+        -> exists because we LACK KNOWLEDGE of the EXACT TIME when each basic OPERATION EXECUTES 
+            -> Because the THREADS are INDEPENDENT
+                -> Since they KNOW NOTHING OF EACH OTHER 
+                    -> they DO NOT KNOW WHAT INSTRUCTIONS each has EXECUTED. 
+        ...
+    ... 
 
 ### 15. Atomicity 
     ...
