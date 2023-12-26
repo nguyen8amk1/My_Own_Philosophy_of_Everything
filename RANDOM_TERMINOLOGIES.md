@@ -162,3 +162,5 @@ Conclusion:
 ## Parameters: 
     ...
 
+## Grok word: 
+    -> to understand something THOROUGHLY and INTUITIVELY

@@ -38,4 +38,17 @@
     vd: Python Cookbook, Javascript Cookbook
 
 # "Grokking" series: 
-    ... 
+    "grok" meaning: to understand something THOROUGHLY and INTUITIVELY
+    CONTENT: 
+        -> emphasize a hands-on, intuitive learning approach.
+        -> includes: 
+            + examples
+            + analogies 
+            + visual aids  
+        Goal: 
+            not just learn the syntax
+            but learn the profound UNDERSTANDING of the UNDERLYING PRINCIPLES
+
+    AIM: for people prefer a learning style that:
+        + EMPHASIZE: UNDERSTANDING and INTUITION 
+            OVER: FORMALISM and MATHEMATICS rigor 
