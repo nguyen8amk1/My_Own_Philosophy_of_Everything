@@ -674,10 +674,45 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
         -> The problem occurs when it's OBSERVABLE (shows up in programs) 
             Observable Nondeterminism = Race Condition
             vd: 
-                ...
+                declare 
+                C = {NewCell 0}
+                thread
+                    C := 1
+                end 
+    
+                thread
+                    C := 2
+                end 
+
+                -> When the program runs, we can't be sure that the result will be 1 or 2,
+                    since we don't know which thread will run first
+                -> This is a SIMPLE CASE of OBSERVABLE NONDETERMINISM
 
     + Interleaving:
-        ... 
+        -> Threads TAKE TURNS each executing a little.
+
+        vd: 
+            declare 
+            C = {NewCell 0}
+            thread
+                I = @C
+                C := I + 1
+            end 
+
+            thread
+                J = @C
+                C := J + 1
+            end 
+            -> the program can run I = @C but then run J = @C, 
+                they're NOT FORCE to RUN the ALL THE CODE one after another in each thread,
+                they can run little by little interchangeably
+
+        -> More complicated programs have many more possible interleavings. 
+        -> **Programming with CONCURRENCY and STATE together is basically a questions of MASTERING the INTERLEAVINGS
+    
+        NOTE: 
+            if at all possible: DO NOT USE STATE AND CONCURRENCY TOGETHER  
+            -> actually we OFTEN DO NOT NEED BOTH together 
 
 ### 15. Atomicity 
     ...
