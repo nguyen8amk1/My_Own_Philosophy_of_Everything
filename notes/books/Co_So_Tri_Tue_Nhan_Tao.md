@@ -175,7 +175,49 @@ notes from books: Co so tri tue nhan tao (KHTN), tg: LE HOAI BAC, TO HOAI VIET
                 -> chi phi = tong so buoc thuc hien 
         
     + 8 quan hau: 
-        ...
+        Co 2 CACH bieu dien bai toan: 
+            + 1. 
+                Idea: 
+                    Start with: a BLANK chess board 
+                    Put chess piece by piece 
+                
+                Bieu dien: 
+                    + Trang thai: 
+                        -> an arrangement with 0-8 queens on the board 
+                    + Trang thai ban dau: 
+                        -> No queens on the board 
+                    + Ham trang thai con: 
+                        -> Generate a new state by adding a new queen   
+                    + Trang thai dich: 
+                        -> all 8 pieces can "eat" each other
+                    + Chi phi duong di: 
+                        -> 0 for each of the step 
+
+                -> Very large state tree:  3x10^14 states
+
+            + 2. 
+                Idea: 
+                    Start with: all 8 pieces on the chess board 
+                    Move the chess pieces 
+
+                Bieu dien: 
+                    + Trang thai: 
+                        -> an arrangement with 8 queens on the board,
+                            each on separate COLUMN -> so that none of them can eat each other 
+
+                    + Trang thai ban dau: 
+                        -> No queens on the board 
+
+                    + Ham trang thai con: 
+                        -> ...
+
+                    + Trang thai dich: 
+                        -> all 8 pieces can "eat" each other
+
+                    + Chi phi duong di: 
+                        -> 0 for each of the step 
+            
+                -> Small state tree: 2057 states
 
 #### Bai toan THUC TE 
     ... 
