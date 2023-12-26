@@ -694,12 +694,12 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
         vd: 
             declare 
             C = {NewCell 0}
-            thread
+            thread I in 
                 I = @C
                 C := I + 1
             end 
 
-            thread
+            thread J in 
                 J = @C
                 C := J + 1
             end 
@@ -715,7 +715,63 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
             -> actually we OFTEN DO NOT NEED BOTH together 
 
 ### 15. Atomicity 
-    ...
+    + Atomic: 
+        -> an operation is atomic if NO INTERMEDIATE STATES can be OBSERVED. 
+        -> "it seems to" JUMP DIRECTLY from INITIAL STATE to RESULT STATES -> no intermidiate state
+        -> A way to MAKE programming with CONCURRENCY and STATE EASIER  
+            -> use ATOMIC OPERATIONS
+                -> can SOLVE INTERLEAVING PROBLEM. 
+
+    + **Main Idea: 
+        -> Make sure that each THREAD BODY is ATOMIC
+        -> LOCK: 
+            -> a way to build atomic operations.
+            + 2 regions: 
+                + inside 
+                + outside  
+
+            + property: 
+                -> only 1 THREAD at a time can be EXECUTING in the INSIDE region.
+                    -> what happens INSIDE the lock as atomic. 
+
+                    -> if the SECOND thread TRIES TO GET IN, 
+                        it will WAIT until the FIRST GETS OUT 
+            + 2 operations: 
+                + CREATE new lock
+                + DEFINE the lock's INSIDE region
+                    with instruction: lock L then .. end. 
+
+        vd: 
+            declare 
+            C = {NewCell 0}
+            L = {NewLock}
+            thread
+                lock L then I in 
+                    I = @C
+                    C := I + 1
+                end
+            end 
+
+            thread
+                lock L then J in 
+                    J = @C
+                    C := J + 1
+                end 
+            end 
+
+        **NOTE: 
+            BOTH THREAD BODIES have to be GUARDED BY THE SAME LOCK  
+    NOTE: 
+        concurrent != parallel 
+        concurrent: 
+            -> multiple threads or processes are making progress, 
+               their execution may OVERLAP IN TIME. 
+                The system may SWITCH between THREADS, 
+                    -> giving the APPEARANCE of SIMULTANEOUS EXECUTION. 
+                    This can ENHANCE RESPONSIVENESS and RESOURCE UTILIZATION. 
+
+            there only 1 TIME LINE THAT EVERYTHING RUN ON 
+            and different threads can participate in parts of the timeline 
 
 ### 16. Where to we go from here ? 
     ...
