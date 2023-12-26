@@ -148,7 +148,34 @@ notes from books: Co so tri tue nhan tao (KHTN), tg: LE HOAI BAC, TO HOAI VIET
                     -> chi co PHAT BIEU TONG QUAT BAN DAU 
 
 #### Bai toan TRO CHOI
-    ... 
+    + 8-puzzle (or Tachi): 
+        Muc tieu tro choi:
+            push the pieces so that it goes: 
+                + from: original arragement (initial state)
+                + to: destination arragement (destination state)
+
+        Bieu dien bai toan: 
+            + Trang thai: 
+                -> An arragement of 8 pieces in 9 cells 
+
+            + Trang thai ban dau: 
+                -> Any state can be the intial state 
+                -> But Only SOME MINOR STATE can REACH THE INTIAL STATE
+
+            + Ham trang thai con: 
+                -> Generate a new state by moving a piece 
+                -> operations/actions: 
+                    + up 
+                    + down 
+                    + left 
+                    + right 
+
+            + Chi phi duong di: 
+                every step cost 1 
+                -> chi phi = tong so buoc thuc hien 
+        
+    + 8 quan hau: 
+        ...
 
 #### Bai toan THUC TE 
     ... 
