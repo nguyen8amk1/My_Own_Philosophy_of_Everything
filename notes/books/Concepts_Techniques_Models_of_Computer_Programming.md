@@ -782,7 +782,7 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
                 + test 
 
         + Concurrent declarative model:
-            -> Declarative model + dataflow concurrency
+            -> Declarative model + DATAFLOW concurrency
             -> allows a more flexible, incremental execution
 
         + Lazy declarative model: 
@@ -794,9 +794,27 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
                         + program structure 
 
         + Stateful model: 
-            ...
+            -> Declarative Model + Explicit State 
+            -> allows:
+                    + writing programs whose BEHAVIOUR CHANGES OVER TIME. 
+            -> good for: 
+                    + program MODULARITY
+
+            If written well: (vd: using ENCAPSULATION and INVARIANTS)
+                -> these programs are almost as EASY to REASON about as declarative programs. 
+
         + Object-oriented model: 
-            ...
+            -> a programming style for STATEFUL PROGRAMMING with DATA ABSTRACTIONS.
+            -> Make easy to use POWERFUL TECHNIQUES such as:
+                + Polymorphism 
+                + Inheritance
+                        
         + Shared-state concurrent model: 
-            ...
+            -> Concurrency (Concurrent declarative model) + Explicit State (Stateful Model)
+            -> If programmed carefully, 
+            using TECHNIQUES of MASTERING INTERLEAVING such as: 
+                + MONITORS
+                + TRANSACTIONS
+                ...
+            -> gives both the advantages of both stateful and concurrent models. 
         
