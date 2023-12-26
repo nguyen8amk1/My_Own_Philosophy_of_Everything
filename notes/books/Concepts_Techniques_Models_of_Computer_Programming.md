@@ -774,5 +774,29 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
             and different threads can participate in parts of the timeline 
 
 ### 16. Where to we go from here ? 
-    ...
+    This chapter has introduced the following COMPUTATION MODELS: 
+        + Declarative model: 
+            -> defines mathematical functions 
+            -> mathematical functions are easy to:
+                + reason about
+                + test 
+
+        + Concurrent declarative model:
+            -> Declarative model + dataflow concurrency
+            -> allows a more flexible, incremental execution
+
+        + Lazy declarative model: 
+            -> Declarative model + Laziness
+            -> allows: 
+                + calculating potentially INFINITE DATA-STRUCTURE
+                    -> good for:
+                        + resource management
+                        + program structure 
+
+        + Stateful model: 
+            ...
+        + Object-oriented model: 
+            ...
+        + Shared-state concurrent model: 
+            ...
         
