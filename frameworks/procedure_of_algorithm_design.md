@@ -107,3 +107,92 @@ They(LP, IP) can:
                 f(n) = h(n)
                 where h(n) = estimated cost from node n to the goal. 
 
+### Divide and Conquer:  
+    Steps: 
+        + 1. DIVIDE into small SUBPROBLEMS.
+
+        + 2. CONQUER subproblem RECURSIVELY. 
+
+        + 3. COMBINE SOLUTIONS of SUBPROBLEMS into 1 original problem 
+
+    Template: 
+        void DC(N) { // N: Kich thuoc du lieu  
+            if (N small enough) {
+                Solve the subproblem        
+            } else {
+                <Divide the original N problem into small sub problems N1, N2, ..., Nm>
+
+                for(i = 1, i < m, i++) {
+                    DC(Ni);
+                }
+
+                <Combine the results>
+            }
+        } 
+
+    Have 2 types: 
+        + Divide kho, Combine de: 
+            -> vd: QuickSort
+        + Divide de, Combine kho 
+            -> vd: MergeSort 
+
+
+    
+### Decrease and Conquer:  
+    ... 
+
+### Dynamic Programming: 
+    An UPGRADE of Divide and Conquer
+    -> If you CAN SOLVE with Divide and Conquer 
+        -> can solve with Dynamic Programming 
+
+    It's a like Divide and Conquer in a sense like: 
+        Top-down analysis  
+        then solve Bottom-up  
+        but if there are too many REPLICATED CALCULATIONS 
+        -> then use Dynamic Programming to CACHE the results 
+
+    + Use some Data Structure the cach the results: 
+        either: 
+            + 1D array 
+            + 2D array 
+            ...
+
+    + Dynamic Programming Equation:  
+            Equation of: 
+                + WHERE to take the PREVIOUS RESULTS for CALCULATION 
+                + WHERE to SAVE the new results 
+
+        **NOTE: 
+            + if you find out the CT Truy hoi -> DP Equation
+            + must find out DP Equation before continuing to the next step 
+
+            but CT Truy hoi != DP Equation 
+
+            
+        vd: to hop chap k cua n 
+            CT Truy hoi: C(k, n) = C(k, n - 1) + C(k -1, n -1)
+            -> DP Equation: C[i][j] = C[i-1][j-1] + C[i -1][j]
+
+    + Basic Steps: 
+        + Figure out what DATA STRUCTURE to use. 
+        + FILL in some of the CELLS corresponse to the BASE CASE. 
+        + Establish DP Equation. 
+        + FILL in ALL CELLS. 
+        + Extract FINAL RESULTS.
+
+    + Bai toan toi uu: 
+        **Phan tich dac trung: 
+            + 1. Optimal Substructure 
+                -> Loi giai toi uu cua cha = tong hop loi giai toi uu cua con 
+                    *kinda like Greedy*
+                -> Find out the RELATIONSHIP between the PARENT and CHILD. 
+
+            + 2. Overlapping
+
+        vd: tim chuoi con chung dai nhat 
+            Xn: a b d a c f
+            Yn: b d a c f a d d 
+
+        ...
+        
