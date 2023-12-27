@@ -114,7 +114,7 @@ They(LP, IP) can:
         + 2. CONQUER subproblem RECURSIVELY. 
 
         + 3. COMBINE SOLUTIONS of SUBPROBLEMS into 1 original problem 
-
+    
     Template: 
         void DC(N) { // N: Kich thuoc du lieu  
             if (N small enough) {
@@ -136,10 +136,52 @@ They(LP, IP) can:
         + Divide de, Combine kho 
             -> vd: MergeSort 
 
-
+    NOTE: 
+        Divide and Conquer can ONLY be SOLVED using TOP DOWN approach 
     
 ### Decrease and Conquer:  
-    ... 
+    DECREASE the INPUT SIZE rather than DIVIDE into sub-problems 
+    3 types of decreases: 
+        + giam theo HANG SO (constant)
+        + giam theo HE SO (factor)
+            vd: n/2, n/4, n/8, ...
+            vd: binary search 
+        + giam GIA TRI THAM SO (variable size decrease)
+            vd: UCLN 
+
+    Flow: 
+        P(n) -> P'(m) -> Solve P'(m) -> Deduce -> Solve P(n)
+        NOTE: m < n
+
+    vd: Tinh giai thua: n!
+        -> giam theo HANG SO, HANG SO = 1 
+   
+    NOTE:
+        Decrease and conquer can be SOLVED using; 
+            + top-down: (recursion)
+            + bottom-up: (for loop)
+
+        Best workflow: 
+            TOP-DOWN ANALYSIS to UNDERSTAND THE PROBLEM
+            then SOLVE using BOTTOM-UP
+
+        **THE MOST IMPORTANT THING TO FIGURE OUT 
+            -> INSERT TECHNIQUES
+            -> each problem have their own rule of insertion  
+    
+    TEMPLATE: 
+    vd: 
+    // S: list of current results: {{1}, {2}, {3}, {4}, {1, 2}, ...}  
+    // a: list of number to insert vd: {1, 2, 3, 4}
+
+    hoanvi(a, n) {
+        S = {a0}
+        for(i = 1 -> n-1)
+            P = empty 
+            foreach x in S
+                P = P + insert(x, a[i])
+        S = P
+    }
 
 ### Dynamic Programming: 
     An UPGRADE of Divide and Conquer
