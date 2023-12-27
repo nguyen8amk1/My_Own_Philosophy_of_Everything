@@ -1,0 +1,3 @@
+# PYTHON DATA SCIENCE HANDBOOK by Jake VanderPlas, 2017
+notes from book: https://avys.omu.edu.tr/storage/app/public/mustafa.kaya/135286/Python_Datascience.pdf
+... 

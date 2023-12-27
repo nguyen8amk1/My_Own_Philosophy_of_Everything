@@ -1,0 +1,3 @@
+# DISCRETE OPTIMIZATION by R. Parker & Ronald Rardin, 1988
+note from books: https://books-library.net/files/books-library.online-07071901Yo0S6.pdf
+... 

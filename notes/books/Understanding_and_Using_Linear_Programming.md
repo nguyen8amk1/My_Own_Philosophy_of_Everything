@@ -1,0 +1,3 @@
+# UNDERSTANDING AND USING LINEAR PROGRAMMING by B. G ̈artner, Springer (2007).
+note from book: https://blogs.epfl.ch/extrema/documents/Maison%2020.05.10.pdf
+... 

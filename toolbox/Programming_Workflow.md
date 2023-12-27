@@ -195,7 +195,7 @@ Key bindings:
 
     go to the next ','(any character though): f , 
     go to the end of the function body: ??  
-    TOGGLE between the current and previous pane/split: ctrl w (2 times)
+    TOGGLE between the current and previous pane/split: ctrl w p
         ->** Very nice to go back to the neotree when you on the right most pane. 
     Move between panes: ctrl w h or ctrl w l
     Split the tab window in half (vertically):  :vs

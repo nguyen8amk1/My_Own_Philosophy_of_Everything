@@ -1,0 +1,3 @@
+# INTRODUCTION TO OPERATIONAL RESEARCH by F. S. Hillier, G. J. Lieberman, 7th Edition,2001
+note from book: https://bitshifters0.files.wordpress.com/2015/03/intorduction-to-operations-research-7ed-hillier-lieberman-1240pp-mgh.pdf
+... 
