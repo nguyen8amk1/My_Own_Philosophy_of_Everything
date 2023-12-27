@@ -35,11 +35,17 @@ http://www.grad.hcmut.edu.vn/gv/front.php/capnhatdecuong/public/printdecuongcdio
 
 ## Resources: 
     + [1] Python Data Science Handbook, Jake VanderPlas, 2017
+        -> https://avys.omu.edu.tr/storage/app/public/mustafa.kaya/135286/Python_Datascience.pdf
     + [2] Linear Algebra with applications, W. Keith Nicholson, 2013
+        -> https://math.emory.edu/~lchen41/teaching/2020_Fall/Nicholson-OpenLAWA-2019A.pdf
     + [3] Deep Learning, Ian Goodfellow, 2016
+        -> http://alvarestech.com/temp/deep/Deep%20Learning%20by%20Ian%20Goodfellow,%20Yoshua%20Bengio,%20Aaron%20Courville%20(z-lib.org).pdf
     + [4] Discrete Optimization (Computer Science and Scientific Computing), R. Parker & Ronald Rardin, 1988
+        -> https://books-library.net/files/books-library.online-07071901Yo0S6.pdf
     + [5] Introduction to Operations Research, F. S. Hillier, G. J. Lieberman, 7th Edition,2001
+        -> https://bitshifters0.files.wordpress.com/2015/03/intorduction-to-operations-research-7ed-hillier-lieberman-1240pp-mgh.pdf
     + [6] Understanding and Using Linear Programming Series: Universitext J. Matouˇsek, B. G ̈artner, Springer (2007).
+        -> https://blogs.epfl.ch/extrema/documents/Maison%2020.05.10.pdf
 
 ## LEARNING: 
     + 1. Linear Algebra:  
