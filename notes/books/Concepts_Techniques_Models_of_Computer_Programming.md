@@ -603,16 +603,39 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
         -> The memory that needed for functions that can:
             + CHANGE their BEHAVIOUR 
             + LEARNING from their PAST 
-    + Memory cell: 
+
+    + Memory CELL: 
         -> Simplest way to define explicit state, a single memory cell.
         -> Many programming language call this "variable"
         -> We call it 'cell' to avoid confusions with the term 'variable' that we define previously
             -> our 'variable' means: Mathematical variable - SHORTCUTS FOR VALUES
 
-        3 functions: 
+        + 3 functions: 
             + CREATE a new cell 
             + ASSIGNMENT - PUTS a NEW VALUE in a cell 
             + ACCESS - gets the CURRENT VALUE stored in the cell 
+
+    + Memory STORE: 
+        -> a SERIES of MEMORY CELLS
+        -> NUMBERED from 1 to n 
+
+        + 4 functions: 
+            + NewStore: 
+                -> create a new store 
+            + Put: 
+                -> put a new value in a memory CELL 
+            + Get: 
+                -> get the current value stored in a memory CELL   
+            + Size: 
+                -> return the highest-numbered cell used so far
+                    basically max_index 
+        vd: 
+            declare
+            S = {NewStore}
+            {Put S 2 [22 33]} -> store [22 33]  in memory cell 2
+            {Browse {Get S 2}} -> display [22 33]
+            {Browse {Size S}} -> display 2 (the max_index)
+
 
 ### 12. Objects 
     + Object: 
@@ -817,4 +840,13 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
                 + TRANSACTIONS
                 ...
             -> gives both the advantages of both stateful and concurrent models. 
-        
+
+### Excercise        
+    ... 
+    3. Program correctness: 
+        ... 
+    7. Variables (shortcut for values) vs memory cells: 
+        ...
+    8. Using explicit state and functions: 
+        ...
+    9. 
