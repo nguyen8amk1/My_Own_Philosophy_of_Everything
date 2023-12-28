@@ -221,7 +221,7 @@ NOTE: **These code examples applies directly to the Mozarts Programming system
         -> The {Pascal} may run slow but it will not prevent {Browse 999} from running immediately (since it's fast :v)
 
 ### 10. Dataflow
-    + DATAFLOW:
+    + DATAFLOW, a BEHAVIOUR what works like this:
         -> if an OPERATION tries to USE A VARIABLE that is NOT yet BOUND.  
             -> it WILL just WAIT
             -> maybe until some other thread will bind that variable, then the operation can continue. 
