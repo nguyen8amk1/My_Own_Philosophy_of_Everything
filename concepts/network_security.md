@@ -212,3 +212,52 @@ protocol + TLS = secure protocol
 PROJECT: 
 sample web app: 
     links: https://github.com/alokyadav1/mern-todo-app
+
+NOTE PRESENTATION: 
+    + TAT CA SOLUTION KHI DUA RA PHAI NOI DUOC TINH UU VIET CUA NO 
+
+    + Target: mo hinh dep roi -> lieu co dung mo hinh machine learning de bao ve tai san duoc khong ? 
+    + Deploy dung duoc module moi quan trong
+
+    "KHONG QUAN TRONG LA LAM CON DAO, MA DUNG CON DAO TOT CHO CONG VIEC",  NGUYEN NGOC TU 2023  
+
+    Quan trong la KIEN TRUC HE THONG: 
+        day la module 1, module 2 
+            TUONG TAC vs nhau ntn 
+
+    "THAY KHONG QUAN TAM EM LAM CAI GI: ... :v
+    NHUNG MA IDEA, KIEN TRUC,... NO PHAI DUNG", NGUYEN NGOC TU 2023
+
+    CLOUD, CLOUD, CLOUD, 
+    CLOUD, CLOUD, CLOUD, 
+    CLOUD, CLOUD, CLOUD, 
+
+    HIEU SAU VE PLATFORM DEN TRIEN KHAI 
+    
+    "DAN SECURITY MA CAU THA LA NAT BET", NGUYEN NGOC TU 2023
+
+    SECURITY ANALYTIC, ANALYSIS: 
+
+    KHONG NOI VE FUNCTION,
+    NOI VE Y NGHIA SECURITY, MO TA NHU THE NAO CHO NO CHAY    
+    KIEN TRUC SECURITY != KIEN TRUC DEVOPS
+
+    KIEN TRUC DEVS: 
+        -> FUNCTIONS
+
+    KIEN TRUC SECURITY: HIGH LEVEL 
+        + component
+        + tuong tac component
+            -> lam sao tuy bien duoc de dat duoc target
+        + data flow 
+
+    LAM SAO DE THEO DOI DATA FLOW NHU THE NAO ?
+
+    GIAI THICH MODULE GIAI QUYET VAN DE SECURITY NHU THE NAO ?
+    MUON DUA MODULE VAO PHAI GIAI THICH MODULE TUONG TAC NHU THE NAO ?
+
+    CAP QUYEN -> ACCESS CONTROL
+
+    Verify 2 buoc: 
+        Authentication 
+        Authorization 
