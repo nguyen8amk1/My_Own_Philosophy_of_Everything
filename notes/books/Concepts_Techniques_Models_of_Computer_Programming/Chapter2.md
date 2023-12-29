@@ -116,4 +116,44 @@
         -> advance topics 
 
 ## 2.1 - DEFINING PRATICAL PROGRAMMING LANGUAGES
-    ...
+    + Practical Language: 
+        -> Programming languages that are used to SOLVE REAL-WORLD PROBLEMS
+        -> It's like a TOOLBOX of an EXPERIENCED MECHANIC: 
+            -> many DIFFERENT TOOLS for DIFFERENT PURPOSES
+            -> ALL TOOLS ARE THERE FOR A REASON
+
+### 2.1.1 Language SYNTAX     
+    -> DEFINES - what are the LEGAL PROGRAMS( programs that can be SUCCESSFULLY EXECUTED )
+
+    NOTE: at this stage (syntax stage), we're DO NOT CARE what the programs are actually doing 
+        That is SEMANTICS (what the programs are actually doing)
+    
+    + Grammars: 
+        -> SET OF RULES - DEFINES - HOW to make "SENTENCES" out of "WORDS"
+        In programming: 
+            Sentences = STATEMENTs
+            Words = TOKENs
+
+            -> 2 level of structures: 
+                + Statements (sentence) = Sequence of tokens (words)
+                + Token (word) = Sequence of characters (letters)
+
+                **-> Sentences -> Tokens -> Characters (sort in term of level of abstractions)
+
+        + User for DEFINING BOTH:  
+            + Statements 
+            + Tokens
+        ...
+
+    + EBNF (Extended Backus-Naur Form): 
+        ...
+
+
+    + How to read grammar: 
+        ... 
+
+
+    + Context-FREE and Context-SENSITIVE grammars: 
+        ... 
+            
+
