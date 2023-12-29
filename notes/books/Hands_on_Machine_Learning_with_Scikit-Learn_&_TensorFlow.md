@@ -1,0 +1,3 @@
+# HANDS-ON MACHINE LEARNING WITH SCIKIT-LEARN & TENSORFLOW
+notes from book: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiJmbu8wrSDAxX2kK8BHbYiCYEQFnoECAsQAQ&url=https%3A%2F%2Fwww.clc.hcmus.edu.vn%2Fwp-content%2Fuploads%2F2017%2F11%2FHands_On_Machine_Learning_with_Scikit_Learn_and_TensorFlow.pdf&usg=AOvVaw0cEFyPUCOvy0ZaxstsyicG&opi=89978449
+... 
