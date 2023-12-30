@@ -140,7 +140,7 @@
 
                 **-> Sentences -> Tokens -> Characters (sort in term of level of abstractions)
 
-        + User for DEFINING BOTH:  
+        + Grammars are used for DEFINING BOTH:  
             + Statements 
             + Tokens
         ...
@@ -156,4 +156,3 @@
     + Context-FREE and Context-SENSITIVE grammars: 
         ... 
             
-
