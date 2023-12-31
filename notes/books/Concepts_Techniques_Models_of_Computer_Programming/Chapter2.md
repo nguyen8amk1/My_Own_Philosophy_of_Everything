@@ -197,4 +197,38 @@
     + Context-FREE and Context-SENSITIVE grammars: 
         + Formal language:
             -> any WELL-DEFINED SET of STATEMENTS 
-        + ... 
+        + Techniques to DEFINE grammars can be CLASSIFIED according to HOW EXPRESSIVE THEY ARE
+            vd: What KIND OF LANGUAGES they can GENERATE. 
+
+        + Context-FREE grammars: 
+            -> the EXPANSION of nonterminal is ALWAYS THE SAME, no matter where it is used. 
+
+        + Context-SENSITIVE grammars: 
+            -> a grammar that contains a NONTERMINAL WHOSE USE DEPENDS ON THE CONTEXT where it is used 
+            vd: 
+                you can only print a variable if the variable was already defined. 
+
+        -> Practical Programming Languages DEFINED in 2 PARTS: 
+            + Context-free Grammar
+                -> easy to: 
+                    + understand
+                    + read
+
+                -> has LOCALITY property: 
+                    -> a nonterminal symbol can be understood 
+                    by examining ONLY THE RULES NEEDED TO DEFINE IT 
+                    -> the RULES that USE it can be IGNORED
+
+                    vd: to understand <digit> 
+                        -> EXAMINE: 
+                            <digit> ::= 0|1|2|3|4|5|6|7|8|9
+                        -> IGNORE: 
+                            <int> ::= <digit> {<digit>}
+
+            + Set of extra conditions
+                -> Corrected the Context-free grammar
+                by imposing a set of extra conditions
+                vd: declare-before-use restriction
+
+            -> Context-SENSITIVE Grammar = Context-free Grammar + Set of extra conditions
+
