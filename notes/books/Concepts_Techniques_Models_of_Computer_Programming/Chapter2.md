@@ -123,112 +123,146 @@
             -> ALL TOOLS ARE THERE FOR A REASON
 
 ### 2.1.1 Language SYNTAX     
-    -> DEFINES - what are the LEGAL PROGRAMS( programs that can be SUCCESSFULLY EXECUTED )
+-> DEFINES - what are the LEGAL PROGRAMS( programs that can be SUCCESSFULLY EXECUTED )
 
-    NOTE: at this stage (syntax stage), we're DO NOT CARE what the programs are actually doing 
-        That is SEMANTICS (what the programs are actually doing)
+NOTE: at this stage (syntax stage), we're DO NOT CARE what the programs are actually doing 
+    That is SEMANTICS (what the programs are actually doing)
+
+#### Grammars: 
+    -> SET OF RULES - DEFINES - HOW to make "SENTENCES" out of "WORDS"
+    In programming: 
+        Sentences = STATEMENTs
+        Words = TOKENs
+
+        -> 2 level of structures: 
+            + Statements (sentence) = Sequence of tokens (words)
+            + Token (word) = Sequence of characters (letters)
+
+            **-> Sentences -> Tokens -> Characters (sort in term of level of abstractions)
+
+    + Grammars are used for DEFINING BOTH:  
+        + Statements 
+        + Tokens
+
+    Code: a sequence of characters 
+        where: 
+            + ' ' : space 
+            + '\n' : new line 
+
+    + TOKENIZER/lexical analyzer: 
+        + input: a SEQUENCE of CHARACTERS
+        + output: a SEQUENCE of TOKENS 
     
-    + Grammars: 
-        -> SET OF RULES - DEFINES - HOW to make "SENTENCES" out of "WORDS"
-        In programming: 
-            Sentences = STATEMENTs
-            Words = TOKENs
-
-            -> 2 level of structures: 
-                + Statements (sentence) = Sequence of tokens (words)
-                + Token (word) = Sequence of characters (letters)
-
-                **-> Sentences -> Tokens -> Characters (sort in term of level of abstractions)
-
-        + Grammars are used for DEFINING BOTH:  
-            + Statements 
-            + Tokens
-
-        Code: a sequence of characters 
-            where: 
-                + ' ' : space 
-                + '\n' : new line 
-
-        + TOKENIZER/lexical analyzer: 
-            + input: a SEQUENCE of CHARACTERS
-            + output: a SEQUENCE of TOKENS 
-        
-        + PARSER: 
-            + input: a SEQUENCE of TOKENS
-            + output: a PARSE TREE
+    + PARSER: 
+        + input: a SEQUENCE of TOKENS
+        + output: a PARSE TREE
 
 
-        **Code -> Tokenizer -> Parser
+    **Code -> Tokenizer -> Parser
 
 
-    + EBNF (Extended Backus-Naur Form): 
-        -> Use for DEFINING GRAMMARS 
-        -> DISTINGUISHES: 
-            + TERMINAL symbols 
-                -> a token 
+#### EBNF (Extended Backus-Naur Form): 
+    -> Use for DEFINING GRAMMARS 
+    -> DISTINGUISHES: 
+        + TERMINAL symbols 
+            -> a token 
 
-            + NONTERMINAL symbols 
-                -> a sequence of tokens
-                -> is DEFINED by means of GRAMMAR RULES 
+        + NONTERMINAL symbols 
+            -> a sequence of tokens
+            -> is DEFINED by means of GRAMMAR RULES 
 
-                + Grammar rules: 
-                    -> shows HOW to EXPAND into TOKENS 
-                        vd: 
+            + Grammar rules: 
+                -> shows HOW to EXPAND into TOKENS 
+                    vd: 
+                    <digit> ::= 0|1|2|3|4|5|6|7|8|9
+                    -> meaning: <digit> presents one of the ten tokens 0,1,...9 
+
+                -> can refer to other nonterminals as well 
+                    vd: 
+                    <int> ::= <digit> {<digit>}
+                    -> meaning: an integer is a digit followed by any number of digits 
+                -> Use to:
+                    + VERIFY a STATEMENT is legal 
+                    + GENERATE STATEMENTS 
+                        -> process of CREATING such VALID SEQUENCES based on the grammar rules
+
+#### How to read grammar: 
+    steps: 
+        1. Start with: NONTERMINAL symbols 
+        2. Reading from left to right to check if the sequence of tokens match the following schemes: 
+            + Each terminal symbol encountered is added to the sequence. 
+            + ...
+            + ... Page 33  
+
+#### Context-FREE and Context-SENSITIVE grammars: 
+    + Formal language:
+        -> any WELL-DEFINED SET of STATEMENTS 
+    + Techniques to DEFINE grammars can be CLASSIFIED according to HOW EXPRESSIVE THEY ARE
+        vd: What KIND OF LANGUAGES they can GENERATE. 
+
+    + Context-FREE grammars: 
+        -> the EXPANSION of nonterminal is ALWAYS THE SAME, no matter where it is used. 
+
+    + Context-SENSITIVE grammars: 
+        -> a grammar that contains a NONTERMINAL WHOSE USE DEPENDS ON THE CONTEXT where it is used 
+        vd: 
+            you can only print a variable if the variable was already defined. 
+
+    -> Practical Programming Languages DEFINED in 2 PARTS: 
+        + Context-free Grammar
+            -> easy to: 
+                + understand
+                + read
+
+            -> has LOCALITY property: 
+                -> a nonterminal symbol can be understood 
+                by examining ONLY THE RULES NEEDED TO DEFINE IT 
+                -> the RULES that USE it can be IGNORED
+
+                vd: to understand <digit> 
+                    -> EXAMINE: 
                         <digit> ::= 0|1|2|3|4|5|6|7|8|9
-                        -> meaning: <digit> presents one of the ten tokens 0,1,...9 
-
-                    -> can refer to other nonterminals as well 
-                        vd: 
+                    -> IGNORE: 
                         <int> ::= <digit> {<digit>}
-                        -> meaning: an integer is a digit followed by any number of digits 
-                    -> Use to:
-                        + VERIFY a STATEMENT is legal 
-                        + GENERATE STATEMENTS 
-                            -> process of CREATING such VALID SEQUENCES based on the grammar rules
 
-    + How to read grammar: 
-        steps: 
-            1. Start with: NONTERMINAL symbols 
-            2. Reading from left to right to check if the sequence of tokens match the following schemes: 
-                + Each terminal symbol encountered is added to the sequence. 
-                + ...
-                + ... Page 33  
+        + Set of extra conditions
+            -> Corrected the Context-free grammar
+            by imposing a set of extra conditions
+            vd: declare-before-use restriction
 
-    + Context-FREE and Context-SENSITIVE grammars: 
-        + Formal language:
-            -> any WELL-DEFINED SET of STATEMENTS 
-        + Techniques to DEFINE grammars can be CLASSIFIED according to HOW EXPRESSIVE THEY ARE
-            vd: What KIND OF LANGUAGES they can GENERATE. 
+        -> Context-SENSITIVE Grammar = Context-free Grammar + Set of extra conditions
 
-        + Context-FREE grammars: 
-            -> the EXPANSION of nonterminal is ALWAYS THE SAME, no matter where it is used. 
+#### Ambiguity: 
+    ... 
 
-        + Context-SENSITIVE grammars: 
-            -> a grammar that contains a NONTERMINAL WHOSE USE DEPENDS ON THE CONTEXT where it is used 
-            vd: 
-                you can only print a variable if the variable was already defined. 
+#### Syntax notation used in the book: 
+    ... 
 
-        -> Practical Programming Languages DEFINED in 2 PARTS: 
-            + Context-free Grammar
-                -> easy to: 
-                    + understand
-                    + read
 
-                -> has LOCALITY property: 
-                    -> a nonterminal symbol can be understood 
-                    by examining ONLY THE RULES NEEDED TO DEFINE IT 
-                    -> the RULES that USE it can be IGNORED
 
-                    vd: to understand <digit> 
-                        -> EXAMINE: 
-                            <digit> ::= 0|1|2|3|4|5|6|7|8|9
-                        -> IGNORE: 
-                            <int> ::= <digit> {<digit>}
 
-            + Set of extra conditions
-                -> Corrected the Context-free grammar
-                by imposing a set of extra conditions
-                vd: declare-before-use restriction
 
-            -> Context-SENSITIVE Grammar = Context-free Grammar + Set of extra conditions
 
+### 2.1.2 Language SEMANTICS     
+    ... 
+
+#### The Kernel language approach: 
+    ... 
+
+#### Formal semantics: 
+    ... 
+
+#### Linguistic abstraction: 
+    ... 
+
+#### Syntactic sugar: 
+    ... 
+
+#### Language design: 
+    ... 
+
+#### Other translation approaches: 
+    ... 
+
+#### The Interpreter approach: 
+    ... 
