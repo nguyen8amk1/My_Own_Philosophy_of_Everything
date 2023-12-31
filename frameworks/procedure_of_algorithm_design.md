@@ -223,6 +223,24 @@ They(LP, IP) can:
         + FILL in ALL CELLS. 
         + Extract FINAL RESULTS.
 
+    New: 3 Basic steps: 
+        + 1. PHAN TICH DAC TRUNG cua loi giai toi uu: 
+            + 1. Optimal Substructure 
+                -> Loi giai toi uu cua cha = tong hop loi giai toi uu cua con 
+                    *kinda like Greedy*
+                -> Find out the RELATIONSHIP between the PARENT and CHILD. 
+            + 2. Overlapping
+
+        + 2. TAO BANG: lap day bang theo 1 quy luat nao do 
+            + gan gia tri cho mot so o nao do (base case).
+            + xac dinh gia tri cua cac o khac nho vao gia tri cac o truoc do. 
+
+        + 3. TRA BANG: 
+            -> truy xuat loi giai bai toan
+
+    NOTE: able to solve the problem top down first 
+        -> find the relationship of the parent and child 
+
     + Bai toan toi uu: 
         **Phan tich dac trung: 
             + 1. Optimal Substructure 

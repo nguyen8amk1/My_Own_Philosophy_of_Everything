@@ -73,7 +73,7 @@ THIS IS WORKFLOW "CHEATSHEET" :V
         1. entertainment browsing - normally is the only one who makes sound (from watching Youtube)
         2. work browsing - mostly stackoverflow or documents (text-based)
         3. work terminal 
-        4. Git Desktop ?? 
+        4. Git Desktop 
 
         5. My slack ?? 
         6. Ultility window 

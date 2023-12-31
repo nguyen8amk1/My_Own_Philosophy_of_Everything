@@ -143,16 +143,58 @@
         + Grammars are used for DEFINING BOTH:  
             + Statements 
             + Tokens
-        ...
+
+        Code: a sequence of characters 
+            where: 
+                + ' ' : space 
+                + '\n' : new line 
+
+        + TOKENIZER/lexical analyzer: 
+            + input: a SEQUENCE of CHARACTERS
+            + output: a SEQUENCE of TOKENS 
+        
+        + PARSER: 
+            + input: a SEQUENCE of TOKENS
+            + output: a PARSE TREE
+
+
+        **Code -> Tokenizer -> Parser
+
 
     + EBNF (Extended Backus-Naur Form): 
-        ...
+        -> Use for DEFINING GRAMMARS 
+        -> DISTINGUISHES: 
+            + TERMINAL symbols 
+                -> a token 
 
+            + NONTERMINAL symbols 
+                -> a sequence of tokens
+                -> is DEFINED by means of GRAMMAR RULES 
+
+                + Grammar rules: 
+                    -> shows HOW to EXPAND into TOKENS 
+                        vd: 
+                        <digit> ::= 0|1|2|3|4|5|6|7|8|9
+                        -> meaning: <digit> presents one of the ten tokens 0,1,...9 
+
+                    -> can refer to other nonterminals as well 
+                        vd: 
+                        <int> ::= <digit> {<digit>}
+                        -> meaning: an integer is a digit followed by any number of digits 
+                    -> Use to:
+                        + VERIFY a STATEMENT is legal 
+                        + GENERATE STATEMENTS 
+                            -> process of CREATING such VALID SEQUENCES based on the grammar rules
 
     + How to read grammar: 
-        ... 
-
+        steps: 
+            1. Start with: NONTERMINAL symbols 
+            2. Reading from left to right to check if the sequence of tokens match the following schemes: 
+                + Each terminal symbol encountered is added to the sequence. 
+                + ...
+                + ... Page 33  
 
     + Context-FREE and Context-SENSITIVE grammars: 
-        ... 
-            
+        + Formal language:
+            -> any WELL-DEFINED SET of STATEMENTS 
+        + ... 
