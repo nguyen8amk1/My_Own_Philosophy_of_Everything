@@ -22,21 +22,20 @@ Backup Timeline (in case i CAN'T FIND FRESHER IN SUMMER):
 -> TOP PRIORITY: 
     FRESHER (spend the whole 6h Semester for preparing the interview (knowledge, projects, CV) -> only 4 months left :)) ) 
     -> I may have to REMOVE SOME OF THE SUBJECTS (at school) to make things lighter for me the to prepare the CV
-## -> 
 
 
 ## IMPORTANT TIMEPOINTS: 
         + Summer Fresher: 
             + Preparations points: <date> 
-            + Endpoints: <date> 
+            + Endpoints: 1/4/2024 (4 months from now (31/12/2023))
 
-        + 7th Semester: 
+        + Start of 7th Semester: 
             + Preparations points: <date> 
-            + Endpoints: <date> 
+            + Endpoints: 1/7/2024 (2 months from summer fresher endpoint (1/4/2024))
 
-        + 8th Semester: 
+        + Start of 8th Semester: 
             + Preparations points: <date>  
-            + Endpoints: <date> 
+            + Endpoints: <date>
 
 ## 2023-12-21 - PLAN FOR FRESHER INTERVIEW: 
     + The time i have left: 2023-12-29 -> 2024-06-1
@@ -48,6 +47,7 @@ Backup Timeline (in case i CAN'T FIND FRESHER IN SUMMER):
                 + ...
                 + ...
                 -> time estimate: 
+
             + gui CV xin viec (during summer): 
                 + knowledges to prepare:  
                     + OOP  
@@ -56,6 +56,7 @@ Backup Timeline (in case i CAN'T FIND FRESHER IN SUMMER):
                     + Operating System
                     + IQ math (toan danh gia nang luc ??)
                     ... 
+
                 -> when to start learning these things ?? 
                     ...
 
