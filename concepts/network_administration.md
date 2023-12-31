@@ -119,7 +119,6 @@ Access List (ACL):
     II. Implementation
     III. Conclusion
     Appendix
-    (3 bang)
     1. Self-evaluation:
         Report / toi da 1
         Presentation / toi da 1
@@ -127,7 +126,6 @@ Access List (ACL):
         (Theo mo ta trong file tren course)
 
     2. Task Assignment
-        bang: 
         Member, Task, %
 
     3. Questions and Answers
