@@ -69,3 +69,19 @@ notes from course: https://www.youtube.com/watch?v=dwRgs6iviKQ&list=PLb-gZ71w7d2
                 + 5. (Abstract) Physical: 
                     vd (Concrete): 
 
+## Evolutions of networking problems: 
+    ... 
+
+
+## VLAN, VLAN TRUNKING
+    + LAN: 
+
+    + TRUNKING: 
+        duong ket noi giua router va switch level3 
+
+        Du lieu dang frame (data link level) di qua switch l3 
+            -> duoc gan VLAN TAG cho moi vlan
+                there is a MAPPING from VLAN TAG to gatewway
+
+            machine in vlan only communicate through the router  
+                 there are no physical connection between 2 machines if packet don't go through gateway 
