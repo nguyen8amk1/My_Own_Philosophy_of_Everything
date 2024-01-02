@@ -496,3 +496,9 @@ But with:
             ... 
         + Ham trang thai con: 
             -> Be able to find the next state from the current state
+
+
+    NOTE: 
+        maybe a more heuristic approach (informed search)
+        You should have some ammont of state layed out first
+            to start finding 
