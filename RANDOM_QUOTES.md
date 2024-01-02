@@ -483,3 +483,16 @@ But with:
         2. Write a main function to solve the problem 
             **ASSUMING that the AUXILIARY FUNCTIONS are KNOWN (vd: ShiftLeft, ShiftRight, AddList,...)
         3. Complete the solution by writing the auxiliary functions
+
+## Learn and Practice like a Path Finding Algorithm
+    These are the 3 things you need: 
+        State: 
+            the knowledge needed for doing the tasks 
+            -> When learning the state 
+            you should also learn the direct linkage to other state as well 
+        + Trang thai ban dau ()
+            ... 
+        + Trang thai dich 
+            ... 
+        + Ham trang thai con: 
+            -> Be able to find the next state from the current state
