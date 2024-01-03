@@ -34,18 +34,18 @@ DHCP:
 
     DHCP protocol handshake ?? 
         Steps: 
-            Client: 
+            + 1. Client: 
                 send DHCP discover (broadcast): ask for assign configs
-            DHCP Server: 
+            + 2. DHCP Server: 
                 received DHCP discover -> send DHCP offer: provide configs 
-            Client: 
+            + 3. Client: 
                 received DHCP offer -> send DHCP request: tell the DHCP Server that the configs was received
-            DHCP Server: 
+            + 4. DHCP Server: 
                 received DHCP request -> send DHCP ACK: acknowledge that everything is configured (done)
 
     DHCP operations:
         2 types:
-            Router as DHCP Server: 
+            + Router as DHCP Server: 
                 router receive the message and act as the DCHP server 
 
                 -> configuration commands:
@@ -64,19 +64,18 @@ DHCP:
                 5. set the actual dns server ip address 
                     vd: dns-server 209.165.200.225
 
-            Router as DHCP relay agents: 
+            + Router as DHCP relay agents: 
                 refer the boardcast message to the single DHCP server 
 
 NAT (Network Translation Address): 
-    Convert public <-> private IP address 
+    -> Convert public <-> private IP address 
         2 usages: 
-            -> multiple private ip clients can share 1 public ip when access the internet 
+            + multiple private ip clients can share 1 public ip when access the internet 
                 -> internet sees all the different client with the same ip (with different ports):v 
                 configurations:
+            + Internet client can access private network using 1 static public ip 
 
-            
-            -> Internet client can access private network using 1 static public ip 
-
+    
 VLAN: 
     Virtual LAN 
     all network devices are LOGICALLY connected (another level of abstraction :v)
@@ -111,8 +110,59 @@ VLAN:
                 -> Switch connect to Router though a Trunk Port ? sub-interface ??  
             + Multi-layer switch 
 
-Access List (ACL): 
-    have to understand the flow and topology of the network to setup this 
+Access Control List (ACL): 
+    + Overview:  
+        -> a sequential LIST of PERMIT/DENY STATEMENTS
+        -> that CONTROL whether a router: 
+            + forwards
+            + drops
+            packets based on INFORMATION found in the PACKET HEADER. 
+        -> Located on: ROUTER: 
+
+    + Operations:  
+        -> the ROUTER - COMPARES the information within the packet 
+        AGAINST each statement (in sequential order),
+        if the packet match none of the statement -> remove (since there always a LAST STATEMENT an IMPLICIT DENY)  
+
+        + 2 types of ACL OPERATIONS: 
+            + Inbound: 
+                -> Filter before routing (xu ly goi tin DI VAO router)
+            + Outbound:
+                -> Filter after routing (xu ly goi tin DI RA router)
+
+    + 2 types of ACL: 
+        + standard: 
+            -> filter IP packets based on: SOURCE ADDRESS only 
+            -> Located: near desitnation
+                -> because: ...
+
+        + extended: 
+            -> filter IP packets based on: 
+                + SOURCE and DESTINATION address (in IP Header)
+                + PROTOCOL type/number
+                + Source and Destination TCP/UDP - PORT NUMBER (in TCP/UDP header)
+            -> Located: near desitnation
+                -> because: ...
+    One ACL per:
+        + protocol 
+        + direction (inbound, outbound) 
+        + interface 
+
+    NOTE: have to understand the flow and topology of the network to setup this 
+
+### Wildcard mask in ACL: 
+    + Definition: 
+        -> a 32 bit string 
+        -> used by router 
+        -> determine: which bits of the address to examine for a match.
+            0: match 
+            1: ignore 
+    + Example: 
+    + Keyword: 
+         + "host": = 0.0.0.0 mask (check all bits)
+         + "any":  = 255.255.255.255 mask (ignore all bits)
+         
+    
 
 ### FINAL REPORT STRUCTURE:
     I. Introduction 
