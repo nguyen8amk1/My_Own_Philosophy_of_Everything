@@ -347,10 +347,36 @@ NOTE: at this stage (syntax stage), we're DO NOT CARE what the programs are actu
                 
 
 ### 2.1.2 Language SEMANTICS     
-    ... 
+    -> defines WHAT A PROGRAM DOES when it executes. 
+
+    -> IDEALLY defined in a simple MATHEMATICAL STRUCTURE 
+    that lets you REASON ABOUT THE PROGRAM, about its:
+        + correctness
+        + execution time
+        + memory use 
+        without introducing any irrelevant details. 
+
+        -> Kernal language approach 
 
 #### The Kernel language approach: 
-    ... 
+    -> defines the SEMANTICS of PROGRAMMING LANGUAGES
+    -> all languages are defined in terms of: 
+        TRANSLATION into a CORE LANGUAGE known as the KERNEL LANGUAGE.
+
+    + KERNEL LANGUAGE APPROACH consist of 2 parts: 
+        + 1. define a VERY SIMPLE LANGUAGE (kernel language)
+            -> should be easy to REASON
+
+            Computation Model = kernel language + data structures 
+
+        + 2. define a TRANSLATION SCHEME
+            from: full programming language
+            to: kernel language
+            -> should be as SIMPLE as possible 
+
+            -> 2 KINDS of translation:
+                + Linguistic Abstraction
+                + Syntactic sugar 
 
 #### Formal semantics: 
     ... 
