@@ -152,10 +152,38 @@ Conclusion:
     ...
 
 
+
 ## Evaluate: 
     FINDING the numerical value or RESULT of a mathematical EXPRESSION or EQUATION.
 
 
+## Expression:
+    a COMBINATION of:
+        + values, 
+        + variables
+        + operators 
+    -> When Evaluate return a SINGLE VALUE  
+
+    vd: 2 + 3, 2 < 3, ... 
+
+## Statement:
+    -> complete line of code that PERFORMS AN ACTION 
+
+    -> execute a specific action or operation.
+        -> not meant to produce a value (it can still produce value though :v)
+
+    vd: 
+        + variable assignment: x = 5; 
+        + while loop 
+        ...
+## Expression vs Statement: 
+    Statements:
+        -> control the flow of execution, 
+        -> CANNOT be NESTED inside EXPRESSIONS
+
+    Expressions:
+        -> part of the computation.
+        -> can be composed within STATEMENTS 
 
 ## Arguments: 
     ...

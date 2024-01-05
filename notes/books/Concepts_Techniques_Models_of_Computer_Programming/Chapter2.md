@@ -304,8 +304,47 @@ NOTE: at this stage (syntax stage), we're DO NOT CARE what the programs are actu
                 -> 2 - (3 - 4) is chosen
 
 #### Syntax notation used in the book: 
-    ...     
+    Each NEW DATA TYPE and LANGUAGE CONSTRUCT 
+    is INTRODUCED together WITH a small SYNTAX DIAGRAM 
+        -> shows HOW IT IT FITS IN THE WHOLE LANGUAGE
 
+    + Syntax diagram: 
+        -> gives GRAMMAR RULES for a simple CONTEXT-FREE GRAMMAR of tokens.  
+        -> the notation SATISFY 2 PRINCIPLES: 
+            + 1. All grammar rules stand on their own. 
+                NOTE: 
+                    NEVER give an incorrect grammar rule 
+                    just to "simplify" the presentation.
+
+            + 2. Have CLEAR INDICATION symbol to determine whether 
+            a grammar rules defines: 
+                + COMPLETE definition
+                + PARTIAL definition
+
+                of nonterminal symbol 
+                    -> always end in "..." (meaning "SOMETHING ELSE")
+
+        vd syntax diagram (for 2 partial definitions of two non terminals):  
+
+            <statement>  ::= skip | <expression> '=' <expression | ... 
+                -> meaning: 
+                    a statement can be the keyword 'skip'
+                    or two expression separated by the '=' symbol
+                    or SOMETHING ELSE (the '...')
+                
+            <expression> ::= <variable> | <int> | ... 
+            
+            <statement> ::= if <expression> then <statement> 
+                            { elseif <expression> then <statement> } 
+                            [ else <statement> ] 
+                            end | ...
+                    
+                + meaning: 
+                    + { something }
+                        -> there can be any number of occurences including ZERO
+                    + [ something ]
+                        -> can be occur zero or 1 time 
+                
 
 ### 2.1.2 Language SEMANTICS     
     ... 
