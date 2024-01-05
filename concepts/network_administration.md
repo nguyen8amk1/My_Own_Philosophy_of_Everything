@@ -599,3 +599,59 @@ NOTE:
 ### "Show command": 
     + show vlan 
         -> show vlan ports on switch 
+
+### DHCP: 
+    a protocol
+    DYNAMICALLY assign:
+        + IP address 
+        + subnet mask 
+        + default gateway 
+        + DNS server 
+    -> for new device which join network
+
+    DHCP protocol handshake ?? 
+        Steps: 
+            + 1. Client: 
+                send DHCP discover (broadcast): ask for assign configs
+            + 2. DHCP Server: 
+                received DHCP discover -> send DHCP offer: provide configs 
+            + 3. Client: 
+                received DHCP offer -> send DHCP request: tell the DHCP Server that the configs was received
+            + 4. DHCP Server: 
+                received DHCP request -> send DHCP ACK: acknowledge that everything is configured (done)
+
+    DHCP operations:
+        2 types:
+            + Router as DHCP Server: 
+                router receive the message and act as the DCHP server 
+
+                -> configuration commands:
+                    1. EXCLUDE THE IP of the devices that use static ip 
+
+                       Router(config)# ip dhcp excluded-address 192.168.1.1 192.168.1.9
+
+                        -> prevent DHCP send an ALREADY USED STATIC IP (vd: router ip, static ip server,...)
+
+                    2. DEFINE ips POOL (create a pool of ip addresses) with a name
+                        Router(config)# ip dhcp pool NET10
+
+                    3. DEFINE the network address (the RANGE) in which the dhcp is gonna generate from 
+                        Router(dhcp-config)# network 192.168.1.0 255.255.255.0
+
+                    4. set DEFAULT GATEWAY
+                        Router(dhcp-config)# default-router 192.168.1.1
+
+                    5. set the actual DNS SERVER IP ADDRESS 
+                        Router(dhcp-config)# dns-server 209.165.200.225
+
+            + Router as DHCP relay agents: 
+                refer the boardcast message to the single DHCP server 
+
+### NAT: 
+    -> Convert public <-> private IP address 
+        2 usages: 
+            + 1. multiple private ip clients can share 1 public ip when access the internet 
+                -> internet sees all the different client with the same ip (with different ports):v 
+                configurations:
+            + 2. Internet client can access private network using 1 static public ip 
+    
