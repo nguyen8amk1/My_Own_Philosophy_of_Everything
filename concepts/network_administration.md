@@ -649,9 +649,51 @@ NOTE:
 
 ### NAT: 
     -> Convert public <-> private IP address 
+        The translation works using a: NAT Translation Table 
         2 usages: 
             + 1. multiple private ip clients can share 1 public ip when access the internet 
                 -> internet sees all the different client with the same ip (with different ports):v 
+                -> The translation works using a: NAT Translation Table 
+
                 configurations:
+                    + 1. Define an ACL that permits the local network                    
+                        Router(config)# access-list 1 permit [network]
+
+                    + 2. Define the NAT information
+                        Router(config)# ip nat inside source list [ACL number] 
+                                        interface [interface name] overload 
+                            -> trong do:
+                                [ACL number]: id cua danh sach cac source ip da duoc dinh nghia san 
+                                [interface name]: ten cua interface muon duoc chuyen doi dia chi
+                                overload: cho phep nhieu thiet bi BEN TRONG duoc chuyen doi thanh 1 thiet bi BEN NGOAI
+
+                    + 3. Specify the inside/outside interface for NAT
+                        Router(config)# interface g0/0/0
+                            -> interface ket noi ben trong
+                        Router(config-if)# ip nat inside 
+                        Router(config)# interface s0/0/0
+                            -> interface ket noi ben ngoai 
+                        Router(config-if)# ip nat outside  
+                
+
+
+
             + 2. Internet client can access private network using 1 static public ip 
+                -> there could only 1 mapping from public to private (the private address in this case would be a web server or something)
+
+                configurations:
+                    + 1. Define an ACL that permits the local network                    
+                        Router(config)# access-list 1 permit [network]
+
+                    + 2. Define the NAT information
+                        Router(config)# ip nat inside source static [private IP] [public IP] 
+                                        interface [interface name] overload 
+
+                    + 3. Specify the inside/outside interface for NAT
+                        Router(config)# interface g0/0/0
+                            -> interface ket noi ben trong
+                        Router(config-if)# ip nat inside 
+                        Router(config)# interface s0/0/0
+                            -> interface ket noi ben ngoai 
+                        Router(config-if)# ip nat outside  
     
