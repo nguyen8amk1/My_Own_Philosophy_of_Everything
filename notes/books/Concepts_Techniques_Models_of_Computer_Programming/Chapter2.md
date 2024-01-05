@@ -399,6 +399,7 @@ NOTE: at this stage (syntax stage), we're DO NOT CARE what the programs are actu
         -> 2 phases: 
             + 1. Define a NEW GRAMMATICAL CONSTRUCT 
             + 2. Define the new construct's TRANSLATION into the kernel language
+
     vd: 
         FUNCTION is a Linguistic abstraction 
             with keyword "fun"
@@ -421,8 +422,45 @@ NOTE: at this stage (syntax stage), we're DO NOT CARE what the programs are actu
         AFFECTING how developers THINK about and USE the language   
 
 #### Syntactic sugar: 
-    ... 
+    -> Shortcut notation for frequently occuring idioms
+        -> is part of the language syntax
+        -> DEFINED BY GRAMMAR RULES 
 
+    + Syntactic sugar vs Linguistic Abstraction: 
+        + Similarity: 
+            -> both providing a more user-friendly/expressive way of writing code. 
+        
+        + Differences: 
+           + Syntactic sugar:  
+                -> CONVENIENT WAY to express certain constructs
+                    -> doesn't introduce new functionality
+                    -> can be precisely MAPPED to the UNDERLYING, more explicit language CONSTRUCTS
+                    -> DOESN'T BRING NEW ABSTRACTIONS 
+
+                vd: 
+                    // Syntactic Sugar (List Comprehension)
+                        squares = [x**2 for x in range(10)]
+
+                    // Equivalent Full Language
+                        squares = []
+                        for x in range(10):
+                            squares.append(x**2)
+
+                + Define: 
+                    -> DEFINED BY GRAMMAR RULES 
+
+           + Linguistic Abstraction: 
+                -> Involves defining a new grammatical construct.
+                -> Typically GOES BEYOND SYNTAX 
+                   May INTRODUCE:
+                        + NEW SEMANTICS 
+                        + higher-level CONCEPTS.
+            
+                + Define: 
+                    -> 2 phases: 
+                        + 1. Define a NEW GRAMMATICAL CONSTRUCT 
+                        + 2. Define the new construct's TRANSLATION into the kernel language
+    
 #### Language design: 
     ... 
 
