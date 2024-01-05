@@ -233,14 +233,78 @@ NOTE: at this stage (syntax stage), we're DO NOT CARE what the programs are actu
         -> Context-SENSITIVE Grammar = Context-free Grammar + Set of extra conditions
 
 #### Ambiguity: 
-    ... 
+    Context-free grammars can be ambiguous 
+    -> there can be several parse trees that correspond to a given token sequence. 
+
+    -> an UNDESIRABLE PROPERTY of a GRAMMAR 
+    since it's unlcear exactly what program is being written.
+
+    vd: 
+        Given these 2 grammar expression: 
+            <exp> ::= <int> | <exp> <op> <exp>
+            <op>  ::= +|* 
+
+        -> Parse tree generate from the expression: 2 * 3 + 4
+            + first: 
+               *
+              / \
+             2   +
+                / \
+               3   4
+
+            + second: 
+                +
+               / \
+              *   4
+             / \
+            2   3
+
+        -> Ambiguity (don't know which to choose)
+
+    + To Remove Ambiguity: 
+        + Grammar rules can be REWRITTEN
+            -> BUT this can MAKE the rules more COMPLICATED.  
+
+        + Add EXTRA CONDITTIONS (a MORE CONVENIENT approach)
+            -> RESTRICT the parser 
+            so that ONLY 1 PARSE TREE IS POSSIBLE.
+            -> called DISAMBIGUATE the grammar.
+
+        vd:  for expresssion such as binary operators  
+            -> add 2 conditions: 
+                + precedence (do uu tien)
+                + associativity (tinh ket hop)
+
+    + Precedence: 
+        -> Operators with high precedence 
+        are PUT as DEEP IN THE PARSE TREE as possible. 
+        -> if * is deeper in the tree than + 
+            -> called * BINDS TIGHTER than + 
+            -> We choose the second one.
+
+    + Associativity: 
+        -> condition on an EXPRESSION with the SAME OPERATOR  
+            vd: 2 - 3 - 4 
+        -> Precedence is NOT ENOUGH to DISAMBIGUATE 
+        because ALL OPERATORS have the SAME PRECEDENCE
+        -> have to choose between 2 trees: 
+            + (2 - 3) - 4
+            + 2 - (3 - 4)
+
+        + Determine whether: 
+            + left most operator
+            + right most operator
+
+            BINDS TIGHTER
+
+        -> there are 2 POSSIBLE ASSOCIATIVITY VALUE for operation - 
+            + left 
+                -> (2 - 3) - 4 is chosen
+            + right  
+                -> 2 - (3 - 4) is chosen
 
 #### Syntax notation used in the book: 
-    ... 
-
-
-
-
+    ...     
 
 
 ### 2.1.2 Language SEMANTICS     
