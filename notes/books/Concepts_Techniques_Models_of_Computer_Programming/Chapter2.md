@@ -382,7 +382,43 @@ NOTE: at this stage (syntax stage), we're DO NOT CARE what the programs are actu
     ... 
 
 #### Linguistic abstraction: 
-    ... 
+    Using a programming language,
+    at some point we may feel the need to EXTENT THE LANGUAGE 
+        -> ADD A NEW LINGUISTIC CONSTRUCT. 
+    vd: 
+        the declaration model has no looping constructs.  
+        -> add a "for" construct to express certain kinds of loops that are useful 
+        
+    + Linguistic Abstraction: 
+        **-> A LANGUAGE CONSTRUCT that is both: 
+            + abstraction
+            + addition 
+            to the language syntax 
+
+    + Define an Linguistic abstraction: 
+        -> 2 phases: 
+            + 1. Define a NEW GRAMMATICAL CONSTRUCT 
+            + 2. Define the new construct's TRANSLATION into the kernel language
+    vd: 
+        FUNCTION is a Linguistic abstraction 
+            with keyword "fun"
+        but the kernel language (of this chapter) only has PROCEDURES
+            -> but function are so useful that we added it as a Linguistic Abstraction
+
+    The TRANSLATION - MAKES IT CLEAR WHAT THE SEMANTICS IS 
+
+    Useful for:  
+        + 1. Improve properties of a language such as:
+                + expressiveness
+                + correctness
+                + security 
+                + efficiency
+        + 2. Hiding the abstraction's implementation from the programmer
+            -> makes it impossible to use the abstraction in the wrong way
+            -> the compiler can use this information to give more efficieny code. 
+
+     -> Have broad impact on the language, 
+        AFFECTING how developers THINK about and USE the language   
 
 #### Syntactic sugar: 
     ... 
