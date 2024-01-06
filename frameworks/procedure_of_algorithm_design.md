@@ -255,4 +255,5 @@ They(LP, IP) can:
             Yn: b d a c f a d d 
 
         ...
-        
+
+     some more hints: https://courses.csail.mit.edu/6.006/spring11/exams/notes3-dp       
