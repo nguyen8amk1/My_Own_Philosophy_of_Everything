@@ -571,7 +571,147 @@ NOTE:
             -> cons: have switch scaling problem (since there is only 1 connection to the router)
 
 
-
-
 NOTE: 
     the pc don't have ip, need DHCP for the IP 
+
+
+
+### Thuan.dev 
+#### Trac nghiem
+    -> 20-25 câu(
+        + nối từ, 
+        + điền vào chỗ trống (1-2 từ), 
+        + single & multi choice)
+
+    1. Có rất nhiều câu hỏi theo định dạng là sử dụng kết quả hình ảnh của câu lệnh “show ip route” và hỏi dựa theo đo 
+        VD: 
+            + Router đang chạy chế độ định tuyến nào? 
+
+            + Các route mà Router có là học từ chế độ định tuyến nào? 
+            (O - OSPF, R - RIP, S - Static…) 
+
+            + Router đang có thông tin của subnet nào, thông qua ai?
+
+    2. Vài câu về ACL (mình có nói rõ trong bài blog rồi)
+
+    3. Cần biết về ADMINISTRATIVE DISTANCE và METRIC trong OSPF và RIP, 
+    có thể hỏi chung với câu hỏi “show ip route” như ở trên.
+
+    4. Một số câu về lệnh trong Linux, cũng đã bao gồm trong bài blog
+
+    5. Chú ý tới sự KHÁC BIỆT VỀ CÁC PHIÊN BẢN trong OSPF và RIP (v1,v2…).
+
+    6. Chia subnet
+
+    7. Có thêm vài câu liên quan tới quản trị Windows mà trong bài blog mình không đề cập tới. 
+        Thứ nhất là hỏi các mô hình có sử dụng Active Directory (site, domain, trees,...). 
+        Thứ hai là hỏi loại DC nào đảm bảo tính sẵn sàng cao của hệ thống (mình chọn ADC do bản chất dự phòng của nó).
+
+
+
+#### Tu luan: 
+1. (cau hinh)
+    Cho một công ty có nhiều phòng ban thuộc các VLAN tương ứng gắn với mỗi switch,
+    có server riêng, có một switch layer 3 quản lý vlan và có một router dẫn ra internet.
+    Switch Layer 3 và Router định tuyến với nhau sử dụng RIP. 
+    Yêu cầu trình bày các bước kèm các câu lệnh cấu hình cho các thiết bị mạng nếu như muốn thêm một phòng ban mới với 10 PC. 
+    Các PC trong phòng ban này tự động nhận địa chỉ IP và đi ra được Internet. 
+
+    note: 
+        tu dong nhan dia chi ip -> co cau hinh DHCP 
+
+2. (troubleshoot)
+    Troubleshooting cho một mạng đang chạy cấu hình Router on A Stick (Đề khác mình không rõ thì là OSPF).
+    Vấn đề đặt ra là 2 PC cùng VLAN không giao tiếp được với nhau
+
+
+#### Knowledge
+
+##### Dinh tuyen: 
+    quá trình chọn lựa các đường đi trên một mạng máy tính để gửi dữ liệu qua đó.
+    2 trường hợp: 
+        + interLAN 
+        + interVLAN 
+
+    + interLAN: 
+        + 2 types: 
+            + static routing: 
+                -> người quản trị sẽ trực tiếp cấu hình từng đường đi cho các Router
+
+                2 types: 
+                    + static default route: 
+                        -> một đường đi mặc định cho Router
+                        + commands: 
+                          Router(config)# ip route 0.0.0.0 0.0.0.0 { exit-intf | next-hop-ip }
+                            Trong đó:
+                                + exit-intf: interface đi ra của gói tin trên Router đó
+                                + next-hop-ip: địa chỉ IP của một Router lân cận. 
+
+                                note: chỉ cần điền một trong 2 trường 
+
+                    + static route to a specific network: 
+                        -> nếu muốn chuyển tiếp gói tin đến một mạng cụ thể nào đó thì trước tiên, 
+                        sẽ PHẢI ĐI QUA INTERFACE nào hoặc đi tới địa chỉ IP nà
+
+                        + commands: 
+                          Router(config)# ip route network mask {next-hop-ip | exit-intf }
+
+
+
+            + dynamic routing: 
+                -> cấu hình chế độ định tuyến phù hợp cho các Router
+                    sau đó, các Router này sẽ TỰ TRAO ĐỔI THÔNG TIN VỚI NHAU
+                    2 types: 
+                        + RIP (Routing Information Protocol): 
+                            -> Distance Vector, Bellman-Ford algorithm 
+                            -> cost: hop count 
+
+                        + OSPF (Open Shortest Path First): 
+                            -> Link State, Dijkstra algorithm
+                            -> cost: phu thuoc vao bandwidth cua cac link giua cac Router. 
+
+    + interVLAN:  
+        Multi-layer switch: 
+            Lợi thế:
+                Tốc độ nhanh hơn RoS do mọi thứ được xử lý ở phần cứng từ chuyển mạch cho tới định tuyến.
+                Không cần phải sử dụng thêm liên kết tới Router do anh Switch Layer 3 này lo hết rồi.
+                Các đường trunk không nhất thiết sử dụng chung 1 liên kết vật lý nữa do các liên kết EtherChannels ở Layer 2 có thể được dùng để làm liên kết trunk giữa các Switch với nhau => Tăng băng thông.
+
+
+##### Dich vu mang: 
+    -> Định tuyến chỉ mới giúp các node giữa các LAN hoặc VLAN giao tiếp được với nhau.
+    -> Để ĐÁP ỨNG CÁC NHU CẦU KHÁC khi sử dụng mạng của người dùng lẫn người quản trị thì sẽ cần tới các DỊCH VỤ MẠNG.
+
+    + NAT: 
+        Trong NAT sẽ bao gồm 4 loại địa chỉ:
+            Inside local address - Địa chỉ nguồn của thiết bị gửi ở phần mạng cục bộ (Thường là địa chỉ IP private).
+            Inside global address - Địa chỉ nguồn của thiết bị gửi được chuyển đổi qua NAT và được sử dụng ở phần mạng toàn cục
+
+            Outside local address - Địa chỉ đích ở phần mạng cục bộ. Thông thường, địa chỉ này sẽ trùng với địa chỉ outside global.
+            Outside global address - Địa chỉ đích ở phần mạng toàn cục.
+        3 types: 
+            + static NAT, 
+            + dynamic NAT 
+            + PAT - Port Address Translation (NAT overload). 
+
+    + ACL: 
+        + Cấu hình ACL: 
+            mot so truong hop thuong dung: 
+                + 1. Cho phép một host cụ thể 
+                    ... 
+                + 2. Cho phép các host của một subnet cụ thể
+                    ... 
+                + 3. Cho phép mọi địa chỉ IP đi qua
+                    ... 
+                + 4. Từ chối mọi truy cập HTTP/HTTPS
+                    ...
+
+        Khi hoàn tất cấu hình, ta có thể kiểm tra lại với lệnh show access-lists để coi toàn bộ các ACL hiện có
+
+    + DHCP: 
+        -> quản lý và cấp phát tự động các địa chỉ IP đến các thiết bị mạng bên trong một mạng 
+        -> thay vì phải đi gán IP thủ công cho từng thiết bị trong mạng thì người quản trị chỉ việc cấu hình DHCP cho Router là được.
+
+        Router được cấu hình DHCP sẽ coi như là DHCP server
+        các host trong mạng sẽ là các DHCP client
+        ... 
