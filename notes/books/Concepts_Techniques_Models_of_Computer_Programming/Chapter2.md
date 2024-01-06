@@ -469,3 +469,40 @@ NOTE: at this stage (syntax stage), we're DO NOT CARE what the programs are actu
 
 #### The Interpreter approach: 
     ... 
+
+
+
+
+
+### 2.2 The single-assignment store 
+    ... 
+
+#### Declarative variables 
+    ... 
+
+#### Value store 
+    ... 
+
+#### Value creation 
+    ... 
+
+#### Variable identifiers 
+    ... 
+
+#### Value creation with identifiers 
+    ... 
+
+#### Partial values 
+    ... 
+
+#### Variable-variable binding
+    ... 
+
+#### Dataflow variables
+    ... 
+
+
+
+
+
+### 2.3 Kernel language 
