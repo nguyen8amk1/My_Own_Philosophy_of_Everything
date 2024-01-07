@@ -133,7 +133,7 @@ Access Control List (ACL):
     + 2 types of ACL: 
         + standard: 
             -> filter IP packets based on: SOURCE ADDRESS only 
-            -> Located: near desitnation
+            -> Located: near destination
                 -> because: ...
 
         + extended: 
@@ -656,8 +656,6 @@ NOTE:
                         + commands: 
                           Router(config)# ip route network mask {next-hop-ip | exit-intf }
 
-
-
             + dynamic routing: 
                 -> cấu hình chế độ định tuyến phù hợp cho các Router
                     sau đó, các Router này sẽ TỰ TRAO ĐỔI THÔNG TIN VỚI NHAU
@@ -694,19 +692,179 @@ NOTE:
             + dynamic NAT 
             + PAT - Port Address Translation (NAT overload). 
 
+        commands: 
+            Use case 1: local network use 1 address to access the internet 
+                1. Define an ACL that permits the local network 
+                    Router(config)# access-list 1 permit [network] [wildcard-mask]
+
+                    vd: access-list 1 permit 192.168.0.0 0.0.255.255
+
+                2. Define the NAT information 
+                    Router(config)# ip nat inside source list [ACL number] interface [interface name] overload
+                    ACL number = 1 (= voi access-list 1)
+
+                    vd: ip nat inside source list 1 interface s0/2/1 overload
+
+                3. Specify the inside/outside interface for NAT
+                    Router(config)# interface g0/0/0
+                    Router(config)# ip nat inside 
+                        -> set up inside interface 
+                        **there are a lot of inside interface 
+
+                    Router(config)# interface s0/0/0
+                    Router(config)# ip nat outside 
+                        -> set up outside interface 
+    
+                Show command: 
+            
+                    Router# show ip nat translations
+                    -> 
+                        Pro Inside global Inside local      Outside global  Outside local 
+                        tcp 8.0.0.1:1024  192.168.1.11:1027 8.8.8.8:80      8.8.8.8:80
+                        tcp 8.0.0.1:1026  192.168.1.11:1026 8.8.8.8:80      8.8.8.8:80
+                        tcp 8.0.0.1:1027  192.168.1.10:1027 8.8.8.8:80      8.8.8.8:80
+
+            Use case 2: Internet client wants to connect to server behind NAT with public IP address 
+                1. Define the NAT information 
+                    Router(config)# ip nat inside source static [private IP] [public IP]
+                    trong do: 
+                        private IP la dia chi cua local server muon public 
+
+                    vd: ip nat inside source static 192.168.10.10 123.4.5.6
+
+                2. Specify the inside/outside interface for NAT
+                    Router(config)# interface g0/0/0
+                    Router(config)# ip nat inside 
+                        -> set up inside interface 
+                        **now there should be only 1 inside 
+
+                    Router(config)# interface s0/0/0
+                    Router(config)# ip nat outside 
+                        -> set up outside interface 
+    
+
+                
     + ACL: 
+            + Overview:  
+                -> a sequential LIST of PERMIT/DENY STATEMENTS
+                -> that CONTROL whether a router: 
+                    + forwards
+                    + drops
+                    packets based on INFORMATION found in the PACKET HEADER. 
+                -> Located on: ROUTER: 
+
+            + Operations:  
+                -> the ROUTER - COMPARES the information within the packet 
+                AGAINST each statement (in sequential order),
+                if the packet match none of the statement -> remove (since there always a LAST STATEMENT an IMPLICIT DENY)  
+
+                + 2 types of ACL OPERATIONS: 
+                    + Inbound: 
+                        -> Filter before routing (xu ly goi tin DI VAO router)
+                    + Outbound:
+                        -> Filter after routing (xu ly goi tin DI RA router)
+
+            + 2 types of ACL: 
+                + standard: 
+                    -> filter IP packets based on: SOURCE ADDRESS only 
+                    -> Located: near desitnation
+                        -> because: ...
+
+                + extended: 
+                    -> filter IP packets based on: 
+                        + SOURCE and DESTINATION address (in IP Header)
+                        + PROTOCOL type/number
+                        + Source and Destination TCP/UDP - PORT NUMBER (in TCP/UDP header)
+                    -> Located: near desitnation
+                        -> because: ...
+            One ACL per:
+                + protocol 
+                + direction (inbound, outbound) 
+                + interface 
+
+            NOTE: have to understand the flow and topology of the network to setup this 
+
+        + Wildcard mask in ACL: 
+            + Definition: 
+                -> a 32 bit string 
+                -> used by router 
+                -> determine: which bits of the address to examine for a match.
+                    0: match 
+                    1: ignore 
+            + Example: 
+                ...
+
+            + Keyword: 
+                + "host": = 0.0.0.0 mask (check all bits)
+                + "any":  = 255.255.255.255 mask (ignore all bits)
+
+            + Standard ACL Syntax: 
+                + DEFINE standard ACL rule: 
+                    -> Router(config)# access-list <access-list-number> {deny | permit | remark } source [source-wildcard][log]
+                    trong do:
+                        + access-list-number: 1-99 or 1300-1999
+                        + source: source IP need to match 
+
+                + Apply ACL to INTERFACE: 
+                    -> Router(config)# interface g0/0/0
+                    -> Router(config-if)# ip access-group access-list-number { in | out } 
+
+                + REMOVE ACL: 
+                        no access-list <access-list-number> 
+                        
+            + Extended ACL Syntax: 
+                + DEFINE Extended ACL rule: 
+                    -> Router(config)# access-list <access-list-number> {deny | permit | remark } 
+                    source     [source-wildcard]      [Operator operand] [port port-number or name] 
+                    desination [destination-wildcard] [Operator operand] [port port-number or name] 
+                    [established] [log]
+
+                    trong do:
+                        + access-list-number: 1-99 or 1300-1999
+                        + source: source IP need to match 
+                        + destination: destination IP need to match 
+                        + Operator: lt(less than), gt(greater than), eq(equal)
+                            -> so sanh cac port 
+
+                + Apply ACL to INTERFACE: 
+                    -> Router(config)# interface g0/0/0
+                    -> Router(config-if)# ip access-group access-list-number { in | out } 
+
+                + REMOVE ACL: 
+                        no access-list <access-list-number> 
+
         + Cấu hình ACL: 
             mot so truong hop thuong dung: 
-                + 1. Cho phép một host cụ thể 
-                    ... 
-                + 2. Cho phép các host của một subnet cụ thể
-                    ... 
-                + 3. Cho phép mọi địa chỉ IP đi qua
-                    ... 
-                + 4. Từ chối mọi truy cập HTTP/HTTPS
-                    ...
+                + 1. Cho phép một HOST CỤ THỂ 
+                    Router(config)# access-list 1 permit 192.168.1.254 0.0.0.0
+                        -> Khi sử dụng wildcard mask 0.0.0.0 để so khớp từng bit thì chỉ có host nào mang đúng địa chỉ IP 192.168.1.254 mới được cho phép đi qua
 
-        Khi hoàn tất cấu hình, ta có thể kiểm tra lại với lệnh show access-lists để coi toàn bộ các ACL hiện có
+                    Có thể dùng từ khóa host thay cho wildcard mask để cấu hình cho trường hợp này vì chúng mang ý nghĩa như nhau
+                    ->  Router(config)# access-list 1 permit host 192.168.1.254
+
+                + 2. Cho phép các host của một SUBNET CỤ THỂ
+                    Router(config)# access-list 1 permit 192.168.1.0 0.0.0.255
+
+                    -> Wildcard mask 0.0.0.255 sẽ chỉ so khớp 3 octet đầu của địa chỉ IP, còn lại mặc kệ.
+                    Do đó, tất cả các host thuộc subnet 192.168.1.0/24 sẽ được phép đi qua.
+                    
+                + 3. Cho phép mọi địa chỉ IP đi qua
+                     Router(config)# access-list 1 permit 255.255.255.255
+                     or
+                     Router(config)# access-list 1 permit any
+
+                    Thường đây sẽ là entry cuối cùng người quản trị nhập cho ACL để phòng trường hợp các mọi chỉ IP không khớp các entry trước đều bị chặn. 
+                    Nguyên nhân là do khi tạo ACL, luôn luôn có một entry được tạo sẵn với nội dung deny any tức từ chối tất cả.
+
+                + 4. Từ chối mọi truy cập HTTP/HTTPS
+                    Router(config)# access-list 103 deny tcp any any eq 80
+                    Router(config)# access-list 103 deny tcp any any eq 443
+
+                    -> Do yêu cầu liên quan tới các giao thức nên cần dùng tới extended ACL được đánh số 103.
+                    HTTP và HTTPS thì sẽ sử dụng TCP ở Layer 4 và số port lần lượt là 80 và 443.
+                    any any là chỉ bất kì địa chỉ nguồn và địa chỉ đích nào, eq tức là kiểm tra bằng (so sánh số port ở header).
+
+        **Khi hoàn tất cấu hình, ta có thể kiểm tra lại với lệnh show access-lists để coi toàn bộ các ACL hiện có.
 
     + DHCP: 
         -> quản lý và cấp phát tự động các địa chỉ IP đến các thiết bị mạng bên trong một mạng 
@@ -714,4 +872,103 @@ NOTE:
 
         Router được cấu hình DHCP sẽ coi như là DHCP server
         các host trong mạng sẽ là các DHCP client
-        ... 
+
+        a protocol
+        DYNAMICALLY assign:
+            + IP address 
+            + subnet mask 
+            + default gateway 
+            + DNS server 
+        -> for new device which join network
+
+        DHCP protocol handshake ?? 
+            Steps: 
+                + 1. Client: 
+                    send DHCP discover (broadcast): ask for assign configs
+                + 2. DHCP Server: 
+                    received DHCP discover -> send DHCP offer: provide configs 
+                + 3. Client: 
+                    received DHCP offer -> send DHCP request: tell the DHCP Server that the configs was received
+                + 4. DHCP Server: 
+                    received DHCP request -> send DHCP ACK: acknowledge that everything is configured (done)
+
+        DHCP operations:
+            2 types:
+                + Router as DHCP Server: 
+                    router receive the message and act as the DCHP server 
+
+                    -> configuration commands:
+                    1. EXCLUDE THE IP of the devices that use static ip -> prevent DHCP send an ALREADY USED STATIC IP (vd: router ip, static ip server,...)
+                        vd: Router(config)# ip dhcp excluded-address 192.168.1.1
+
+                    2. define ips pool (create a pool of ip addresses) with a name
+                        vd: Router(config)# ip dhcp pool NET10
+
+                    3. define the network address (the range) in which the dhcp is gonna generate from 
+                        vd: Router(config)# network 192.168.1.0 255.255.255.0
+
+                    4. set default gateway
+                        vd: Router(config)# default-router 192.168.1.1
+
+                    5. set the actual dns server ip address 
+                        vd: Router(config)# dns-server 209.165.200.225
+
+                + Router as DHCP relay agents: 
+                    refer the boardcast message to the single DHCP server 
+
+#### Basic Network Troubleshooting
+    Trước khi xem xét các vấn đề khác thì 
+    luôn kiểm tra xem CẤU HÌNH ĐỊA CHỈ IP cho các thiết bị trong mạng đã đúng hết chưa,
+    CÓ CÙNG MỘT SUBNET hay chưa 
+    ĐẢM BẢO là các INTERFACE cần sử dụng đều đang ở TRẠNG THÁI ON đã cấu hình no shutdown.
+        -> show ip int brief 
+
+    + Van de lien quan DICH VU MANG: 
+        Đề thường sẽ nói như sau: 
+            “Mạng này đang chạy dịch vụ X, song PC A không sử dụng được dịch vụ X” 
+            -> Khả năng cao là ROUTER chạy dịch vụ đó được CẤU HÌNH SAI 
+
+        + Host không nhận được địa chỉ IP 
+            -> DHCP: 
+                XEM LẠI DÃY ĐỊA CHỈ IP trong NETWORK POOL đã khai báo đúng hoặc đủ chưa, 
+                cấu hình ip-helper đã đúng interface hay chưa
+
+        + Traffic của host bị chặn bất thường, các host không giao tiếp được 
+            -> ACL: 
+            2 chuyện ưu tiên nhất: 
+                + Cấu hình inbound hoặc là outbound đã hợp lý chưa, 
+                + xem lại VỊ TRÍ ĐẶT ACL TRONG MẠNG dã đúng chưa là . 
+
+            Nếu không có gì thì ta mới xét tới:
+                + thứ tự các entry 
+                + tính hợp lệ của các entry đó.
+
+        + Host đi ra internet không được 
+            -> NAT: 
+                Kiểm tra lại interface in và interface out đã đúng chiều chưa. 
+                Còn lại là phụ thuộc vào việc ĐÃ CẤP ĐỦ SỐ ĐỊA CHỈ IP INSIDE GLOBAL để phục vụ số lượng thiết bị trong mạng hay chưa.
+
+        **Trong cả 3 truong hpo, ta ĐỀU PHẢI ĐẢM BẢO INTERFACE CỦA ROUTER CÓ ĐANG CHẠY DỊCH VỤ ĐÓ.
+
+
+    + Van de lien quan DINH TUYEN: 
+       Nếu đề không nói chạy dịch vụ mạng nào hết 
+       chỉ nói các host không giao tiếp được với nhau như mong muốn
+        -> xét định tuyến
+        **Đảm bảo các thiết bị đang chạy cùng một chế độ định tuyến với nhau
+
+        + Đối với định tuyến tĩnh:
+            có đường đi thì phải có đường về. 
+            -> cấu hình route từ A đến B thì cũng phải cấu hình route từ B đến A mới nói chuyện được.
+
+        + Đối với định tuyến động và định tuyến các VLAN:
+            -> lỗi thường thấy là cấu hình lộn interface với địa chỉ IP
+    
+
+
+
+
+## KEYPOINTS:
+    The solution don't have to work, it just have to be LOGICAL 
+    I need a generate function for this :)) 
+    I NEED A GRAPH 
