@@ -972,3 +972,9 @@ NOTE:
     The solution don't have to work, it just have to be LOGICAL 
     I need a generate function for this :)) 
     I NEED A GRAPH 
+
+
+## TODO: 
+    have all the routing commands: static, dynamic, rip ospf, ... @Current 
+
+    fill out all the requirements of the trac nghiem
