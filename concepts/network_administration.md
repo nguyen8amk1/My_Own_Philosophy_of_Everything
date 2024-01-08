@@ -554,6 +554,7 @@ NOTE:
 
                     R1(config-if)# interface g0/0/0.10
                         -> create sub-interface
+
                     R1(config-if)# encapsulation dot1q 10
                         -> IMPORTANT: define VLAN TAG 
                     R1(config-if)# ip add 192.168.10.1 255.255.255.0
@@ -975,6 +976,6 @@ NOTE:
 
 
 ## TODO: 
-    have all the routing commands: static, dynamic, rip ospf, ... @Current 
-
-    fill out all the requirements of the trac nghiem
+    Note lai cac bai mau cua Thuan @Current 
+    fill out all the requirements of the trac nghiem 
+    Note lai cac do an 
