@@ -99,7 +99,6 @@ TODO:
 
 SE334.O21.PMCL.1,SE334.O21.PMCL,DS312.O21.CNCL,NT204.O21.ATCL,NT204.O21.ATCL.1,NT213.O22.ATCL,NT213.O22.ATCL.1,NT230.O22.ATCL,NT230.O22.ATCL.1
 
-
 Script: 
 
 // Chỉ cần thay mỗi môn trên một hàng cho biến monDangKy này là xong

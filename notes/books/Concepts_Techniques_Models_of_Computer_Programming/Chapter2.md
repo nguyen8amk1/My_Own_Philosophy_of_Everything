@@ -233,31 +233,234 @@ NOTE: at this stage (syntax stage), we're DO NOT CARE what the programs are actu
         -> Context-SENSITIVE Grammar = Context-free Grammar + Set of extra conditions
 
 #### Ambiguity: 
-    ... 
+    Context-free grammars can be ambiguous 
+    -> there can be several parse trees that correspond to a given token sequence. 
+
+    -> an UNDESIRABLE PROPERTY of a GRAMMAR 
+    since it's unlcear exactly what program is being written.
+
+    vd: 
+        Given these 2 grammar expression: 
+            <exp> ::= <int> | <exp> <op> <exp>
+            <op>  ::= +|* 
+
+        -> Parse tree generate from the expression: 2 * 3 + 4
+            + first: 
+               *
+              / \
+             2   +
+                / \
+               3   4
+
+            + second: 
+                +
+               / \
+              *   4
+             / \
+            2   3
+
+        -> Ambiguity (don't know which to choose)
+
+    + To Remove Ambiguity: 
+        + Grammar rules can be REWRITTEN
+            -> BUT this can MAKE the rules more COMPLICATED.  
+
+        + Add EXTRA CONDITTIONS (a MORE CONVENIENT approach)
+            -> RESTRICT the parser 
+            so that ONLY 1 PARSE TREE IS POSSIBLE.
+            -> called DISAMBIGUATE the grammar.
+
+        vd:  for expresssion such as binary operators  
+            -> add 2 conditions: 
+                + precedence (do uu tien)
+                + associativity (tinh ket hop)
+
+    + Precedence: 
+        -> Operators with high precedence 
+        are PUT as DEEP IN THE PARSE TREE as possible. 
+        -> if * is deeper in the tree than + 
+            -> called * BINDS TIGHTER than + 
+            -> We choose the second one.
+
+    + Associativity: 
+        -> condition on an EXPRESSION with the SAME OPERATOR  
+            vd: 2 - 3 - 4 
+        -> Precedence is NOT ENOUGH to DISAMBIGUATE 
+        because ALL OPERATORS have the SAME PRECEDENCE
+        -> have to choose between 2 trees: 
+            + (2 - 3) - 4
+            + 2 - (3 - 4)
+
+        + Determine whether: 
+            + left most operator
+            + right most operator
+
+            BINDS TIGHTER
+
+        -> there are 2 POSSIBLE ASSOCIATIVITY VALUE for operation - 
+            + left 
+                -> (2 - 3) - 4 is chosen
+            + right  
+                -> 2 - (3 - 4) is chosen
 
 #### Syntax notation used in the book: 
-    ... 
+    Each NEW DATA TYPE and LANGUAGE CONSTRUCT 
+    is INTRODUCED together WITH a small SYNTAX DIAGRAM 
+        -> shows HOW IT IT FITS IN THE WHOLE LANGUAGE
 
+    + Syntax diagram: 
+        -> gives GRAMMAR RULES for a simple CONTEXT-FREE GRAMMAR of tokens.  
+        -> the notation SATISFY 2 PRINCIPLES: 
+            + 1. All grammar rules stand on their own. 
+                NOTE: 
+                    NEVER give an incorrect grammar rule 
+                    just to "simplify" the presentation.
 
+            + 2. Have CLEAR INDICATION symbol to determine whether 
+            a grammar rules defines: 
+                + COMPLETE definition
+                + PARTIAL definition
 
+                of nonterminal symbol 
+                    -> always end in "..." (meaning "SOMETHING ELSE")
 
+        vd syntax diagram (for 2 partial definitions of two non terminals):  
 
+            <statement>  ::= skip | <expression> '=' <expression | ... 
+                -> meaning: 
+                    a statement can be the keyword 'skip'
+                    or two expression separated by the '=' symbol
+                    or SOMETHING ELSE (the '...')
+                
+            <expression> ::= <variable> | <int> | ... 
+            
+            <statement> ::= if <expression> then <statement> 
+                            { elseif <expression> then <statement> } 
+                            [ else <statement> ] 
+                            end | ...
+                    
+                + meaning: 
+                    + { something }
+                        -> there can be any number of occurences including ZERO
+                    + [ something ]
+                        -> can be occur zero or 1 time 
+                
 
 ### 2.1.2 Language SEMANTICS     
-    ... 
+    -> defines WHAT A PROGRAM DOES when it executes. 
+
+    -> IDEALLY defined in a simple MATHEMATICAL STRUCTURE 
+    that lets you REASON ABOUT THE PROGRAM, about its:
+        + correctness
+        + execution time
+        + memory use 
+        without introducing any irrelevant details. 
+
+        -> Kernal language approach 
 
 #### The Kernel language approach: 
-    ... 
+    -> defines the SEMANTICS of PROGRAMMING LANGUAGES
+    -> all languages are defined in terms of: 
+        TRANSLATION into a CORE LANGUAGE known as the KERNEL LANGUAGE.
+
+    + KERNEL LANGUAGE APPROACH consist of 2 parts: 
+        + 1. define a VERY SIMPLE LANGUAGE (kernel language)
+            -> should be easy to REASON
+
+            Computation Model = kernel language + data structures 
+
+        + 2. define a TRANSLATION SCHEME
+            from: full programming language
+            to: kernel language
+            -> should be as SIMPLE as possible 
+
+            -> 2 KINDS of translation:
+                + Linguistic Abstraction
+                + Syntactic sugar 
 
 #### Formal semantics: 
     ... 
 
 #### Linguistic abstraction: 
-    ... 
+    Using a programming language,
+    at some point we may feel the need to EXTENT THE LANGUAGE 
+        -> ADD A NEW LINGUISTIC CONSTRUCT. 
+    vd: 
+        the declaration model has no looping constructs.  
+        -> add a "for" construct to express certain kinds of loops that are useful 
+        
+    + Linguistic Abstraction: 
+        **-> A LANGUAGE CONSTRUCT that is both: 
+            + abstraction
+            + addition 
+            to the language syntax 
+
+    + Define an Linguistic abstraction: 
+        -> 2 phases: 
+            + 1. Define a NEW GRAMMATICAL CONSTRUCT 
+            + 2. Define the new construct's TRANSLATION into the kernel language
+
+    vd: 
+        FUNCTION is a Linguistic abstraction 
+            with keyword "fun"
+        but the kernel language (of this chapter) only has PROCEDURES
+            -> but function are so useful that we added it as a Linguistic Abstraction
+
+    The TRANSLATION - MAKES IT CLEAR WHAT THE SEMANTICS IS 
+
+    Useful for:  
+        + 1. Improve properties of a language such as:
+                + expressiveness
+                + correctness
+                + security 
+                + efficiency
+        + 2. Hiding the abstraction's implementation from the programmer
+            -> makes it impossible to use the abstraction in the wrong way
+            -> the compiler can use this information to give more efficieny code. 
+
+     -> Have broad impact on the language, 
+        AFFECTING how developers THINK about and USE the language   
 
 #### Syntactic sugar: 
-    ... 
+    -> Shortcut notation for frequently occuring idioms
+        -> is part of the language syntax
+        -> DEFINED BY GRAMMAR RULES 
 
+    + Syntactic sugar vs Linguistic Abstraction: 
+        + Similarity: 
+            -> both providing a more user-friendly/expressive way of writing code. 
+        
+        + Differences: 
+           + Syntactic sugar:  
+                -> CONVENIENT WAY to express certain constructs
+                    -> doesn't introduce new functionality
+                    -> can be precisely MAPPED to the UNDERLYING, more explicit language CONSTRUCTS
+                    -> DOESN'T BRING NEW ABSTRACTIONS 
+
+                vd: 
+                    // Syntactic Sugar (List Comprehension)
+                        squares = [x**2 for x in range(10)]
+
+                    // Equivalent Full Language
+                        squares = []
+                        for x in range(10):
+                            squares.append(x**2)
+
+                + Define: 
+                    -> DEFINED BY GRAMMAR RULES 
+
+           + Linguistic Abstraction: 
+                -> Involves defining a new grammatical construct.
+                -> Typically GOES BEYOND SYNTAX 
+                   May INTRODUCE:
+                        + NEW SEMANTICS 
+                        + higher-level CONCEPTS.
+            
+                + Define: 
+                    -> 2 phases: 
+                        + 1. Define a NEW GRAMMATICAL CONSTRUCT 
+                        + 2. Define the new construct's TRANSLATION into the kernel language
+    
 #### Language design: 
     ... 
 
@@ -266,3 +469,40 @@ NOTE: at this stage (syntax stage), we're DO NOT CARE what the programs are actu
 
 #### The Interpreter approach: 
     ... 
+
+
+
+
+
+### 2.2 The single-assignment store 
+    ... 
+
+#### Declarative variables 
+    ... 
+
+#### Value store 
+    ... 
+
+#### Value creation 
+    ... 
+
+#### Variable identifiers 
+    ... 
+
+#### Value creation with identifiers 
+    ... 
+
+#### Partial values 
+    ... 
+
+#### Variable-variable binding
+    ... 
+
+#### Dataflow variables
+    ... 
+
+
+
+
+
+### 2.3 Kernel language 
