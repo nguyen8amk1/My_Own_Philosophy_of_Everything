@@ -475,14 +475,60 @@ NOTE: at this stage (syntax stage), we're DO NOT CARE what the programs are actu
 
 
 ### 2.2 The single-assignment store 
-    ... 
+    We INTRODUCE declarative MODEL BY FIRST EXPLAINING its DATA STRUCTURE
+    -> Declarative Model use Single-assignment store
+
+    + Single-assignment Store: 
+        -> a SET of VARIABLEs that are INITIALLY UNBOUND 
+        that can be BOUND to ONE VALUE.  
+
+    -> a STORE: a SET of VARIABLEs
+
+    vd: 
+        unbound store: {x1, x2, x3}   
+        bounded store: {x1 = 313, x2 = [1 2 3], x3}   
+            -> x3 is left unbounded 
 
 #### Declarative variables 
-    ... 
+    -> variables in the single-assignment store 
+   
+    **Once bound, a declarative variable:
+            + STAYS BOUND THROUGHOUT THE COMPUTATION
+            + INDISTINGUISABLE from its VALUE
+                -> it can be used in calculations as if it were the value
+
+                vd: doing the operation x + y 
+                is the same as doing 11 + 22
+                if the store is {x=11, y=22}
 
 #### Value store 
-    ... 
+    -> a STORE where ALL VARIABLES ARE BOUND TO VALUES    
+        -> a PERSISTENT MAPPING: 
+            from: variables
+            to: values 
 
+    + a VALUE: is a MATHEMATICAL CONSTANT 
+        -> value can also be compound entity
+        vd: integer 3 is a value 
+            [1 2 3] is a value 
+
+    Question: Why use SINGLE-ASSIGNMENT STORE when a VALUE STORE seems more common and useful? 
+        Functional Programming language implement value store  
+        OOP language implement cell store (which also kinda like value store, in a sense :v)
+
+        -> there are a lot of reasons: 
+            + 1. COMPUTE with PARTIAL VALUES
+                -> a procedure can RETURN an output 
+                by BINDING AN UNBOUND VARIABLE ARGUMENT.
+
+            + 2. Declarative Concurrency (explain in chapter 4)
+
+            + 3. Need for:
+                + relational(logic) programming
+                + constraint programming 
+
+            + others reasons related to efficiency (tail recursion, difference lists,...). 
+    
 #### Value creation 
     ... 
 

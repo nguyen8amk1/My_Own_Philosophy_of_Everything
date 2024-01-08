@@ -186,9 +186,22 @@ Conclusion:
         -> can be composed within STATEMENTS 
 
 ## Arguments: 
-    ...
+    -> a value that is PASSED TO A FUNCTION or method when it is called or invoked.
+
+    -> It CORRESPONDS TO THE ACTUAL DATA that is SUPPLIED to the function's parameters during the function call.
+
+    -> Arguments PROVIDE THE ACTUAL VALUES that the function will operate on.  
+
+    vd: result = add_numbers(3, 5)  
+        -> '3' and '5' are ARGUMENTS 
+
 ## Parameters: 
-    ...
+    -> a variable that is used in a function or method definition.
+    -> PART OF THE FUNCTION SIGNATURE 
+        define what kind of values the function expects to receive.
+
+    vd: def add_numbers(x, y):  
+        -> 'x' and 'y' are parameters
 
 ## Grok word: 
     -> to understand something THOROUGHLY and INTUITIVELY
