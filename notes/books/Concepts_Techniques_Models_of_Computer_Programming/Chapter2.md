@@ -530,7 +530,18 @@ NOTE: at this stage (syntax stage), we're DO NOT CARE what the programs are actu
             + others reasons related to efficiency (tail recursion, difference lists,...). 
     
 #### Value creation 
-    ... 
+    Basic OPERATION on a STORE:   
+        + BINDING a VARIABLE to a newly created VALUE.
+            -> xi = value 
+
+    Single-assignment Operation: xi = value
+        internal steps: 
+        1. constructs value in the store 
+        2. binds the variable xi to this value 
+            if the variable is already bound 
+                -> the operation will test if the two values are compatible (like grouping 2 values) 
+                if not compatible -> signaled exception.   
+        
 
 #### Variable identifiers 
     ... 
