@@ -530,11 +530,11 @@ NOTE: at this stage (syntax stage), we're DO NOT CARE what the programs are actu
             + others reasons related to efficiency (tail recursion, difference lists,...). 
     
 #### Value creation 
-    Basic OPERATION on a STORE:   
+    + Basic OPERATION on a STORE:   
         + BINDING a VARIABLE to a newly created VALUE.
             -> xi = value 
 
-    Single-assignment Operation: xi = value
+    + Single-assignment Operation: xi = value
         internal steps: 
         1. constructs value in the store 
         2. binds the variable xi to this value 
@@ -544,16 +544,45 @@ NOTE: at this stage (syntax stage), we're DO NOT CARE what the programs are actu
         
 
 #### Variable identifiers 
-    ... 
+    + Variable Identifier: a TEXTUAL NAME that refers to a STORE ENTITY from OUTSIDE THE STORE. 
+        vd: the variable names in program source code 
+    + an Environment: the MAPPING:
+                        from: variable identifiers
+                        to: store entities
+    vd: 
+        Variable Identifier X 
+        REFERS to store variable x1.
+        -> Environment {<x> -> x1}
+    
+        note: 
+            <x>: represent any identifier
+            when want to implement in real program, replace the <x> with identifier name
 
 #### Value creation with identifiers 
-    ... 
+    bound variable to to values
+        vd: x1 = [1 2 3]
+    with a variable identifier we can write the binding as: 
+        vd: X = [1 2 3]
+        after the bind complete X still refer to x1 {X -> x1}
+
+    1. X bind to x1, x1 bind to [1 2 3]
+    2. X bind directly to [1 2 3]
+        -> both is the same, INDISTINGUISABLE 
+        -> Since we have DEREFERENCING (FOLLOW THE LINKS of bound variables to GET THE VALUE)         
+            basically REMOVE the VARIABLE between the IDENTIFIER and the VALUE 
 
 #### Partial values 
+    -> a DATA STRUCTURE that MAY CONTAIN UNBOUND VARIABLE 
     ... 
 
 #### Variable-variable binding
-    ... 
+    Variable bound to variable 
+    x1 = x2
+    -> we say that {x1, x2} form an EQUIVALENCE SET 
+        {x1, x2}  is the same as x1 = x2
+    **Whenever one variable in an EQUIVALENCE SET is bound 
+        -> all variables see the binding. 
+    
 
 #### Dataflow variables
     ... 
