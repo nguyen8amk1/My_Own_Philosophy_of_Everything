@@ -292,7 +292,7 @@ They(LP, IP) can:
 
         + Substring:  
             Solving smaller subproblems substrings and expand outwards
-            Useful: USE this in problems where we CAN’T TAKE ADVANTAGE OF PREFIX/SUFFIX structures
+            Useful: USE this in problems where we CAN’T TAKE ADVANTAGE OF PREFIX/SUFFIX structures (which means have NO ORDER)
             
             Note: 
                 "expand outwards" meaning: 
@@ -301,7 +301,7 @@ They(LP, IP) can:
                     highlights the progression in the expansion of the considered substrings
 
                 -> More general and versatile than prefix/suffix 
-                    -> can solve prefix/suffix problem 
+                    -> can solve prefix/suffix problem while the reverse cannot 
 
                 -> have a no predetermined starting point
                 -> not have any direction 
