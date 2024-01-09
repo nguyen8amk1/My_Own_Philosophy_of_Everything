@@ -589,7 +589,5 @@ NOTE: at this stage (syntax stage), we're DO NOT CARE what the programs are actu
 
 
 
-
-
 ### 2.3 Kernel language 
     ... 
