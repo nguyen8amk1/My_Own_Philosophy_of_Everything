@@ -256,4 +256,95 @@ They(LP, IP) can:
 
         ...
 
+
      some more hints: https://courses.csail.mit.edu/6.006/spring11/exams/notes3-dp       
+
+##### Main steps of solving a dynamic programming:
+    1. Define the subproblems
+    2. Find HOW TO COMBINE SOLUTIONS to SUBPROBLEMS to form solutions to larger subproblems
+    3. Choose an ORDER TO SOLVE SUBPROBLEMS so the problems they depend on are solved before combining solution
+
+
+    **These 3 steps have to be satisfied when giving a dynamic programming solution.  
+
+
+#### Combining solutions: 
+    there a FEW MAJOR WAYS to COMBINE SOLUTIONS:     
+        + Prefix/Suffix:  
+            Start with solving smaller subproblems 
+                from beginning and expand subproblems toward the end 
+                or 
+                from end and expand subproblems toward the begnning  
+
+            Useful: when the problem has a NATURAL ORDER or STRUCTURE that CAN BE EXPLOITED.
+
+            
+            + Visualize:
+                vd: the ASSEMBLY LINE as a sequence of tasks:
+                    Task 1 -> Task 2 -> Task 3 -> ... -> Task n
+
+                Solve subproblems starting from Task 1 and expand towards Task n, 
+                OPTIMIZING EACH TASK IN SEQUENCE.
+
+            NOTE: 
+                -> have a predetermined starting point, (first element or last element)
+                -> have a direction to expand 
+
+        + Substring:  
+            Solving smaller subproblems substrings and expand outwards
+            Useful: USE this in problems where we CAN’T TAKE ADVANTAGE OF PREFIX/SUFFIX structures
+            
+            Note: 
+                "expand outwards" meaning: 
+                    emphasizes the iterative and step-by-step nature of the process
+                    systematically extend solutions from smaller to larger substrings
+                    highlights the progression in the expansion of the considered substrings
+
+                -> More general and versatile than prefix/suffix 
+                    -> can solve prefix/suffix problem 
+
+                -> have a no predetermined starting point
+                -> not have any direction 
+            
+
+            Multiplication Parentheses:
+            vd: Visualize a sequence of numbers:
+                a1 * a2 * a3 * ... * an
+                -> Solve subproblems for smaller substrings, 
+                    such as (a1 * a2) * (a3 * a4), 
+                    and expand outward until the entire sequence is considered.
+            
+
+
+        + Combination (not understand):  
+            ... 
+
+        + Tree:  
+            The tree approach involves:
+                solving smaller subproblems at the leaves 
+                expanding upwards level by level until the root subproblem is solved.
+
+            useful: for problems with a HIERARCHICAL or RECURSIVE STRUCTURE.
+
+#### Adding constraints: 
+    A common mistake: 
+        -> define the subproblem WITHOUT ENOUGH CONSTRAINTS. 
+
+    If you’re having trouble working out a dynamic programming solution, 
+        LOOK FOR OTHER PARAMETERS THAT YOU MIGHT BE ABLE TO FIT INTO THE SUBPROBLEM TO CONSTRAIN IT FURTHER.
+
+    EXTRA CONSTRAINTS may MAKE COMBINING SUBPROBLEMS MORE STRAIGHTFORWARD and be the KEY TO SOLVING A DYNAMIC PROGRAMMING PROBLEM.
+
+    It may add more runtime, but sometimes we have to add constraints to the subproblems and a slower
+    correct solution will often get more points than an incorrect solution anyway.
+
+    vd: 
+        WIdget layout (added WIDTH CONSTRAINT),
+        Knapsack problem (added SIZE CONSTRAINT)
+
+#### Running time: 
+    Calculating the runtime of a dynamic programming solution involves computing: 
+        + how many subproblems there are 
+        + how long it takes to solve each subproblem.
+
+        The runtime is usually (Time per subproblem) × (Number of subproblems).
