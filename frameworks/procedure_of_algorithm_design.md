@@ -317,7 +317,46 @@ They(LP, IP) can:
 
 
         + Combination (not understand):  
-            ... 
+            Combining solutions involves:
+                using a multi-dimensional table to store solutions, 
+                with EACH DIMENSION USING A DIFFERENT COMBINATION STRUCTURE 
+
+            This is common when solving problems where ORDER MATTERS and the SOLUTION RELIES ON MULTIPLE FACTORS.
+
+            NOTE: 
+                + Combination structure: 
+                    ... 
+
+                + How does 2d table works: 
+                    the key to understand is to recognize that 
+                        + each DIMENSION represent different PARAMETER in the problem 
+                        + the TABLE is used to efficiently STORE and RETRIEVE SOLUTIONS to subproblems.
+
+                    Typically: 
+                        one dimension of the table: represents the SIZE or INDEX of the SUBPROBLEM, 
+                        other dimension: represents a DIFFERENT PARAMETER or aspect of the PROBLEM.
+
+                        In the context of Knapsack problem: 
+                            + Rows (First Dimension):
+                                Rows REPRESENT DIFFERENT ITEMS OR CHOICES AVAILABLE in the problem.
+                                Each row (indexed by i) corresponds to a different item or a decision point in the problem.
+                                    -> different items = different parameters
+
+                            + Columns (Second Dimension):
+                                Columns represent different VALUES or states of a parameter in the problem.
+                                Each column (indexed by w) corresponds to a different state of the REMAINING CAPACITY of the knapsack.
+                                    -> Remaining capacity = Number = SIZE 
+                                    -> Parameter "w" (weight)
+
+                            -> The entry dp[i][w] represents: the OPTIMAL SOLUTION for the SUBPROBLEM with the FIRST I ITEMS and REMAINING CAPACITY W.
+
+                + The order of combining solutions from different cells in the table may involve a combination of prefix, suffix, or substring structures.
+                    vd: the order of combination of in the Knapsack problem in the columns (horizontal direction) is prefix structure
+
+                    You can understand this as: 
+                        + prefix/suffix: is typically called as the "first i items" approach, that works on 1d array 
+                            -> since each row, column of a dp 2d table is a 1d array, you may use this technique on those rows, columns. 
+
 
         + Tree:  
             The tree approach involves:
