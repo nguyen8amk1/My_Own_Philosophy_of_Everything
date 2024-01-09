@@ -1,0 +1,10 @@
+# MY LESSON IN LIFE 
+
+## HOW TO BUY CLOTHES 
+    ... 
+
+## MY CARELESSNESS IS KILLING ME 
+    ... 
+
+## WAYS TO FIX MY CARELESSNESS
+    ... 
